@@ -326,7 +326,130 @@ Backend and
         // }else{
         //     System.out.println("The number is not divisible by 3 and 7.");
         // }
-
-
 //     }
 // }
+import java.util.Scanner;
+public class java{
+    public static void main(){
+        Scanner num = new Scanner(System.in);
+        System.out.println("Enter the number of rows:");
+        int n = num.nextInt();
+        // for(int i=0;i<n;i++){
+        //     for(int j=0;j<=i;j++){
+        //         System.out.print("*");
+        //     }System.out.println(" ");
+        // }
+        // for(int i=0;i<n;i++){
+        //     for(int k=n-i;k>0;k--){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j=0;j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println(" ");
+        // }
+        // for(int i=0;i<n;i++){
+        //     for(int k=n;k>0;k--){
+        //         System.out.println(" ");
+        //     }
+        //     for(int j=0;j<=(i-1);j++){
+        //         System.out.print("*");
+        //     }
+        // }System.out.println(" ");
+        // for(int i=0;i<n;i++){
+        //     for(int j=0;j<=n;j++){
+        //         System.out.println("*");
+        //     }System.out.print(" ");
+        // }
+        // for(int i=0;i<n;i++){
+        //     for(int j=2*i;j>0;j--){
+        //         if(j%2==0){
+        //             System.out.print("*");
+        //         }else{
+        //             System.out.println();
+        //         }
+        //     }System.out.print(" ");
+        // }
+        // for(int i=0;i<n;i++){
+        //     for(int j=0;j<=i;j++){
+        //         System.out.print("*");
+        //     }System.out.println(" ");
+        // }
+        // for(int i=0;i<n;i++){
+        //     for(int k = n-1;k>0;k--){
+        //         System.out.print(" ");
+        //     }
+        //     for(int j =1;j<=i;j++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+        
+
+        // for (int i = 1; i <= n; i++) {
+        //     for (int k = n - i; k > 0; k--) {
+        //         System.out.print(" ");
+        //     }
+        //     for (int j = 0; j < i; j++) {
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
+        // for(int i=0;i<n;i++){
+        //     for(int j=n-i;j>0;j--){
+        //         System.out.print("*");
+        //     }System.out.println();
+        // }
+    // for(int i=0;i<n;i++){
+    //     for(int j = 0;j<i;j++){
+    //         System.out.print(" ");
+    //     }
+    //     for(int k=0;k<n-i;k++){
+    //         System.out.print("*");
+    //     }System.out.println();
+    // }
+    
+
+//     for(int i = 1; i <= n; i++) {
+//         for(int j = 1; j <= 2*n-1; j++) {
+//             if(j >= i && j <= 2*n-i)
+//                 System.out.print("*");
+//             else
+//                 System.out.print(" ");
+//             }
+//         System.out.println();
+
+// for(int i=0;i<n;i++){
+//         for(int k=0;k<i;k++){
+//             System.out.print(" ");
+//         }
+//     for(int j=0;j<n;j++){
+//         System.out.print("*");
+//     }System.out.println(" ");
+// }
+//  for(int i=0;i<n;i++){
+//     for(int j=0;j<n;j++){
+//         if(i==0 || i==n-1){
+//             System.out.print("*");
+//         }else{
+//             if(j==0 || j==n){
+//                 System.out.print("*");
+//             }else{
+//                 System.out.print(" ");
+//             }
+//         }
+//     }
+// }
+int x = 1;
+for(int i=0;i<n;i++){
+    for(int j=0;j<i;j++){
+        System.out.print(x+" ");
+        x++;
+    }System.out.println();
+}
+        }
+    }
+
+
+            
+
