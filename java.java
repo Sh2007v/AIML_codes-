@@ -1,5 +1,6 @@
-public class java{
-    public static void main(){
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
         /* System.out.println("Shah");
         System.out.println("Virdi");
         System.out.print("Singh");
@@ -175,12 +176,157 @@ public class java{
     //         y++;
     //     }System.out.println(" ");
     // }
-}
+    // System.out.println(Math.max(4,5));
+    // System.out.println(Math.min(4,5));
+    // System.out.println(Math.abs(-789));
+    // System.out.println(Math.sqrt(64));
+    // System.out.println(Math.pow(2,4));
+    // System.out.println(Math.round(4.3));
+    // System.out.println(Math.ceil(5.3));
+    // System.out.println(Math.floor(6.4));
+    // System.out.println(Math.random());
+    // int num = (int)(Math.random()*101);
+    // System.out.println(num);
+    // Scanner myObj = new Scanner(System.in);
+    // System.out.println("Enter name,age and salary:");
+    // String name = myObj.nextLine();
+    // int age = myObj.nextInt();
+    // double salary = myObj.nextDouble();
+    // System.out.println("Name="+name);
+    // System.out.println("Age="+age);
+    // System.out.println("Salary="+salary);
+    
+// }
 
 
     
-}
+// }
 
 /* I am learning Java to become a 
 Backend and 
     Full Stack developer */
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         // Scanner myObj = new Scanner(System.in);
+        // System.out.println("Enter name,age and salary:");
+        // String name = myObj.nextLine();
+        // int age = myObj.nextInt();
+        // double salary = myObj.nextDouble();
+        // System.out.println("Name="+name);
+        // System.out.println("Age="+age);
+        // System.out.println("Salary="+salary);
+        // Scanner myObj = new Scanner(System.in);
+        // System.out.println("Enter num:");
+        // int num = myObj.nextInt();
+        // System.out.println("Entered number is:"+num);
+        // Scanner x1 = new Scanner(System.in);
+        // System.out.println("Enter 1st num:");
+        // int x = x1.nextInt();
+        // Scanner x2 = new Scanner(System.in);
+        // System.out.println("Enter 2nd num:");
+        // int y = x2.nextInt();
+        // int res = x+y;
+        // System.out.println("The addition is: "+res);
+        // Scanner x1 = new Scanner(System.in);
+        // System.out.println("Enter 1st num:");
+        // int x = x1.nextInt();
+        // Scanner x2 = new Scanner(System.in);
+        // System.out.println("Enter 2nd num:");
+        // int y =x2.nextInt();
+        // int res = x*y;
+        // System.out.println("The required product is :" + res);
+//    }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+        // Scanner num = new Scanner(System.in);
+        // System.out.println("Enter a number:");
+        // int x = num.nextInt();
+        // System.out.println(x);
+        // Scanner x1 = new Scanner(System.in);
+        // System.out.println("Enter 1st num:");
+        // int a = x1.nextInt();
+        // Scanner x2 = new Scanner(System.in);
+        // System.out.println("Enter 2nd num:");
+        // int b = x2.nextInt();
+        // int res = a+b;
+        // System.out.println(res);
+        // Scanner name = new Scanner(System.in);
+        // System.out.println("Enter name: ");
+        // String n = name.nextLine();
+        // System.out.println("Hello "+n);
+        // Scanner ln = new Scanner(System.in);
+        // System.out.println("Enter length");
+        // int l = ln.nextInt();
+        // Scanner wi = new Scanner(System.in);
+        // System.out.println("Enter width");
+        // int w = wi.nextInt();
+        // int area = l*w;
+        // System.out.println(area);
+        // Scanner num = new Scanner(System.in);
+        // System.out.println("Enter a num:");
+        // int g = num.nextInt();
+        // if(g>0){
+        //     System.out.println("Positive");
+        // }else if(g<0){
+        //     System.out.println("Negative");
+        // }else{
+        //     System.out.println("Zero");
+        // }
+        // Scanner num = new Scanner(System.in);
+        // System.out.println("Enter a num:");
+        // int n = num.nextInt();
+        // if(n%2==0){
+        //     System.out.println("Even");
+        // }else{
+        //     System.out.println("Odd");
+        // }
+        // Scanner num1 = new Scanner(System.in);
+        // System.out.println("Enter 1st num:");
+        // int n1 = num1.nextInt();
+        // Scanner num2 = new Scanner(System.in);
+        // System.out.println("Enter 2nd num:");
+        // int n2 = num2.nextInt();
+        // if(n1>n2){
+        //     System.out.println("1st num is larger");
+        // }else{
+        //     System.out.println("2nd num is larger");
+        // }
+        // Scanner num1 = new Scanner(System.in);
+        // System.out.println("Enter 1st num: ");
+        // int n1 = num1.nextInt();
+        // Scanner num2 = new Scanner(System.in);
+        // System.out.println("Enter 2nd num: ");
+        // int n2 = num2.nextInt();
+        // Scanner num3 = new Scanner(System.in);
+        // System.out.println("Enter 3rd num: ");
+        // int n3 = num3.nextInt();
+        // if(n1>n2 && n1>n3){
+        //     System.out.println("Largest num is "+n1);
+        // }else if(n2>n3 && n2>n1){
+        //     System.out.println("Largest num is "+n2);
+        // }else{
+        //     System.out.println("Largest num is "+n3);
+        // }
+        // Scanner num = new Scanner(System.in);
+        // System.out.println("Enter a num: ");
+        // int n = num.nextInt();
+        // if(n%5==0){
+        //     System.out.println("Divisible by 5");
+        // }else{
+        //     System.out.println("Not divisible by 5");
+        // }
+        // Scanner num = new Scanner(System.in);
+        // System.out.println("Enter the num: ");
+        // int n = num.nextInt();
+        // if(n%3 == 0 && n%7 == 0){
+        //     System.out.println("The number is divisible by both 3 and 7.");
+        // }else{
+        //     System.out.println("The number is not divisible by 3 and 7.");
+        // }
+
+
+//     }
+// }
