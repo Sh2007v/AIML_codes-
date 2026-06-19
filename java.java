@@ -328,12 +328,12 @@ Backend and
         // }
 //     }
 // }
-import java.util.Scanner;
-public class java{
-    public static void main(){
-        Scanner num = new Scanner(System.in);
-        System.out.println("Enter the number of rows:");
-        int n = num.nextInt();
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the number of rows:");
+//         int n = num.nextInt();
         // for(int i=0;i<n;i++){
         //     for(int j=0;j<=i;j++){
         //         System.out.print("*");
@@ -449,9 +449,54 @@ public class java{
 // }
 
 
-        }
-    }
+    //     }
+    // }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner (System.in);
+//         System.out.print("Enter the num: ");
+//         int n = num.nextInt();
+//         if(n%2==0){
+//             System.out.print("Even");
+//         }else{
+//             System.out.print("Odd");
+//         }
 
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.print("Enter the num");
+//         int n = num.nextInt();
+//         if(n>=18){
+//             System.out.print("Eligible to vote");
+//         }else{
+//             System.out.print("Not eligibile to vote");
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num1 = new Scanner(System.in);
+//         System.out.print("Enter the 1st number");
+//         int n1 = num1.nextInt();
+//         Scanner num2 = new Scanner(System.in);
+//         System.out.print("Enter the 2nd number");
+//         int n2 = num2.nextInt();
+//         if(n1>n2){
+//             System.out.println(n1+"is greater than"+n2);
+//         }else{
+//             System.out.println(n2+" is greater than "+n1);
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
 
-            
-
+//     }
+// }
