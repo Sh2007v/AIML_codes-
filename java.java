@@ -500,3 +500,279 @@ Backend and
 
 //     }
 // }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the marks: ");
+//         int n = num.nextInt();
+//         if(n>90){
+//             System.out.println("A");
+//         }else if(n>=80 && n<=90){
+//             System.out.println("B");
+//         }else if(n>=70 && n<80){
+//             System.out.println("C");
+//         }else if(n>=60 && n<70){
+//             System.out.println("D");
+//         }else{
+//             System.out.println("F");
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the num:");
+//         int n=num.nextInt();
+//         if(n<0){
+//             System.out.println(Math.abs(n));
+//         }
+//         else{
+//             System.out.println(n);
+//         }
+
+//     }
+
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the num:");
+//         int ct=0;
+//         int n = num.nextInt();
+//         while(n!=0){
+//             n=n/10;
+//             ct++;
+//         }
+//         if(ct>1 && ct<3) System.out.println("YES");
+//         else System.out.println("NO");
+//     }
+// } ...WORK HARD, WORK EVERY WAKING MINUTE...
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner a1 = new Scanner(System.in);
+//         System.out.println("Enter the Row : ");
+//         int a = a1.nextInt();
+//         Scanner a2 = new Scanner(System.in);
+//         System.out.println("Enter the Col : ");
+//         int b = a2.nextInt();
+//         if((a+b)%2==0){
+//             System.out.println("WHITE");
+//         }else{
+//             System.out.println("BLACK");
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the week num: ");
+//         int n = num.nextInt();
+//         switch(n){
+//             case 1:
+//                 System.out.println("Monday");
+//                 break;
+//             case 2:
+//                 System.out.println("Tues");
+//                 break;
+//             case 3:
+//                 System.out.println("Wed");
+//                 break;
+//             default:
+//                 System.out.println("Other day");
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner oper = new Scanner(System.in);
+//         System.out.println("Enter operator : ");
+//         String o = oper.nextLine();
+//         Scanner num1 = new Scanner(System.in);
+//         System.out.println("Enter 1st num : ");
+//         int a = num1.nextInt();
+//         Scanner num2 = new Scanner(System.in);
+//         System.out.println("Enter 2nd num : ");
+//         int b = num2.nextInt();
+//         int res=0;
+//         switch(o){
+//             case "+" :
+//                 res = a+b;
+//                 break;
+//             case "-":
+//                 res = a-b;
+//                 break;
+//             case "*":
+//                 res = a*b;
+//                 break;
+//             case "/":
+//                 res = a/b;
+//                 break;
+//             default:
+//                 System.out.println("Wrong operator!");
+//         }
+//         System.out.println("Required output is : " + res);
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the limit:");
+//         int n = num.nextInt();
+//         int i =1;
+//         int fact =1;
+//         while(i<=n){
+//             fact*=i;
+//             i++;
+//         }
+//         System.out.println(fact);
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the number : ");
+//         int n = num.nextInt();
+//         int ct=0;
+//         while(n>0){
+//             n=n/10;
+//             ct++;
+//         }
+//         System.out.println(ct);
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter a number:");
+//         int n = num.nextInt();
+//         int rev=0;
+//         while(n>0){
+//             rev=rev*10+n%10;
+//             n=n/10;
+//         }
+//         System.out.println("Reversed num : "+rev);
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the number: ");
+//         int n = num.nextInt();
+//         int prod = 1;
+//         while(n>0){
+//             prod*=n%10;
+//             n=n/10;
+//         }
+//         System.out.println("Product:"+prod);
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the num : ");
+//         int n = num.nextInt();
+//         int max=0;
+//         int l=0;
+//         while(n>0){
+//             l=n%10;
+//             if(max<l){
+//                 max=l;
+//             }
+//             n=n/10;
+//         }
+//         System.out.println(max);
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the num : ");
+//         int n = num.nextInt();
+//         int temp = n;
+//         int rev = 0;
+//         while(temp>0){
+//             rev=rev*10+temp%10;
+//             temp=temp/10;
+//         }
+//         if(rev==n){
+//             System.out.println("Palindrome");
+//         }else{
+//             System.out.println("Not Palindrome");
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter num : ");
+//         int n = num.nextInt();
+//         int sum = 0;
+//         int temp = n;
+//         while(n>0){
+//             int x=n%10;
+//             int f = 1;
+//             while(x>0){
+//                 f*=x;
+//                 x--;
+
+//             }
+//             sum+=f;
+//             n=n/10;
+//         }
+//         if(temp==sum){
+//             System.out.println("Strong Number");
+//         }else{
+//             System.out.println("Not a Strong Number ");
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the num : ");
+//         int n = num.nextInt();
+//         int fact = 1; 
+//         for(int i=1;i<=n;i++){
+//             fact*=i;
+//         }
+//         System.out.println(fact);
+
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the num : ");
+//         int n = num.nextInt();
+//         int ct=0;
+//         int temp = n;
+//         while(temp>0){
+//             temp=temp/10;
+//             ct++;
+//         }
+//         int sum = 0;
+//         for(int i=1;i<=ct;i++){
+//             sum+=n%10;
+//             n=n/10;
+//         }
+//         System.out.println(sum);
+//     }
+// }
+
+
+
