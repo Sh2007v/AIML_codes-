@@ -1063,4 +1063,100 @@ Backend and
 //     }
 // }
 
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the num : ");
+//         int n = num.nextInt();
+//         for(int i=1;i<=n;i++){
+//             for(int k=1;k<=n-i;k++){
+//                 System.out.print(" ");
+//             }
+//             for(int j=1;j<=2*i-1;j++){
+//                 System.out.print("*");
+//             }
+//         System.out.println(" ");
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter num : ");
+//         int n = num.nextInt();
+//         for(int i=1;i<=n;i++){
+//             for(int j=1;j<=i+1;j++){
+//                 System.out.print(" ");
+//             }
+//             for(int k=1;k<=2*(n-i)+1;k++){
+//                 System.out.print("*");
+//             }
+//         System.out.println(" ");
+//         }
+//     }
+// }
 
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter num : ");
+//         int n = num.nextInt();
+//         for(int i=1;i<=2*n-1;i++){
+//             for(int j=n-1;j>0;j++){
+//                 System.out.print(" ");
+//             }
+//             for(int k=1;k<=2*(i)-1;k++){
+//                 System.out.print("*");
+//             }
+//             //System.out.println(" ");
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the num : ");
+//         int n = num.nextInt();
+//         for(int i=1;i<=n;i++){
+//             for(int j=n-i;j>=0;j--){
+//                 System.out.print(" ");
+//             }
+//             for(int k=1;k<=2*i-1;k++){
+//                 System.out.print("*");
+//             }
+//         System.out.println(" ");
+//         }
+//         for(int i=1;i<n;i++){
+//             // for(int y=1; y<=n-i;n++){
+//             //     System.out.print(" ");
+//             // }
+//             for(int s=0;s<=i;s++){
+//                 System.out.print(" ");
+//             }
+//             for(int x=1;x<=2*(n-i)-1;x++){
+//                 System.out.print("*");
+//             }
+//         System.out.println(" ");
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Num : ");
+//         int n = num.nextInt();
+//         for(int i=1;i<=n;i++){
+//             for(int j=1;j<=n;j++){
+//                 System.out.print(i*j+" ");
+//             }
+//         System.out.println(" ");
+//         }
+//     }
+// }
