@@ -1160,3 +1160,54 @@ Backend and
 //         }
 //     }
 // }
+// import java.util.Scanner;
+// public class java {
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.print("Enter the size of array: ");
+//         int n = num.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("Enter array elements:");
+//         for(int i = 0; i < n; i++){
+//             arr[i] = num.nextInt();
+//         }
+//         System.out.println("Array elements are:");
+//         for(int i = 0; i < n; i++){
+//             System.out.print(arr[i] + " ");
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter num : ");
+//         int n = num.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("Enter array elements : ");
+//         for(int i=0;i<n;i++){
+//             arr[i]=num.nextInt();
+//         };
+//         System.out.println("Elements entered by you ");
+//         for(int i=0;i<n;i++){
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
+// }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter num : ");
+//         int n = num.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("Enter the elements.");
+//         for(int i=0;i<n;i++){
+//             arr[i] = num.nextInt();
+//         }
+//         System.out.println("Entered elements.");
+//         for(int i=0;i<n;i++){
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
+// }
