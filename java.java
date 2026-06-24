@@ -1247,6 +1247,7 @@ Backend and
 //     }
 // }
 
+
 // import java.util.Scanner;
 // public class java{
 //     public static void main(String[] args){
@@ -1267,6 +1268,8 @@ Backend and
 //     }
 // }
 
+// Last element of an array.
+
 // import java.util.Scanner;
 // public class java{
 //     public static void main(String[] args){
@@ -1282,6 +1285,8 @@ Backend and
 
 //     }
 // }
+
+//Specific element extraction
 
 // import java.util.Scanner;
 // public class java{
@@ -1299,17 +1304,193 @@ Backend and
 //     }
 // }
 
+// Find length of array
+
 // import java.util.Scanner;
 // public class java{
 //     public static void main(String[] args){
 //         Scanner num = new Scanner(System.in);
 //         System.out.println("Enter the array : ");
 //         int n = num.nextInt();
-//         int[] arr = new int[n];
+//         int[] arr = new int[n];   MOST CRUCIAL CODELINE...
 //         for(int i=0;i<arr.length;i++){
 //             arr[i] = num.nextInt();
 //         }
 //         System.out.println("Length : "+arr.length);
 //     }
 // }
+
+//Count even elements
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter num : ");
+//         int n = num.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("Enter array elements : ");
+//         for(int i=0;i<n;i++){
+//             arr[i] = num.nextInt();
+//         }
+//         int ct_even=0;
+//         for(int i=0;i<n;i++){
+//             if(arr[i]%2==0){
+//                 ct_even++;
+//             }
+//         }
+//         System.out.println("The number of even elements are : "+ct_even);
+//     }
+// }
+
+//Find the target element
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+        
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the number : ");
+//         int n= num.nextInt();
+//         int[] arr = new int[n];
+//         System.out.println("Enter array elements : ");
+
+//         for(int i=0;i<n;i++){
+//             arr[i]=num.nextInt();
+//         }
+        
+//         Scanner target = new Scanner(System.in);
+//         System.out.println("Enter target element : ");
+//         int t = target.nextInt();
+
+//         int flag = 0;
+
+//         for(int i=0;i<n;i++){
+//             if(arr[i]==t){
+//                 flag=1;
+//             }
+//         }
+
+//         if(flag==1){
+//             System.out.println("Found");
+//         }else{
+//             System.out.println("Not Found");
+//         }
+        
+//     }
+// }
+
+//Reversing an array
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter size of array : ");
+//         int n = num.nextInt();
+        
+//         int[] arr = new int[n];
+//         System.out.println("Enter the array : ");
+
+//         for(int i=0;i<n;i++){
+//             arr[i] = num.nextInt();
+//         }
+        
+//         for(int i=n;i>0;i--){
+//             System.out.print(arr[i-1]+" ");
+//         }
+//     }
+// }
+
+//Sum of even elements
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the size of array : ");
+//         int n = num.nextInt();
+
+//         int[] arr = new int[n];
+
+//         System.out.println("Enter the array : ");
+//         for(int i=0;i<n;i++){
+//             arr[i]=num.nextInt();
+//         }
+//         int sum_even=0;
+//         int sum_odd=0;
+
+//         for(int i=0;i<n;i++){
+//             if(arr[i]%2==0){
+//                 sum_even+=arr[i];
+//             }else{
+//                 sum_odd+=arr[i];
+//             }
+//         }
+//         System.out.println("Even sum : "+sum_even);
+//         System.out.println("Odd sum : "+sum_odd);
+//     }
+// }
+
+//Sorted array or not
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter array size : ");
+//         int n = num.nextInt();
+
+//         int[] arr = new int[n];
+
+//         System.out.println("Enter array elements : ");
+//         for(int i=0;i<n;i++){
+//             arr[i]=num.nextInt();
+//         }
+//         int s=1;
+
+//         for(int i=0;i<n;i++){
+//             for(int j=i+1;j<n-1;j++){
+//                 if(arr[i]>arr[j]){
+//                     s=0;
+//                 }
+//             }
+//         }
+//         if(s==0){
+//             System.out.println("Not sorted ");
+//         }else{
+//             System.out.println("Sorted");
+//         }
+//     }
+// }
+
+//Second largest element.
+
+import java.util.Scanner;
+public class java{
+    public static void main(String[] args){
+        Scanner num = new Scanner(System.in);
+        System.out.println("Enter the size of array : ");
+        int n = num.nextInt();
+
+        int[] arr = new int[n];
+
+        System.out.println("Enter the array : ");
+        for(int i=0;i<n;i++){
+            arr[i] = num.nextInt();
+        }
+        //int temp = 0;
+
+        for(int i=0;i<n-1;i++){
+            for(int j=i+1;j<n;j++){
+                if(arr[i]>arr[j]){
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        System.out.println("Second largest num : " +arr[n-2]);
+    }
+}
 
