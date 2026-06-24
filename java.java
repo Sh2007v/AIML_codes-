@@ -1589,3 +1589,103 @@ Backend and
 //     }
 // }
 
+// public class java{
+//     public static void main(String[] args){
+//         int[][] myNum={{1,2,3},{4,5,6,7}};
+//         for(int row=0;row<myNum.length;row++){
+//             for(int col=0;col<myNum[row].length;col++){
+//                 System.out.print(" "+myNum[row][col]);
+//             }
+//         }
+//     }
+// }
+
+// public class java {
+//     public static void main(String[] args) {
+//         int[][] myNumbers = { {1, 4, 2}, {3, 6, 8, 5, 2} };
+
+//         for (int[] row : myNumbers) {
+//             for (int num : row) {
+//                 System.out.println(num);
+//             }
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the num of rows : ");
+//         int r = sc.nextInt();
+//         System.out.println("Enter the num of cols : ");
+//         int c = sc.nextInt();
+//         int[][] matrix = new int[r][c];
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 matrix[i][j] =  sc.nextInt();
+//             }
+//         }
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 System.out.print(matrix[i][j]+" ");
+//             }
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the row num : ");
+//         int r = sc.nextInt();
+//         System.out.println("Enter the cols num :");
+//         int c =sc.nextInt();
+
+//         int [][] arr = new int[r][c];
+//         System.out.println("Enter the array : ");
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+        
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 System.out.print(arr[i][j]+" ");
+//             }
+//         }
+//     }
+// }
+
+// Sum of array elements
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int sum = 0;
+//         System.out.println("Enter the rows number : ");
+//         int r = sc.nextInt();
+//         System.out.println("Enter the col num : ");
+//         int c = sc.nextInt();
+
+//         int[][] arr = new int[r][c];
+
+//         System.out.println("Enter the array : ");
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j] = sc.nextInt();
+//             }
+//         }
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 sum+=arr[i][j];
+                
+//             }
+//         }
+//         System.out.println("Sum : "+sum);
+//     }
+// }
