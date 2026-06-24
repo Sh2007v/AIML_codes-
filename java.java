@@ -1466,31 +1466,54 @@ Backend and
 
 //Second largest element.
 
-import java.util.Scanner;
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner num = new Scanner(System.in);
+//         System.out.println("Enter the size of array : ");
+//         int n = num.nextInt();
+
+//         int[] arr = new int[n];
+
+//         System.out.println("Enter the array : ");
+//         for(int i=0;i<n;i++){
+//             arr[i] = num.nextInt();
+//         }
+//         //int temp = 0;
+
+//         for(int i=0;i<n-1;i++){
+//             for(int j=i+1;j<n;j++){
+//                 if(arr[i]>arr[j]){
+//                     int temp = arr[i];
+//                     arr[i] = arr[j];
+//                     arr[j] = temp;
+//                 }
+//             }
+//         }
+//         System.out.println("Second largest num : " +arr[n-2]);
+//     }
+// }
+//No input for Stirngs right now.
 public class java{
     public static void main(String[] args){
-        Scanner num = new Scanner(System.in);
-        System.out.println("Enter the size of array : ");
-        int n = num.nextInt();
+        String str = "Java Programming";
+        System.out.println("Length : "+str.length());
+        System.out.println("Character at index 2 : "+str.charAt(2));
+        System.out.println("Substring: "+str.substring(5));
+        System.out.println("Contains Substring Pro: "+str.contains("Pro"));
+        System.out.println("Uppercase: "+str.toUpperCase());
+        System.out.println("Replace:"+str.replace("Java","Python"));
+        System.out.println("Substring from 1 to 3:"+str.substring(1,4));
+        System.out.println("  Hey    ".trim());
+        System.out.println("Java".equals("Java"));
+        System.out.println("java".equalsIgnoreCase("JAVA"));
+        System.out.println("Java".startsWith("J"));
+        System.out.println("Java".endsWith("va"));
+        System.out.println("Java".indexOf("a"));
+        System.out.println("Java".lastIndexOf("a"));
+        System.out.println("J,a,v,a".split(",")); //to print string, use loop !!
+        System.out.println("Java".concat("Programming"));
 
-        int[] arr = new int[n];
-
-        System.out.println("Enter the array : ");
-        for(int i=0;i<n;i++){
-            arr[i] = num.nextInt();
-        }
-        //int temp = 0;
-
-        for(int i=0;i<n-1;i++){
-            for(int j=i+1;j<n;j++){
-                if(arr[i]>arr[j]){
-                    int temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
-            }
-        }
-        System.out.println("Second largest num : " +arr[n-2]);
     }
 }
 
