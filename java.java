@@ -1494,26 +1494,97 @@ Backend and
 //     }
 // }
 //No input for Stirngs right now.
+
+// public class java{
+//     public static void main(String[] args){
+//         String str = "Java Programming";
+//         System.out.println("Length : "+str.length());
+//         System.out.println("Character at index 2 : "+str.charAt(2));
+//         System.out.println("Substring: "+str.substring(5));
+//         System.out.println("Contains Substring Pro: "+str.contains("Pro"));
+//         System.out.println("Uppercase: "+str.toUpperCase());
+//         System.out.println("Replace:"+str.replace("Java","Python"));
+//         System.out.println("Substring from 1 to 3:"+str.substring(1,4));
+//         System.out.println("  Hey    ".trim());
+//         System.out.println("Java".equals("Java"));
+//         System.out.println("java".equalsIgnoreCase("JAVA"));
+//         System.out.println("Java".startsWith("J"));
+//         System.out.println("Java".endsWith("va"));
+//         System.out.println("Java".indexOf("a"));
+//         System.out.println("Java".lastIndexOf("a"));
+//         System.out.println("J,a,v,a".split(",")); //to print string, use loop !!
+//         System.out.println("Java".concat("Programming"));
+
+//     }
+// }
+
+//Occurence of Character
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         String s="Banana";
+//         char ta = 'n';
+//         int ct=0;
+//         for(int i=0;i<s.length();i++){
+//             if(s.charAt(i)==ta){
+//                 ct++;
+//             }
+//         }
+//         System.out.println(ct);
+//     }
+// }
+//Reverse a string
+// public class java{
+//     public static void main(String[] args){
+//         String name = "Shah";
+//         for(int i=name.length()-1;i>=0;i--){
+//             System.out.print(name.charAt(i));
+//         }
+//     }
+// }
+//Palindrome string or not
+// public class java{
+//     public static void main(String[] args){
+//         String rev = "";
+//         String s1 = "madam";
+//         for(int i=s1.length()-1;i>=0;i--){
+//             rev+=s1.charAt(i);
+//         }
+//         System.out.println(rev);
+//         if(rev.equals(s1)){
+//             System.out.println("Palindrome");
+//         }else{
+//             System.out.println("Not a Palindrome");
+//         }
+//     }
+// }
+
+//Count vowels,spaces,digits and consonants
 public class java{
     public static void main(String[] args){
-        String str = "Java Programming";
-        System.out.println("Length : "+str.length());
-        System.out.println("Character at index 2 : "+str.charAt(2));
-        System.out.println("Substring: "+str.substring(5));
-        System.out.println("Contains Substring Pro: "+str.contains("Pro"));
-        System.out.println("Uppercase: "+str.toUpperCase());
-        System.out.println("Replace:"+str.replace("Java","Python"));
-        System.out.println("Substring from 1 to 3:"+str.substring(1,4));
-        System.out.println("  Hey    ".trim());
-        System.out.println("Java".equals("Java"));
-        System.out.println("java".equalsIgnoreCase("JAVA"));
-        System.out.println("Java".startsWith("J"));
-        System.out.println("Java".endsWith("va"));
-        System.out.println("Java".indexOf("a"));
-        System.out.println("Java".lastIndexOf("a"));
-        System.out.println("J,a,v,a".split(",")); //to print string, use loop !!
-        System.out.println("Java".concat("Programming"));
-
+        String str = "Shah 3185";
+        int ct_vowels=0,ct_spaces=0,ct_digits=0,ct_conson=0;
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)>='0' && str.charAt(i)<='9'){
+                ct_digits++;
+            }else if(str.charAt(i)>='A'&&str.charAt(i)<='Z' || str.charAt(i)>='a' && str.charAt(i)<='z'){
+                if((str.charAt(i)=='a')||(str.charAt(i)=='e')||(str.charAt(i)=='i')||(str.charAt(i)=='o' )||(str.charAt(i)=='u')){
+                        ct_vowels++;
+                    }
+                    else{
+                        ct_conson++;
+                    }
+                
+            }
+            else{
+                ct_spaces++;
+            
+        }
+    }
+        System.out.println("Spaces num : "+ct_spaces);
+        System.out.println("Vowels num : "+ct_vowels);
+        System.out.println("Consonants num :"+ct_conson);
+        System.out.println("Digits num : "+ct_digits);
     }
 }
-
