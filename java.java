@@ -1561,30 +1561,31 @@ Backend and
 // }
 
 //Count vowels,spaces,digits and consonants
-public class java{
-    public static void main(String[] args){
-        String str = "Shah 3185";
-        int ct_vowels=0,ct_spaces=0,ct_digits=0,ct_conson=0;
-        for(int i=0;i<str.length();i++){
-            if(str.charAt(i)>='0' && str.charAt(i)<='9'){
-                ct_digits++;
-            }else if(str.charAt(i)>='A'&&str.charAt(i)<='Z' || str.charAt(i)>='a' && str.charAt(i)<='z'){
-                if((str.charAt(i)=='a')||(str.charAt(i)=='e')||(str.charAt(i)=='i')||(str.charAt(i)=='o' )||(str.charAt(i)=='u')){
-                        ct_vowels++;
-                    }
-                    else{
-                        ct_conson++;
-                    }
+// public class java{
+//     public static void main(String[] args){
+//         String str = "Shah 3185";
+//         int ct_vowels=0,ct_spaces=0,ct_digits=0,ct_conson=0;
+//         for(int i=0;i<str.length();i++){
+//             if(str.charAt(i)>='0' && str.charAt(i)<='9'){
+//                 ct_digits++;
+//             }else if(str.charAt(i)>='A'&&str.charAt(i)<='Z' || str.charAt(i)>='a' && str.charAt(i)<='z'){
+//                 if((str.charAt(i)=='a')||(str.charAt(i)=='e')||(str.charAt(i)=='i')||(str.charAt(i)=='o' )||(str.charAt(i)=='u')){
+//                         ct_vowels++;
+//                     }
+//                     else{
+//                         ct_conson++;
+//                     }
                 
-            }
-            else{
-                ct_spaces++;
+//             }
+//             else{
+//                 ct_spaces++;
             
-        }
-    }
-        System.out.println("Spaces num : "+ct_spaces);
-        System.out.println("Vowels num : "+ct_vowels);
-        System.out.println("Consonants num :"+ct_conson);
-        System.out.println("Digits num : "+ct_digits);
-    }
-}
+//         }
+//     }
+//         System.out.println("Spaces num : "+ct_spaces);
+//         System.out.println("Vowels num : "+ct_vowels);
+//         System.out.println("Consonants num :"+ct_conson);
+//         System.out.println("Digits num : "+ct_digits);
+//     }
+// }
+
