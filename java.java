@@ -1783,8 +1783,116 @@ Backend and
 //     }
 // }
 
-public class java{
-    static void Meth(String[] args){
+// public class java{
+//     static void Meth(String[] args){
 
-    }
-}
+//     }
+// }
+
+// public class java{
+//     static void Method(){
+//         System.out.println("Hello World !");
+//     }
+//     public static void main(String[] args){
+//         Method();
+//     }
+// }
+
+// public class java{
+//     static void Method(){
+//         System.out.println("Shah");
+//     }
+//     public static void main(String[] args){
+//         Method();
+//     }
+// }
+
+// public class java{
+//     static int method(){
+//         return 100;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(method());
+//     }
+// }
+
+// public class java{
+//     static void Meth(int num){
+//         System.out.println(num);        
+//     }
+//     public static void main(String[] args){
+//         Meth(100);
+//     }
+// }
+
+// public class java{
+//     static int meth(int x, int y){
+//         return x+y;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(meth(1,3));
+//     }
+// }
+
+// public class java{
+//     static int meth(int x,int y){
+//         return x-y;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(meth(6,7));
+//     }
+// }
+
+// public class java{
+//     static int meth(int x, int y){
+//         return x*y;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(meth(6,7));
+//     }
+// }
+
+// public class java{
+//     static int meth(int x){
+//         return x*x;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(meth(7));
+//     }    
+// }
+
+// public class java{
+//     static int metn(int x){
+//         return (x)*(x)*(x);
+//     }
+//     public static void main(String[] args){
+//         System.out.println(metn(5));
+//     }
+// }
+
+// public class java{
+//     static int meth(int x,int y){
+//         if(x>y){
+//             return x;
+//         }else{
+//             return y;
+//         }
+//     }
+//     public static void main(String[] args){
+//         System.out.println(meth(8,5));
+//     }
+// }
+
+// public class java{
+//     static int meth(int x, int y){
+//         if(x<y){
+//             return x;
+//         }else{
+//             return y;
+//         }
+//     }
+//     public static void main(String[] args){
+//         System.out.println(meth(3,4));
+//     }
+// }
+
