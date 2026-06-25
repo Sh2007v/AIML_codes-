@@ -1755,3 +1755,36 @@ Backend and
 //     }
 // }
 
+//import java.util.Scanner;
+// public class java{
+//     static void Method(){
+//         System.out.println("Function Method");
+//     }
+//     public static void main(String[] args){
+//         Method();
+//     }
+// }
+
+// public class java{
+//     static void name(String fname){
+//         System.out.println("Hello "+fname);
+//     }
+//     public static void main(String[] args){
+//         name("Shah");
+//     }
+// }
+
+// public class java{
+//     static void Meth(String fname,int age){
+//         System.out.println(fname+" is "+ age);
+//     }
+//     public static void main(String[] args){
+//         Meth("Shah",18);
+//     }
+// }
+
+public class java{
+    static void Meth(String[] args){
+
+    }
+}
