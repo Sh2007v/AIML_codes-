@@ -1689,3 +1689,69 @@ Backend and
 //         System.out.println("Sum : "+sum);
 //     }
 // }
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter row num : ");
+//         int row = sc.nextInt();
+//         System.out.println("Enter col num : ");
+//         int col = sc.nextInt();
+
+//         int[][] arr = new int[row][col];
+
+//         System.out.println("Enter the array : ");
+//         for(int i=0;i<row;i++){
+//             for(int j=0;j<col;j++){
+//                 arr[i][j] =sc.nextInt();
+//             }
+//         }
+//         System.out.println(arr[0].length);
+
+
+//     }
+// }
+
+// //Max and min elements in an array
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter row num :");
+//         int r = sc.nextInt();
+//         System.out.println("Enter col num : ");
+//         int c = sc.nextInt();
+
+//         int[][] arr = new int[r][c];
+
+//         System.out.println("Enter array : ");
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         int max = arr[0][0];
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 if(arr[i][j]>max){
+//                     max=arr[i][j];
+//                 }
+//             }
+//         }
+//         int min = arr[0][0];
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 if(arr[i][j]<min){
+//                     min = arr[i][j];
+//                 }
+//             }
+//         }
+//         System.out.println("Largest Element : " + max);
+//         System.out.println("Smallest Element : " + min);
+//     }
+// }
+
