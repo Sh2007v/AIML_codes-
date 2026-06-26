@@ -1895,4 +1895,101 @@ Backend and
 //         System.out.println(meth(3,4));
 //     }
 // }
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter row num : ");
+//         int r = sc.nextInt();
+//         System.out.println("Enter col num : ");
+//         int c = sc.nextInt();
 
+//         int [][]arr = new int[r][c];
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]= sc.nextInt();
+//             }
+//         }
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 System.out.print(arr[i][j]+" ");
+//             }
+//         }
+//         System.out.println();
+//         for(int j=0;j<c;j++){
+//                 System.out.print(arr[0][j]+" ");
+//             }
+//         System.out.println();
+//         for(int j=0;j<r;j++){
+//             System.out.print(arr[2][j]+" ");
+//         }
+//         System.out.println();
+//         for(int j=0;j<c;j++){
+//             System.out.print(arr[0][j]+" ");
+//         }
+//         System.out.println();
+//         int sum = 0;
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 sum+=arr[i][j];
+//             }
+//         }
+//         int avg = sum/(r*c);
+//         System.out.println(sum);
+//         System.out.println(avg);
+
+//         int max=arr[0][0];
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 if(arr[i][j]>max){
+//                     max = arr[i][j];
+//                 }
+//             }
+//         }
+//         int min = arr[0][0];
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 if(arr[i][j]<min){
+//                     min = arr[i][j];
+//                 }
+//             }
+//         }
+//         System.out.println(max);
+//         System.out.println(min);
+    
+//     int ct_e=0,ct_o=0;
+//     for(int i=0;i<r;i++){
+//         for(int j=0;j<c;j++){
+//             if(arr[i][j]%2==0){
+//                 ct_e++;
+//             }else{
+//                 ct_o++;
+//             }
+//         }
+//     }
+//     System.out.println(ct_e);
+//     System.out.println(ct_o);
+
+
+// }
+// }
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int r = sc.nextInt();
+//         int c = sc.nextInt();
+
+//         int [][] arr = new int[r][c];
+
+//         int t = sc.nextInt();
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+
+//             }
+//         }
+//     }
+// }
