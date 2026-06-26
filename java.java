@@ -1984,12 +1984,176 @@ Backend and
 
 //         int [][] arr = new int[r][c];
 
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         int f=0;
 //         int t = sc.nextInt();
 
 //         for(int i=0;i<r;i++){
 //             for(int j=0;j<c;j++){
-
+//                 if(t==arr[i][j]){
+//                     f=1;
+//                     break;
+//                 }
 //             }
 //         }
+//         if(f==1){
+//             System.out.println("Found");
+//         }else{
+//             System.out.println("Not Found");
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int r = sc.nextInt();
+//         int c =sc.nextInt();
+
+//         int[][] arr = new int[r][c];
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j] = sc.nextInt();
+//             }
+//         }
+
+//         int t = sc.nextInt();
+//         int ct = 0;
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 if(arr[i][j]==t){
+//                     ct++;
+//                 }
+//             }
+//         }
+//         System.out.println(ct);
+//     }
+// }
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int r = sc.nextInt();
+//         int c = sc.nextInt();
+
+//         int[][] arr = new int[r][c];
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j] = sc.nextInt();
+//             }
+//         }
+
+//         int r_sum=0;
+
+//         for(int i=0;i<r;i++){
+//             r_sum=0;
+//             for(int j=0;j<c;j++){
+//                 r_sum+=arr[i][j];
+//             }
+//         System.out.println("Row Sum " + (i+1)+": " + r_sum);
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int r = sc.nextInt();
+//         int c = sc.nextInt();
+
+//         int [][] arr = new int[r][c];
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+//         for(int j=0;j<c;j++){
+//             int c_sum=0;
+//             for(int i=0;i<r;i++){
+//                 c_sum+=arr[i][j];
+//             }
+//         System.out.println("Col Sum " + (j+1) + ":"+ (c_sum));
+//         }
+
+//     }
+// }
+//Print main diagonal
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+        
+//         int r=sc.nextInt();
+//         int c=sc.nextInt();
+
+//         int[][] arr = new int[r][c];
+        
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j] = sc.nextInt();
+//             }
+//         }
+//         for(int i=0;i<r;i++){
+//             System.out.print(arr[i][i]+" ");
+//         }
+
+//     }
+// }
+//Print Secondary Diagonal
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int r = sc.nextInt();
+//         int c = sc.nextInt();
+        
+//         int [][] arr = new int[r][c];
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+
+//         for(int i=0;i<r;i++){
+//           System.out.print(arr[i][c-i-1]+" ");
+//         }
+//     }
+// }
+
+// Transpose a matrix
+
+// import java.util.Scanner;
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         int r = sc.nextInt();
+//         int c = sc.nextInt();
+
+//         int[][] arr = new int[r][c];
+
+//         for(int i=0;i<r;i++){
+//             for(int j=0;j<c;j++){
+//                 arr[i][j]=sc.nextInt();
+//             }
+//         }
+
+//         for(int j=0;j<r;j++){
+//             for(int i=0;i<c;i++){
+//                 System.out.print(arr[i][j]+" ");
+//             }
+//         }
+
 //     }
 // }
