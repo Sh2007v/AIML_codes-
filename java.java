@@ -2179,13 +2179,21 @@ Backend and
 //     myObj.x=50; //error
 //     myObj.pi = 987;//error
 // }
-public class java{
-    static void myStaticmethod(){
-        System.out.println("This is a static method");
-    }
-    public static void main(String[] args){
-        myStaticmethod();
-        java.myStaticmethod();
-        //outputs will be the same...
-    }
-}
+// public class java{
+//     static void myStaticmethod(){
+//         System.out.println("This is a static method");
+//     }
+//     public static void main(String[] args){
+//         myStaticmethod();
+//         java.myStaticmethod();
+//         //outputs will be the same...
+//     }
+// }
+// public class java{
+//     int x = 5;
+
+// public static void main(String[] args){
+//     java myObj1 = new java();
+//     System.out.println(myObj1.x);
+//     }
+// }
