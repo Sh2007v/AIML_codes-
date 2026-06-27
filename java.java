@@ -2290,4 +2290,187 @@ Backend and
 //     }
 // }
 
-//Reverse a num
+// public class java{
+//     static void method(){
+//         System.out.println("This is a method !");
+//     }
+//     public static void main(String[] args){
+//         method();
+//     }
+// }
+
+// public class java{
+//     static void greet(){
+//         System.out.println("Hello World !");
+//     }
+//     public static void main(String[] args){
+//         greet();
+//     }
+// }
+
+// //Add num
+// public class java{
+//     static int add(int x,int y ){
+//         return x+y;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(add(5,6));
+//     }
+// }
+
+// // Subtract,Multiply and divide nums
+// public class java{
+//     static int sub(int x, int y){
+//         return x-y;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(sub(7,6));
+//     }
+// }
+
+// public class java{
+//     static int div(int x,int y){
+//         return x/y;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(div(9,3));
+//     }
+// }
+// //Max(a,b,c);
+// public class java{
+//     static int max(int x,int y,int z){
+//         if(x>y && x>z){
+//             return x;
+//         }
+//         else if(y>x && y>z){
+//             return y;
+//         }
+//         else{
+//             return z;
+//         }
+        
+//     }
+//     public static void main(String[] args){
+//         System.out.println(max(7,5,6));
+//     }
+// }
+//min(a,b,c);
+// public class java{
+//     static int min(int a,int b,int c){
+//         if(a<=b && a<=c){
+//             return a;
+//         }
+//         else if(b<=c && b<=a){
+//             return b;
+//         }else{
+//             return c;
+//         }
+//     }
+//     public static void main(String[] args){
+//         System.out.println(min(2,4,6));
+//     }
+// }
+// //fact(n);
+// public class java{
+//     static int fact(int n){
+//         int f = 1;
+//         while(n>0){
+//             f*=n;
+//             n--;
+//         }
+//         return f;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(fact(5));
+//     }
+// }
+//prime(n)
+// public class java{
+//     static void primecheck(int n){
+//         int f = 0;
+//         if(n==0 || n==1){
+//             System.out.println("Not Prime");
+//         }
+//         for(int i=2;i<n;i++){
+//             if(n%i==0){
+//                 f=1;
+//                 break;
+//             }
+//         }
+//         if(f==1){
+//             System.out.println("Not Prime");
+//         }else{
+//             System.out.println("Prime");
+//         }
+//     }
+//     public static void main(String[] args){
+//         primecheck(77);
+//     }
+// }
+
+//rev(n)
+// public class java{
+//     static int rev(int n){
+//         int r = 0;
+//         while(n>0){
+//             r = r*10+n%10;
+//             n=n/10;
+//         }
+//         return r;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(rev(1203));
+//     }
+// }
+
+// //palindr(n);
+// public class java{
+//     static void pal(int n){
+//         int t=n;
+//         int rev = 0;
+//         while(t>0){
+//             rev = rev*10+t%10;
+//             t=t/10;
+//         }
+//         if(n==rev){
+//             System.out.println("Palindrome");
+//         }
+//         else{
+//             System.out.println("Not Palindrome");
+//         }
+//     }
+//     public static void main(String[] args){
+//         pal(123);
+//     }
+// }
+
+// //ct(dig);
+// public class java{
+//     static int ct(int n){
+//         int dig=0;
+
+//         while(n>0){
+//             dig++;
+//             n=n/10;
+//         }
+//         return dig;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(ct(1000));
+//     }
+// }
+
+// //sum(dig);
+// public class java{
+//     static int sum(int n){
+//         int sum = 0;
+//         while(n>0){
+//             sum+=n%10;
+//             n=n/10;
+//         }
+//         return sum;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(sum(1236));
+//     }
+// }
