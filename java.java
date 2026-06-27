@@ -2157,3 +2157,35 @@ Backend and
 
 //     }
 // }
+
+// class Person{
+//     public String name="John";
+//     private int age = 80;
+// }
+// public class java{
+//     public static void main(String[] args){
+//         Person p = new Person();
+//         System.out.println(p.name);
+//         System.out.println(p.age);  //error ,age is not accessible.
+//     }
+// }
+
+// public class java{
+//     final int x = 90;
+//     final double pi = 3.14;  
+// }
+// public static void main(String[] args){
+//     java myObj = new java();
+//     myObj.x=50; //error
+//     myObj.pi = 987;//error
+// }
+public class java{
+    static void myStaticmethod(){
+        System.out.println("This is a static method");
+    }
+    public static void main(String[] args){
+        myStaticmethod();
+        java.myStaticmethod();
+        //outputs will be the same...
+    }
+}
