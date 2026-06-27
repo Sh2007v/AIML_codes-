@@ -2197,3 +2197,97 @@ Backend and
 //     System.out.println(myObj1.x);
 //     }
 // }
+// public class java{
+//     public static int sum(int k){
+//         if(k>0){
+//             return k+sum(k-1);
+//         }else{
+//         return 0;
+//     }
+// }
+// public static void main(String[] args){
+//     int result = sum(10);
+//     System.out.println(result);
+// }
+// }
+
+// public class java{
+//     static void greet(){
+//         System.out.println("Hello World");
+//     }
+//     public static void main(String[] args){
+//         greet();
+//     }
+// }
+
+// public class java{
+//     static void name(){
+//         System.out.println("Shah");
+//     }
+//     public static void main(String[] args){
+//         name();
+//     }
+// }
+//Add two nums
+// public class java{
+//     static int add(int x, int y){
+//         return x+y;
+//     }
+//     public static void main(String[] args){
+//         System.out.println(add(3,5));
+//     }
+// }
+//Even or odd
+// public class java{
+//     static void ev_or_odd(int x){
+//         if(x%2==0){
+//             System.out.println("Even");
+//         }else{
+//             System.out.println("Odd");
+//         }
+//     }
+//     public static void main(String[] args){
+//         ev_or_odd(3);
+//     }
+// }
+//Factorial
+// public class java{
+//     static int fact(int n){
+//         if(n==0){
+//             return 1;
+//         }else{
+//         return n*fact(n-1);
+//         }
+//     }
+//     public static void main(String[] args){
+//         System.out.println(fact(7));
+//     }
+// }
+//Prime or not
+// public class java{
+    
+//     static void isPrime(int x){
+//         int f = 1;
+//         if(x<=1){
+//             System.out.println("Not prime");
+//             return;
+//         }
+//         for(int i=2;i<x;i++){
+//             if(x%i==0){
+//                 f=0;
+//                 break;
+//             }
+//         }
+//         if(f==0){
+//             System.out.println("Not prime");
+//         }else{
+//             System.out.println("Prime");
+//         }
+
+//     }
+//     public static void main(String[] args){
+//         isPrime(5);
+//     }
+// }
+
+//Reverse a num
