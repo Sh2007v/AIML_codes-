@@ -2502,34 +2502,91 @@ Backend and
 //     }
 // }
 
-//is_str(n);
-import java.util.Scanner;
-public class java{
-    static void is_Str(int n){
-        int x=0;
-        int fact_su=0;
-        int t = n;
-        while(t>0){
-            x=t%10;
-            int fact = 1;
+// //is_str(n);
+// import java.util.Scanner;
+// public class java{
+//     static void is_Str(int n){
+//         int x=0;
+//         int fact_su=0;
+//         int t = n;
+//         while(t>0){
+//             x=t%10;
+//             int fact = 1;
 
-            while(x>0){
-                fact*=x;
-                x=x-1;
-            }
-            fact_su+=fact;
-            t=t/10;
-        }
-        if(fact_su==n){
-            System.out.println("Strong number");
-        }else{
-            System.out.println("Not a Strong number");
-        }
-    }
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the num : ");
-        int n = sc.nextInt();
-        is_Str(n);
-    }
-}
+//             while(x>0){
+//                 fact*=x;
+//                 x=x-1;
+//             }
+//             fact_su+=fact;
+//             t=t/10;
+//         }
+//         if(fact_su==n){
+//             System.out.println("Strong number");
+//         }else{
+//             System.out.println("Not a Strong number");
+//         }
+//     }
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the num : ");
+//         int n = sc.nextInt();
+//         is_Str(n);
+//     }
+// }
+
+// //fibo(n);
+// import java.util.Scanner;
+// public class java{
+//     static int fibo(int n){
+//         int a=0;
+//         int b=1;
+//         int c=0;
+//         for(int i=0;i<n-1;i++){
+//             System.out.print(a+" ");
+//             c=a+b;
+//             a=b;
+//             b=c;
+            
+//         }
+//         return a;
+//     }
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the num : ");
+//         int n = sc.nextInt();
+//         System.out.println(fibo(n));
+//     }
+// }
+
+// //sum_arr(n)
+// import java.util.Scanner;
+// public class java{
+    
+//     static int arr_sum(int[] arr){
+        
+//         int sum = 0;
+        
+//         for(int i=0;i<arr.length;i++){
+//             sum+=arr[i];
+//         }
+        
+//         return sum;
+//     }
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter num of elements : ");
+        
+//         int n = sc.nextInt();
+        
+//         int[] arr = new int[n];
+//         System.out.println("Enter the array : ");
+        
+//         for(int i=0;i<n;i++){
+//             arr[i] = sc.nextInt();
+//         }
+        
+//         System.out.println(arr_sum(arr));
+//     }
+// }
+
+
