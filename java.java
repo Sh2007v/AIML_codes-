@@ -2474,3 +2474,62 @@ Backend and
 //         System.out.println(sum(1236));
 //     }
 // }
+//is_arms_or_not(n);
+// public class java{
+//     static void is_arms(int n){
+//         int t1 = n;
+//         int t2 = n;
+//         int x=0;
+//         int ct=0;
+//         while(t1>0){
+//             t1=t1/10;
+//             ct++;
+//         }
+//         int r=0;
+//         while(t2>0){
+//             x=t2%10;
+//             r+=Math.pow(x,ct);
+//             t2/=10;
+//         }
+//         if(n == r){
+//             System.out.println("Armstrong number");
+//         }else{
+//             System.out.println("Not an Armstrong number");
+//         }
+//     }
+//     public static void main(String[] args){
+//         is_arms(152);
+//     }
+// }
+
+//is_str(n);
+import java.util.Scanner;
+public class java{
+    static void is_Str(int n){
+        int x=0;
+        int fact_su=0;
+        int t = n;
+        while(t>0){
+            x=t%10;
+            int fact = 1;
+
+            while(x>0){
+                fact*=x;
+                x=x-1;
+            }
+            fact_su+=fact;
+            t=t/10;
+        }
+        if(fact_su==n){
+            System.out.println("Strong number");
+        }else{
+            System.out.println("Not a Strong number");
+        }
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the num : ");
+        int n = sc.nextInt();
+        is_Str(n);
+    }
+}
