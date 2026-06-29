@@ -2599,8 +2599,44 @@ Backend and
 //     }
 // }
 
+//classes and objects
+// import java.util.Scanner;
 
+// class Student{
+//     String name;
+//     int mks;
+// }
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+        
+//         System.out.println("Enter the following details");
+        
+//         Student s1 = new Student();
+        
+//         System.out.println("Enter name : ");
+//         s1.name=sc.nextLine();
 
+//         System.out.println("Enter mks : ");
+//         s1.mks = sc.nextInt();
 
+//         System.out.println("Name:"+s1.name);
+//         System.out.println("Marks:"+s1.mks);
 
-
+//     }
+// }
+import java.util.Scanner;
+class employee{
+    double id;
+    String Name;
+    int salary;
+}
+public class java{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the details:");
+        Employee e = 
+        employee.id=sc.nextInt();
+    }
+}
+    
