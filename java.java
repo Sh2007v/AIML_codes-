@@ -2625,18 +2625,138 @@ Backend and
 
 //     }
 // }
-import java.util.Scanner;
-class employee{
-    double id;
-    String Name;
-    int salary;
-}
-public class java{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the details:");
-        Employee e = 
-        employee.id=sc.nextInt();
-    }
-}
+// import java.util.Scanner;
+// class employee{
+//     double id;
+//     String Name;
+//     int salary;
+// }
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the details:");
+        
+//         employee e1 =  new employee();
+        
+//         System.out.println("Enter your id : ");
+//         e1.id=sc.nextInt();
+        
+//         sc.nextLine();
+        
+//         System.out.println("Enter your Name : ");
+//         e1.Name=sc.nextLine();
+
+//         System.out.println("Enter your salary : ");
+//         e1.salary = sc.nextInt();
+
+//         System.out.println("Employee details are : ");
+//         System.out.println("ID : "+e1.id);
+//         System.out.println("Name : "+e1.Name);
+//         System.out.println("Salary: "+e1.salary);
+//     }
+// }
+
+// import java.util.Scanner;
+// class rect{
+//     int l;
+//     int b;
+// }
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         rect r1 = new rect();
+        
+//         System.out.println("Enter the length : ");
+//         r1.l = sc.nextInt();
+        
+//         System.out.println("Enter the breadth : ");
+//         r1.b = sc.nextInt();
+
+//         System.out.println("Entered dimensions are : ");
+//         System.out.println("Length : "+r1.l);
+//         System.out.println("Breadth : "+r1.b);
+//     }
+// }
+
+// import java.util.Scanner;
+// class Circle{
+//     int r;
+// }
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         Circle c1 = new Circle(); //creating object
+        
+//         System.out.println("Enter the radius : ");
+//         c1.r = sc.nextInt();
+
+//         System.out.println("Entered elements are : ");
+//         System.out.println("Radius : "+c1.r);
+// }
+// }
+// import java.util.Scanner;
+// class Car{
+//     String brand;
+//     int model;
+//     float price;
+// }
+// public class java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         Car c1 = new Car();
+        
+//         System.out.println("Enter the details ");
+
+//         System.out.println("Brand : ");
+//         c1.brand = sc.nextLine();
+
+//         System.out.println("Model :");
+//         c1.model = sc.nextInt();
+
+//         System.out.println("Price : ");
+//         c1.price = sc.nextFloat();
+
+//         System.out.println("Entered elements are : ");
+//         System.out.println("Brand : "+c1.brand);
+//         System.out.println("Model : "+c1.model);
+//         System.out.println("Price : "+c1.price);
+
+
+//     }
+// }
+
+// import java.util.Scanner;
+// class Mobile{
+//     String brand;
+//     int ram;
+//     int storage;
+//     float price;
+// }
+// public class java{
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+//     Mobile m1 = new Mobile();
+
+//     System.out.println("Enter the details : ");
+    
+//     System.out.println("Enter brand : ");
+//     m1.brand = sc.nextLine();
+
+//     System.out.println("Enter RAM : ");
+//     m1.ram = sc.nextInt();
+
+//     System.out.println("Enter storage : ");
+//     m1.storage = sc.nextInt();
+
+//     System.out.println("Enter Price :");
+//     m1.price = sc.nextFloat();
+
+//     System.out.println("Entered elements are : ");
+//     System.out.println("Brand : "+m1.brand);
+//     System.out.println("RAM :"+m1.ram);
+//     System.out.println("Storage :" + m1.storage);
+//     System.out.println("Price :"+m1.price);
+
+// }
+// }
     
