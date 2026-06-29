@@ -2588,5 +2588,19 @@ Backend and
 //         System.out.println(arr_sum(arr));
 //     }
 // }
+// public class java{
+//     int x = 90;
+//     int y = 45;
+//     public static void main(String[] args){
+//         java myObj1 = new java();
+//         java myObj2 = new java();
+//         System.out.println(myObj1.x);
+//         System.out.println(myObj2.y);
+//     }
+// }
+
+
+
+
 
 
