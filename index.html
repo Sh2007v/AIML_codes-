@@ -1,129 +1,228 @@
-<!-------
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
- This is a body tag-->
-<!--------
-<body>
-    <h1>Hello World!</h1>
-    <p>This is a paragraph</p>
-    <h2>Heading 2</h2>
-    <h3>H3</h3>
-    <h4>H4</h4>
-    <h5>H5</h5>
-    <h6>H6</h6>
-    <a href = "https://www.google.com/">Google</a>
-    <br>
-    <a href = "/hello.html">Go to Hello file</a>
-    <img src = "https://www.lapisbard.com/cdn/shop/products/CONTEMPORARY-BLACK-BALLPOINT-PEN.jpg?v=1629442257&width=2048" alt = "Pen" height = "100" width ="80"/>
-    <br>
-    <b>Bold line</b><br>
-    <i>Italic line </i><br>
-    <p>Lorem ipsum <u>dolor sit amet consectetur</u>, adipisicing elit. Sit, illo deleniti? Iure, ducimus. <i>Pariatur</i> sunt modi recusandae quidem dolor,<big>ad iure aspernatur<hr> quae facilis</big> perspiciatis <small>voluptates</small> earum <b>consectetur ipsum dicta.</b>
-    </p>
-    <u>underlined text</u>
-    <p>C<sub>6</sub>H<sub>6</sub></p>
-    <p>A<sup>n</sup>+B</p>
-    <pre>Lorem ipsum dolor sit amet    consectetur adipisicing elit. Facere ducimus non pariatur officia corporis. Quidem 
-        excepturi temporibus deleniti veniam voluptatum nobis assumenda alias et! Eaque temporibus dolore eos voluptates nobis.</pre>
-        <header>
-            <h1>Education</h1>
-        <h1>Projects</h1>
-    </header>
-    <section>Education:Non med| KV </section>
-    <section>Experience:CSIR (Trainer) </section>
-    <article>Mystory</article>
-    <aside>For content aside from main tag (Like an advertisement) </aside>
-    <a href ="https://google.com" target = "_main"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcRbaJvhBgd0YgBp_8nLiSylsEjA-79JncguHiPaRBw&s"height ="100" width ="90"></a>
-<div>
-    <p>A Paragraph.</p>
-</div>    
-<ul>
-    <li>Apple</li>
-    <ul>
-        <li>color:red</li>
-        <li>season:winters</li>
-    </ul>
-    <li>Mango</li>
-    <ul>
-        <li>color:yellow</li>
-        <li>season:winters</li>
-    </ul>
-</ul>
-</div>    
-<ol>
-    <li>Apple</li>
-    <ol>
-        <li>color:red</li>
-        <li>season:winters</li>
-    </ol>
-    <li>Mango</li>
-    <ol>
-        <li>color:yellow</li>
-        <li>season:winters</li>
-    </ol>
-</ol>
-<caption>
-    Data
-</caption>
-<table>
-    <thead>
-<tr>
-    <th>Name</th>
-</tr>
-<tr>
-    <th>Roll Number</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-    <td>Shah</td>
-</tr>
-<tr>
-    <td>
-        3185
-    </td>
-</tr>
-</tbody>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Housing Loan Management</title>
 
-</table>
-</body>
-</html>    
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+/* Left Side */
+
+.left{
+    flex:2;
+    background:linear-gradient(135deg,#0F4C81,#1B6CA8);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:70px;
+}
+
+.left h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.left h2{
+    font-size:24px;
+    margin-bottom:20px;
+    font-weight:400;
+}
+
+.left p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:650px;
+}
+
+/* Right Side */
+
+.right{
+    flex:1;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:-5px 0 15px rgba(0,0,0,0.1);
+}
+
+.card{
+    width:80%;
+}
+
+.tabs{
+    display:flex;
+    margin-bottom:30px;
+}
+
+.tabs button{
+    flex:1;
+    padding:15px;
+    border:none;
+    background:#e5e5e5;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.tabs button.active{
+    background:#0F4C81;
+    color:white;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input{
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#0F4C81;
+}
+
+.submit-btn{
+    padding:15px;
+    border:none;
+    background:#0F4C81;
+    color:white;
+    font-size:17px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#08365d;
+}
+
+.info-box{
+    margin-top:30px;
+    background:#eef5fb;
+    padding:20px;
+    border-left:5px solid #0F4C81;
+    border-radius:5px;
+}
+
+.info-box h3{
+    margin-bottom:10px;
+}
+
+.info-box p{
+    color:#555;
+    line-height:1.6;
+}
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.left{
+    height:45vh;
+}
+
+.right{
+    height:55vh;
+}
+
+}
+</style>
+
 </head>
+
 <body>
-    <form action ="/action.php">
-       
-        <input type ="text" placeholder="Type something here">
-        
-        <input type ="password" placeholder="password">
-        
-        <label for = "101">
-        <input type ="radio" value="class 11" name="class" id="id1">class 11
-        </label>
-        
-        <label>
-        <input type ="radio" value="class 12" name="class" id="id2">class 12
-        </label>
-        <label for ="math">
-            <input type="checkbox" value="math" name="subject" id="101">Maths
-        </label>
-        <label for ="phy">
-            <input type="checkbox" value="phy" name="subject" id="102">Physics
-        </label>
-        <label for ="chem">
-            <input type="checkbox" value="chem" name="subject" id="104">Chemistry
-        </label>
-        <textarea name ="feedback" id="101" placeholder="Feedback please!"></textarea>
-    </form>
+
+<div class="container">
+
+    <div class="left">
+
+        <h1>Housing Loan Management System</h1>
+
+        <h2>Simple • Secure • Reliable</h2>
+
+        <p>
+            Welcome to our Housing Loan Management Portal.
+            Our platform helps customers apply for home loans by
+            understanding their financial budget and preferred
+            house structure. Once registered, users can proceed
+            with loan eligibility, budget planning, EMI calculation,
+            and document verification.
+        </p>
+
+    </div>
+
+    <div class="right">
+
+        <div class="card">
+
+            <div class="tabs">
+                <button class="active">Login</button>
+                <button>Sign Up</button>
+            </div>
+
+            <form>
+
+                <input
+                type="text"
+                placeholder="Username"
+                required>
+
+                <input
+                type="password"
+                placeholder="Password"
+                required>
+
+                <input
+                type="email"
+                placeholder="Mail ID"
+                required>
+
+                <button class="submit-btn">
+                    Continue
+                </button>
+
+            </form>
+
+            <div class="info-box">
+                <h3>Next Step</h3>
+                <p>
+                    After authentication, the system will collect your
+                    budget and preferred house structure to recommend
+                    suitable housing loan options.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
 </body>
-</html>  ----->
+</html>
