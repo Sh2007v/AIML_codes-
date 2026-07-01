@@ -3040,28 +3040,28 @@ Backend and
 //     }
 // }
 
-import java.util.Scanner;
-class Engine{
-    int engineNo;
-    String fuelType;
-}
-class Car{
-    String brand;
-    String model;
-    Engine engine;
-}
-public class rough_java{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+// import java.util.Scanner;
+// class Engine{
+//     int engineNo;
+//     String fuelType;
+// }
+// class Car{
+//     String brand;
+//     String model;
+//     Engine engine;
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
 
-        Car c = new Car();
+//         Car c = new Car();
 
-        System.out.println("Enter Brand : ");
-        c.brand = sc.nextLine();
+//         System.out.println("Enter Brand : ");
+//         c.brand = sc.nextLine();
 
-        System.out.println("Enter model : ");
-        c.model = sc.nextLine();
+//         System.out.println("Enter model : ");
+//         c.model = sc.nextLine();
 
-        System.out.println("Enter engine ");
-    }
-}
+//         System.out.println("Enter engine ");
+//     }
+// }
