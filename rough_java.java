@@ -3065,3 +3065,93 @@ Backend and
 //         System.out.println("Enter engine ");
 //     }
 // }
+
+//Constructors
+
+// public class rough_java{
+//     int modelYear;
+//     String modelName;
+//     public rough_java(int year, String name){
+//         modelYear = year;
+//         modelName = name;
+//     }
+//     public static void main(String[] args){
+//         rough_java myCar = new rough_java(1789,"Mustang");
+//         System.out.println(myCar.modelYear + " " + myCar.modelName);
+//     }
+// }
+
+// class Student{
+//     String name;
+//     int rollNo;
+//     Student(){
+//         name = "Shah";
+//         rollNo = 3185;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+        
+//         Student s = new Student();
+
+//         System.out.println("Name :"+s.name);
+//         System.out.println("Roll Num :"+s.rollNo);
+
+//     }
+// }
+
+
+// import java.util.Scanner;
+// class Student{
+//     String name;
+//     int rollNum;
+//     Student(String n, int r){
+//         name = n;
+//         rollNum = r; 
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter name :");
+//     String name = sc.nextLine();
+
+//     System.out.println("Enter Roll num :");
+//     int rollNum = sc.nextInt();
+
+//     Student s = new Student(name,rollNum);
+
+//     System.out.println("Name :"+s.name);
+//     System.out.println("Roll Num :"+s.rollNum);
+
+//     }
+// }
+
+// import java.util.Scanner;
+// class Rectangle{
+//     int length;
+//     int breadth;
+//     Rectangle(int l, int b){
+//         length = l;
+//         breadth = b;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the length : ");
+//         int l = sc.nextInt();
+
+//         System.out.println("Enter the breadth :");
+//         int b = sc.nextInt();
+
+//         Rectangle r = new Rectangle(l,b);
+
+//         int area = r.length*r.breadth;
+
+//         System.out.println("Area = "+area);
+        
+//     }
+// }
