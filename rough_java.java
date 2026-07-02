@@ -3155,3 +3155,197 @@ Backend and
         
 //     }
 // }
+// import java.util.Scanner;
+// class Student{
+//     String name;
+//     int rollNo;
+//     Student(){
+//         name = "Shah";
+//         rollNo = 3185;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+        
+//         Student s = new Student();
+
+//         System.out.println("Name :"+s.name);
+//         System.out.println("Roll Num :"+s.rollNo);
+//     }
+// }
+
+// class Employee{
+//     int id;
+//     String name;
+//     int salary;
+//     Employee(){
+//         id = 3185;
+//         name = "Shah";
+//         salary = 456;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+    
+//         Employee e = new Employee();
+        
+//         System.out.println("ID : "+e.id);
+//         System.out.println("Name : "+e.name);
+//     }
+// }
+
+// class Book{
+//     String title;
+//     String author;
+//     int price;
+//     Book(){
+//         title = "G";
+//         author = "a";
+//         price = 123;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Book b = new Book();
+//         System.out.println("Title :"+b.title);
+//         System.out.println("Author :"+b.author);
+//         System.out.println("Price :"+b.price);
+//     }
+// }
+
+// import java.util.Scanner;
+// class Student{
+//     String name;
+//     int rollNo;
+//     Student(){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter name :");
+//         name = sc.nextLine();
+
+//         System.out.println("Enter roll num :");
+//         rollNo = sc.nextInt();
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Student st = new Student();
+
+//         System.out.println("Name :"+st.name);
+//         System.out.println("Roll Num :"+st.rollNo);
+//     }
+// }
+
+
+// import java.util.Scanner;
+// class Employee{
+//     int id;
+//     String name;
+//     int salary;
+//     Employee(){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter ID:");
+//         id = sc.nextInt();
+
+//         sc.nextLine();
+
+//         System.out.println("Enter Name: ");
+//         name = sc.nextLine();
+
+//         System.out.println("Enter Salary: ");
+//         salary = sc.nextInt();
+
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Employee e = new Employee();
+//         System.out.println("ID: "+e.id);
+//         System.out.println("Name: "+e.name);
+//         System.out.println("Salary :"+e.salary);
+//     }
+// }
+
+
+// import java.util.Scanner;
+// class Book{
+//     String title;
+//     String author;
+//     int price;
+//     Book(){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter Title : ");
+//         title = sc.nextLine();
+
+//         System.out.println("Enter Author Name :");
+//         author = sc.nextLine();
+
+//         System.out.println("Enter price");
+//         price = sc.nextInt();
+
+//     }
+
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Book b = new Book();
+
+//         System.out.println("Title :"+b.title);
+//         System.out.println("Author Name :"+b.author);
+//         System.out.println("Price : "+b.price);
+//     }
+// }
+
+// import java.util.Scanner;
+// class Car{
+//     String Brand;
+//     String Model;
+//     int Price;
+//     Car(){
+//         Scanner sc = new Scanner(System.in);
+        
+//         System.out.println("Enter Brand :");
+//         Brand = sc.nextLine();
+
+//         System.out.println("Enter Model :");
+//         Model = sc.nextLine();
+
+//         System.out.println("Enter Price :");
+//         Price = sc.nextInt();
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Car c = new Car();
+//         System.out.println("Brand :"+c.Brand);
+//         System.out.println("Model :"+c.Model);
+//         System.out.println("Price :"+c.Price);
+//     }
+// }
+
+// import java.util.Scanner;
+// class Circle{
+//     int radius;
+//     Circle(){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter radius :");
+//         radius = sc.nextInt();
+
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         Circle c = new Circle();
+
+//         System.out.println("Area : "+(3.14*c.radius*c.radius));
+
+//     }
+// }
+
+
