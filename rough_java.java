@@ -3348,4 +3348,126 @@ Backend and
 //     }
 // }
 
+// import java.util.Scanner;
+// class Book{
+//     String title;
+//     String author;
+//     int price;
+
+//     Book(String t, String a, int p){
+//         title = t;
+//         author = a;
+//         price = p;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+        
+//         System.out.println("Enter Title :");
+//         String t = sc.nextLine();
+        
+//         System.out.println("Enter Author :");
+//         String a = sc.nextLine();
+        
+//         System.out.println("Enter Price :");
+//         int p = sc.nextInt();
+        
+//         Book b = new Book(t,a,p);
+
+//         System.out.println("Title:"+b.title);
+//         System.out.println("Author:"+b.author);
+//         System.out.println("Price:"+b.price);
+
+//     }
+// }
+
+// import java.util.Scanner;
+// class Rectangle{
+//     int length;
+//     int breadth;
+//     Rectangle(int l,int b){
+//         length=l;
+//         breadth=b;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter length:");
+//         int l = sc.nextInt();
+
+//         System.out.println("Enter breadth:");
+//         int b = sc.nextInt();
+
+//         Rectangle r = new Rectangle(l,b);
+
+//         System.out.println("Area:"+(r.length)*(r.breadth));
+//     }
+// }
+
+// import java.util.Scanner;
+// class Employee{
+//     String id;
+//     String name;
+//     int salary;
+//     Employee(String i,String n,int s){
+//         id= i;
+//         name = n;
+//         salary = s;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter ID :");
+//         String id = sc.nextLine();
+
+//         System.out.println("Enter Name :");
+//         String name = sc.nextLine();
+
+//         System.out.println("Enter Salary:");
+//         int salary = sc.nextInt();
+
+//         Employee e = new Employee(id,name,salary);
+//         System.out.println("ID: "+e.id);
+//         System.out.println("Name: "+e.name);
+//         System.out.println("Salary: "+e.salary);
+//    }
+// }
+
+
+// import java.util.Scanner;
+// class Student{
+//     String name;
+//     int roll;
+//     Student(String n, int r){
+//         String name = n;
+//         int roll = r;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter Name :");
+//         String n = sc.nextLine();
+
+//         System.out.println("Enter Roll :");
+//         int r = sc.nextInt();
+
+//         Student s = new Student(n,r);
+
+//         System.out.println("Student Details :");
+//         System.out.println("Name: "+s.name);
+//         System.out.println("Roll Num: "+s.roll);
+
+
+
+//     }
+// }
+
+
 
