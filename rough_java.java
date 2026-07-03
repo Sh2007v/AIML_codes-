@@ -3469,5 +3469,31 @@ Backend and
 //     }
 // }
 
+import java.util.Scanner;
+class Book{
+    String title;
+    String author;
+    int price;
+    Book(String t, String a, int p){
+        title = t;
+        author = a;
+        price = p;
+    }
+}
+public class rough_java{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter title :");
+        String t = sc.nextLine();
+
+        System.out.println("Enter author :");
+        String a = sc.nextLine();
+
+        System.out.println("Enter Price :");
+        int p = sc.nextInt();
+
+        
+    }
+}
 
