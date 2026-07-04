@@ -3495,6 +3495,287 @@ Backend and
 //     }
 // }
 
+// import java.util.Scanner;
+// class Student{
+//     String name;
+//     int rollNo;
+//     Student(String name,int rollNo){
+//         this.name = name;
+//         this.rollNo = rollNo;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter Name: ");
+//         String name = sc.nextLine();
+
+//         System.out.println("Enter Roll No: ");
+//         int rollNo = sc.nextInt();
+
+//         Student s = new Student(name,rollNo);
+//         System.out.println("Student Details");
+//         System.out.println("Name: "+s.name);
+//         System.out.println("Roll No: "+s.rollNo);
+//     }
+// }
+
+// import java.util.Scanner;
+
+// class Employee{
+//     int id;
+//     String name;
+//     int salary;
+//     Employee(int id, String name,int salary){
+//         this.id = id;
+//         this.name = name;
+//         this.salary = salary;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter ID :");
+//         int id = sc.nextInt();
+
+//         sc.nextLine(); 
+
+//         System.out.println("Enter Name :");
+//         String name = sc.nextLine();
+
+//         System.out.println("Enter Salary :");
+//         int salary = sc.nextInt();
+
+//         Employee e = new Employee(id,name,salary);
+//         System.out.println("Employee Details");
+//         System.out.println("ID : "+e.id);
+//         System.out.println("Name : "+e.name);
+//         System.out.println("Salary : "+e.salary);
+//     }
+// }
+
+// import java.util.Scanner;
+// class Book{
+//     String title;
+//     String author;
+//     int price;
+//     Book(String title, String author, int price){
+//         this.title = title;
+//         this.author = author;
+//         this.price = price;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter title :");
+//         String title = sc.nextLine();
+
+//         System.out.println("Enter author name :");
+//         String author = sc.nextLine();
+
+//         System.out.println("Enter price :");
+//         int price = sc.nextInt();
+
+//         Book b = new Book(title,author,price);
+
+//         System.out.println("Book Details");
+//         System.out.println("Title : "+b.title);
+//         System.out.println("Author : "+b.author);
+//         System.out.println("Price : "+b.price);
+//     }
+// }
+
+// import java.util.Scanner;
+// class Rectangle{
+//     int length;
+//     int breadth;
+//     Rectangle(int length, int breadth){
+//         this.length = length;
+//         this.breadth = breadth;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter length = ");
+//         int length = sc.nextInt();
+
+//         System.out.println("Enter breadth = ");
+//         int breadth = sc.nextInt();
+
+//         Rectangle r = new Rectangle(length,breadth);
+
+//         System.out.println("Area : "+((r.length)*(r.breadth)));
+//     }
+// }
+
+// import java.util.Scanner;
+// class College{
+//     String collegeName;
+//     String city;
+//     College(String collegeName, String city){
+//         this.collegeName = collegeName;
+//         this.city = city;
+//     }
+// }
+// class Student{
+//     String name;
+//     int rollNo;
+//     College college;
+//     Student( String name, int rollNo, College college){
+//         this.name = name;
+//         this.rollNo = rollNo;
+//         this.college = college;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter Student Name : ");
+//         String name = sc.nextLine();
+
+//         System.out.println("Enter Roll Number : ");
+//         int rollNo = sc.nextInt();
+
+//         sc.nextLine();
+
+//         System.out.println("Enter College details : ");
+        
+//         System.out.println("Enter College Name :");
+//         String collegeName = sc.nextLine();
+
+//         System.out.println("Enter College City :");
+//         String city = sc.nextLine();
+
+//         College c = new College(collegeName,city);
+//         Student s = new Student(name,rollNo,c);
+//         System.out.println("Student Details :");
+//         System.out.println("Name : "+s.name);
+//         System.out.println("Roll Num :"+s.rollNo);
+//         System.out.println("College Name :"+c.collegeName);
+//         System.out.println("College city :"+c.city);
+//     }
+// }
+
+// import java.util.Scanner;
+
+// class Address{
+//     int houseNo;
+//     String street;
+//     String city;
+//     Address(int houseNo, String street, String city){
+//         this.houseNo = houseNo;
+//         this.street = street;
+//         this.city = city;
+//     }
+// }
+
+// class Person{
+//     String name;
+//     int age;
+//     Address address;
+//     Person(String name, int age, Address address){
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//     }
+// }
+
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter Person Name : ");
+//         String name = sc.nextLine();
+
+//         // sc.nextLine();
+
+//         System.out.println("Enter Age : ");
+//         int age = sc.nextInt();
+
+//         System.out.println("Enter Address Details ");
+        
+//         System.out.println("Enter House Num :");
+//         int houseNo = sc.nextInt();
+
+//         sc.nextLine();
+
+//         System.out.println("Enter Street Name :");
+//         String street = sc.nextLine();
+
+//         System.out.println("Enter City Name :");
+//         String city = sc.nextLine();
+
+//         Address a = new Address(houseNo,street,city);
+//         Person p = new Person(name,age,a);
+        
+//         System.out.println("Person Details");
+//         System.out.println("Name : "+p.name);
+//         System.out.println("Age : "+p.age);
+//         System.out.println("Address Details ");
+//         System.out.println("House Number : "+p.address.houseNo);
+//         System.out.println("Street Name : "+p.address.street);
+//         System.out.println("City Name : "+p.address.city);
+//     }
+// }
+
+// import java.util.Scanner;
+// class Department{
+//     String departmentName;
+//     String location;
+//     Department(String departmentName, String location){
+//         this.departmentName = departmentName;
+//         this.location = location;
+//     }
+// }
+// class Employee{
+//     String employeeName;
+//     int employeeId;
+//     Department department;
+//     Employee(String employeeName,int employeeId, Department department){
+//         this.employeeName = employeeName;
+//         this.employeeId = employeeId;
+//         this.department = department;
+//     }
+// }
+// public class rough_java{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the Employee Name : ");
+//         String employeeName = sc.nextLine();
+
+//         System.out.println("Enter the Employee ID :");
+//         int employeeId = sc.nextInt();
+
+//         System.out.println("Enter Department Details");
+        
+//         sc.nextLine();
+        
+//         System.out.println("Enter Department Name :");
+//         String departmentName = sc.nextLine();
+
+//         System.out.println("Enter Location :");
+//         String location = sc.nextLine();
+
+//         Department d = new Department(departmentName,location);
+//         Employee e = new Employee(employeeName,employeeId,d);
+//         System.out.println("Employee Details");
+//         System.out.println("Employee Name : "+e.employeeName);
+//         System.out.println("Employee ID : "+e.employeeId);
+//         System.out.println("Employee Department Details");
+//         System.out.println("Department Name: "+e.department.departmentName);
+//         System.out.println("Department location: "+e.department.location);
+//     }
+// }
+
+
 
 
 
