@@ -137,4 +137,68 @@
 //     }
 // }
 
+//THIRD LARGEST ELEMENT
+// import java.util.Scanner;
+// public class arrays_rev{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Size of Array :");
+//         int size = sc.nextInt();
+
+//         int[] arr = new int[size];
+
+//         System.out.println("Enter the Array :");
+//         for(int i=0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+
+//         for(int i=0;i<size;i++){
+//             for(int j=i+1;j<size;j++){
+//                 if(arr[i]>arr[j]){
+//                    int temp = arr[j];
+//                    arr[j] = arr[i];
+//                    arr[i] = temp;
+//                 }
+//             }
+//         }
+//         for(int i=0;i<size;i++){
+            
+//                 System.out.print(arr[i]+" ");
+            
+//         }
+//         System.out.println();
+
+//         System.out.println("Third Largest Element : " + arr[size-3]);
+//     }
+// }
+
+
+//SORTING AN ARRAY USING BUBBLE SORT
+// import java.util.Scanner;
+// public class arrays_rev{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Size of Array :");
+//         int size = sc.nextInt();
+
+//         int[] arr = new int[size];
+
+//         System.out.println("Enter the Array :");
+//         for(int i=0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+//         for(int i=0;i<size+1;i++){
+//             if(arr[i]>arr[i+1]){
+//                 int temp = arr[i+1];
+//                 arr[i+1] = arr[i];
+//                 arr[i] = temp;
+//             }
+//         }
+//         for(int i=0;i<size;i++){
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
+// }
 
