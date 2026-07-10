@@ -1766,7 +1766,7 @@
 //         return age;
 //     }
 // }
-// public class rough_java{
+// public class oops{
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
 
@@ -1783,7 +1783,11 @@
 //     }
 // }
 
-//ENCAPSULATION HARD PROBLEMS
+/////////////////////////////////
+// ENCAPSULATION HARD PROBLEMS //
+/////////////////////////////////
+
+
 
 // import java.util.Scanner;
 // class Employee{
@@ -1873,3 +1877,129 @@
 //         System.out.println("");
 //     }
 // }
+
+
+//EMPLOYEE SALARY ALL QUESTIONS HAVE THIS STYLE OF APPROACH
+
+//APPROACH
+
+
+// import java.util.Scanner;
+// class Employee{
+    
+//     private int id;
+//     private String name;
+//     private String dept;
+//     private int basicSalary;
+//     private int yearsofexperience;
+
+//     private int bonus;
+//     private int finalSalary;
+
+//     //setters
+
+//     public void setId(int id){
+//         if(id>0){
+//         this.id = id;
+//     }else{
+//         this.id = 1;
+//     }
+// }
+//     public void setName(String name){
+//         this.name = name;
+//     }
+//     public void setDept(String dept){
+//         this.dept = dept;
+//     }
+
+//     public void setBasicsSalary(int basicSalary){
+//         if(basicSalary>15000){
+//         this.basicSalary = basicSalary;
+//     }
+//     else{
+//         this.basicSalary = 15000;
+//     }
+// }
+//     public void setYearsofexperience(int yearsofexperience){
+//         if(yearsofexperience>0){
+//         this.yearsofexperience = yearsofexperience;
+//         }
+//         else{
+//             this.yearsofexperience = 0;
+//         }
+//     }
+
+//     //calculation
+
+//     public void bonus(){
+//         if(yearsofexperience<2){
+//             bonus = basicSalary*5/100;
+//         }
+//         else if(yearsofexperience<=5){
+//             bonus = basicSalary*10/100;
+//         }
+//         else{
+//             bonus = basicSalary*20/100;
+//         }
+//         finalSalary = basicSalary + bonus;
+//     }
+//     //setters
+
+//     public int getId(){
+//         return id;
+//     }
+//     public String getName(){
+//         return name;
+//     }
+//     public String getDept(){
+//         return dept;
+//     }
+//     public int getBasicSalary(){
+//         return basicSalary;
+//     }
+//     public int getYearsofexperience(){
+//         return yearsofexperience;
+//     }
+//     public int getBonus(){
+//         return bonus;
+//     }
+//     public int getFinalSalary(){
+//         return finalSalary;
+//     }
+// }
+
+// public class oops{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         Employee e = new Employee();
+
+//         System.out.println("Enter the ID: ");
+//         e.setId(sc.nextInt());
+
+//         sc.nextLine();
+
+//         System.out.println("Enter name :");
+//         e.setName(sc.nextLine());
+
+//         System.out.println("Enter Dept :");
+//         e.setDept(sc.nextLine());
+
+//         System.out.println("Enter Basic Salary : ");
+//         e.setBasicsSalary(sc.nextInt());
+
+//         System.out.println("Enter Experience Years : ");
+//         e.setYearsofexperience(sc.nextInt());
+
+//         e.bonus();
+
+//         System.out.println("ID : "+e.getId());
+//         System.out.println("Name :"+e.getName());
+//         System.out.println("Dept :"+e.getDept());
+//         System.out.println("Basic Salary :"+e.getBasicSalary());
+//         System.out.println("Experience Years :"+e.getYearsofexperience());
+//         System.out.println("Bonus : "+e.getBonus());
+//         System.out.println("Final Salry : "+e.getFinalSalary());
+//     }
+// }
+
