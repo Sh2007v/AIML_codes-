@@ -1,11 +1,11 @@
 package Java.OOP.Polymorphism.CompileTimePoly;
 
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class calculator{
+// class calculator{
     
-} 
-public class example {
+// } 
+// public class example {
     
-}
+// }
