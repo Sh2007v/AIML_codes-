@@ -1,0 +1,33 @@
+1.ConditionalStatements
+
+if condition:
+      code runs if condition is True
+
+elif another_condition:
+      code runs if previous condition was False
+      and this condition is True
+else:
+      code runs if all conditions are False
+
+
+2.Match
+
+.compare a value against multiple patterns and execute the matching block of code
+
+Syntax:
+
+match expression:
+    case value1:
+        # Code
+    case value2:
+        # Code
+    case value3:
+        # Code
+    case _:
+        # Default code
+
+Tip:
+Use if-elif-else when you need to evaluate conditions (such as marks >= 90 or age >= 18). 
+Use match when you need to choose between fixed values (such as menu options, days of the week, or months).
+
+
