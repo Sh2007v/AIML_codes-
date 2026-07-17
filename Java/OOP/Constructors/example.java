@@ -95,21 +95,21 @@
 
 //Magic Square
 
-import java.util.Scanner;
-public class example{
-    public static void main(String[] args){
+// import java.util.Scanner;
+// public class example{
+//     public static void main(String[] args){
 
-        Scanner sc = new Scanner(System.in);
+//         Scanner sc = new Scanner(System.in);
 
-        int r = sc.nextInt();
-        int c = sc.nextInt();
+//         int r = sc.nextInt();
+//         int c = sc.nextInt();
 
 
-        for(int i=1;i<r;i++){
-            for(int j=1;j<c;j++){
+//         for(int i=1;i<r;i++){
+//             for(int j=1;j<c;j++){
                 
-            }
-        }
+//             }
+//         }
 
-    }
-}
+//     }
+// }
