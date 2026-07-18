@@ -211,3 +211,191 @@
 # if len(password) >= 8 and has_digit and has_upper:
 #     print("Strong Password")
 
+
+
+#WHILE LOOP (EASY)
+
+# # ==========================================
+# # 1. Print Numbers from 1 to N
+# # ==========================================
+# n = int(input("Enter N: "))
+
+# i = 1
+# while i <= n:
+#     print(i)
+#     i += 1
+
+
+# # ==========================================
+# # 2. Print Numbers from N to 1
+# # ==========================================
+# n = int(input("Enter N: "))
+
+# while n >= 1:
+#     print(n)
+#     n -= 1
+
+
+# # ==========================================
+# # 3. Multiplication Table
+# # ==========================================
+# num = int(input("Enter a number: "))
+
+# i = 1
+# while i <= 10:
+#     print(num, "x", i, "=", num * i)
+#     i += 1
+
+
+# # ==========================================
+# # 4. Sum of First N Natural Numbers
+# # ==========================================
+# n = int(input("Enter N: "))
+
+# i = 1
+# sum = 0
+
+# while i <= n:
+#     sum += i
+#     i += 1
+
+# print("Sum =", sum)
+
+
+# # ==========================================
+# # 5. Factorial of a Number
+# # ==========================================
+# num = int(input("Enter a number: "))
+
+# fact = 1
+# i = 1
+
+# while i <= num:
+#     fact *= i
+#     i += 1
+
+# print("Factorial =", fact)
+
+
+# # ==========================================
+# # 6. Count Digits in a Number
+# # ==========================================
+# num = int(input("Enter a number: "))
+
+# count = 0
+
+# if num == 0:
+#     count = 1
+
+# while num != 0:
+#     count += 1
+#     num //= 10
+
+# print("Total Digits =", count)
+
+
+# # ==========================================
+# # 7. Reverse a Number
+# # ==========================================
+# num = int(input("Enter a number: "))
+
+# reverse = 0
+
+# while num != 0:
+#     digit = num % 10
+#     reverse = reverse * 10 + digit
+#     num //= 10
+
+# print("Reversed Number =", reverse)
+
+
+# # ==========================================
+# # 8. Palindrome Number
+# # ==========================================
+# num = int(input("Enter a number: "))
+
+# original = num
+# reverse = 0
+
+# while num != 0:
+#     digit = num % 10
+#     reverse = reverse * 10 + digit
+#     num //= 10
+
+# if original == reverse:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+
+
+# # ==========================================
+# # 9. Sum of Digits
+# # ==========================================
+# num = int(input("Enter a number: "))
+
+# sum = 0
+
+# while num != 0:
+#     digit = num % 10
+#     sum += digit
+#     num //= 10
+
+# print("Sum of Digits =", sum)
+
+
+# # ==========================================
+# # 10. Armstrong Number (3-Digit)
+# # ==========================================
+# num = int(input("Enter a 3-digit number: "))
+
+# original = num
+# sum = 0
+
+# while num != 0:
+#     digit = num % 10
+#     sum += digit ** 3
+#     num //= 10
+
+# if original == sum:
+#     print("Armstrong Number")
+# else:
+#     print("Not an Armstrong Number")
+
+#PRIME NUMBER CHECKER
+
+num = int(input("Enter the number: "))
+flag = 1
+i=2
+
+if(num<2):
+    flag=0
+
+while(i<num):
+    if(num%i==0):
+        flag = 0
+        break
+    i+=1
+
+
+if(flag == 0):
+    print("Not Prime")
+else:
+    print("Prime")
+
+
+#PRINT ALL PRIME NUM
+
+lim=int(input("Enter the limit : "))
+
+i = 2
+init_lim=1
+
+while(i<lim):
+    
+    while(init_lim<=i):
+        if(i%init_lim!=0):
+            print(init_lim)
+        init_lim+=1
+
+    i+=1
+
