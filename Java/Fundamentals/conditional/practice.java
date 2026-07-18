@@ -105,7 +105,7 @@ import java.util.Scanner;
 //     }
 // }
 
-// UNIVERSITY RESULT SYSTEM
+//UNIVERSITY RESULT SYSTEM
 //  public class practice{
 //      public static void main(String[] args){
          
@@ -140,6 +140,46 @@ import java.util.Scanner;
 //         }
 //     }
 //  }
+
+
+// Switch statements
+
+//SIMPLE CALCULATOR
+
+public class practice{
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+        int n1 = sc.nextInt();
+        sc.nextLine();
+        String op = sc.nextLine();
+        int n2 = sc.nextInt();
+        int res = 0;
+        
+        switch(op){
+            case "+":
+                res = n1+n2;
+                System.out.println(res);
+                break;
+            case "-":
+                if(n1>n2){
+                    res = n1-n2;
+                }else{
+                    res = n2-n1;
+                }
+                System.out.println(res);
+                break;
+            case "*":
+                res = n1*n2;
+                System.out.println(res);
+                break;
+            case "/":
+                res = n1/n2;
+                System.out.println(res);
+                break;
+        }
+    }
+}
 
 
 
