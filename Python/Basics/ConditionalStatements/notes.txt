@@ -31,3 +31,15 @@ Use if-elif-else when you need to evaluate conditions (such as marks >= 90 or ag
 Use match when you need to choose between fixed values (such as menu options, days of the week, or months).
 
 
+3. While loop
+    a. Entry controlled loop
+    b. used when the num of iterations is not known in advance.
+    
+    Syntax:
+        while condition:
+            # Code to execute
+            updation
+            
+    
+
+
