@@ -146,43 +146,220 @@ import java.util.Scanner;
 
 //SIMPLE CALCULATOR
 
-public class practice{
-    public static void main(String[] args){
+// public class practice{
+//     public static void main(String[] args){
 
-        Scanner sc = new Scanner(System.in);
-        int n1 = sc.nextInt();
-        sc.nextLine();
-        String op = sc.nextLine();
-        int n2 = sc.nextInt();
-        int res = 0;
+//         Scanner sc = new Scanner(System.in);
+//         int n1 = sc.nextInt();
+//         sc.nextLine();
+//         String op = sc.nextLine();
+//         int n2 = sc.nextInt();
+//         int res = 0;
         
-        switch(op){
-            case "+":
-                res = n1+n2;
-                System.out.println(res);
-                break;
-            case "-":
-                if(n1>n2){
-                    res = n1-n2;
-                }else{
-                    res = n2-n1;
-                }
-                System.out.println(res);
-                break;
-            case "*":
-                res = n1*n2;
-                System.out.println(res);
-                break;
-            case "/":
-                res = n1/n2;
-                System.out.println(res);
-                break;
-        }
-    }
-}
+//         switch(op){
+//             case "+":
+//                 res = n1+n2;
+//                 System.out.println(res);
+//                 break;
+//             case "-":
+//                 if(n1>n2){
+//                     res = n1-n2;
+//                 }else{
+//                     res = n2-n1;
+//                 }
+//                 System.out.println(res);
+//                 break;
+//             case "*":
+//                 res = n1*n2;
+//                 System.out.println(res);
+//                 break;
+//             case "/":
+//                 res = n1/n2;
+//                 System.out.println(res);
+//                 break;
+//         }
+//     }
+// }
+
+
+
+//WEEKDAYS FINDER
+// import java.util.Scanner;
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the number in range of (1-7): ");
+//         int day = sc.nextInt();
+
+//         switch(day){
+//             case 1:
+//                 System.out.println("Monday");
+//                 break;
+//             case 2:
+//                 System.out.println("Tuesday");
+//                 break;
+//             case 3:
+//                 System.out.println("Wednesday");
+//                 break;
+//             case 4:
+//                 System.out.println("Thursday");
+//                 break;
+//             case 5:
+//                 System.out.println("Friday");
+//                 break;
+//             case 6:
+//                 System.out.println("Saturday");
+//                 break;
+//             case 7:
+//                 System.out.println("Sunday");
+//                 break;
+//             default:
+//                 System.out.println("Invalid Input");
+//             }
+//         sc.close();
+//     }
+// }
+
+
+//Month Name Finder
+// import java.util.Scanner;
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter month number: ");
+//         int mon = sc.nextInt();
+
+//         switch(mon){
+//             case 1:
+//                 System.out.println("January");
+//                 break;
+//             case 2:
+//                 System.out.println("February");
+//                 break;
+//             case 3:
+//                 System.out.println("March");
+//                 break;
+//             case 4:
+//                 System.out.println("April");
+//                 break;
+//             case 5:
+//                 System.out.println("May");
+//                 break;
+//             case 6:
+//                 System.out.println("June");
+//                 break;
+//             case 7:
+//                 System.out.println("July");
+//                 break;
+//             case 8:
+//                 System.out.println("August");
+//                 break;
+//             case 9:
+//                 System.out.println("September");
+//                 break;
+//             case 10:
+//                 System.out.println("October");
+//                 break;
+//             case 11:
+//                 System.out.println("November");
+//                 break;
+//             case 12:
+//                 System.out.println("December");
+//                 break;
+//             default:
+//                 System.out.println("Invalid Month");    
+//         }
+//         sc.close();
+
+//     }
+// }
+
+
+
+//Grade Description
+// import java.util.Scanner;
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the grade : ");
+//         String grade = sc.nextLine();
+
+//         switch (grade){
+//             case "O":
+//                 System.out.println("Outstanding");
+//                 break;
+//             case "A":
+//                 System.out.println("Excellent");
+//                 break;
+//             case "B":
+//                 System.out.println("Very Good");
+//                 break;
+//             case "C":
+//                 System.out.println("Good");
+//                 break;
+//             case "D":
+//                 System.out.println("Average");
+//                 break;
+//             case "F":
+//                 System.out.println("Fail");
+//                 break;
+//             default:
+//                 System.out.println("Invalid Input");
+//         }
+//         sc.close();
+//     }
+// }
+
+//AREA CALCULATOR
+
+// import java.util.Scanner;
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.print("Enter Choice: \n1.Square\n2.Rectangle\n3.Circle");
+//         int choice = sc.nextInt();
+
+//         switch(choice){
+//             case 1:
+//                 System.out.println("Enter the side of Square: ");
+//                 int side = sc.nextInt();
+
+//                 int areaSq = side*side;
+
+//                 System.out.println("Area : "+areaSq);
+//                 break;
+//             case 2:
+//                 System.out.println("Enter the length of reactangle: ");
+//                 int length = sc.nextInt();
+
+//                 System.out.println("Enter the breadth of rectangle: ");
+//                 int breadth = sc.nextInt();
+
+//                 int area = length*breadth;
+//                 System.out.println("Area: " +area);
+
+//                 break;
+//             case 3:
+//                 System.out.println("Enter the radius of the Circle: ");
+//                 float radius = sc.nextFloat();
+
+//                 float areaC = (float)((3.14)*(radius)*(radius));
+
+//                 System.out.println("Area: "+areaC);
+//                 break;
+//             default:
+
+//                 System.out.println("Invalid Input");
+//         }
+//         sc.close();
+//     }
+// }
 
 
 
 
-
-
+//Unit Converter
