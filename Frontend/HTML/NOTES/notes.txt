@@ -1,0 +1,14 @@
+HTML TAGS
+    Syntax: <tagname>Content</tagname>
+    Examples:   <h1>My First Heading</h1>
+                <p>My First Paragraph</p>
+    EMPTY HTML TAGS
+        :tags with no containing data.
+        e.g. : <br>
+    NESTED  HTML TAGS
+        :tags inside tags
+
+HTML Attributes
+    Syntax: <tagname attribute="value">Content</tagname>
+    example: <p style="color:red;">Hello</p>
+    
