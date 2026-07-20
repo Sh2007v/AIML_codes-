@@ -361,5 +361,244 @@ package Java.Fundamentals.LoopingTheory;
 //     }
 // }
 
+// import java.util.Scanner;
+
+// public class Practice {
+
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+
+        // ============================
+        // INPUT
+        // ============================
+
+        // System.out.print("Enter First Number: ");
+        // int num = sc.nextInt();
+
+        // Uncomment for GCD/LCM/Menu/Prime Range
+        /*
+        System.out.print("Enter Second Number: ");
+        int num2 = sc.nextInt();
+        */
+
+        // int i = 1;
+        // int sum = 0;
+        // int temp = num;
+        // int reverse = 0;
+        // int result = 0;
+        // int place = 1;
+        // int power = 1;
+
+        // ==========================================
+        // QUESTION 1 : Print Numbers 1 to N
+        // ==========================================
+
+        /*
+        do{
+            System.out.println(i);
+            i++;
+        }while(i <= num);
+        */
+
+        // ==========================================
+        // QUESTION 2 : Sum of First N Numbers
+        // ==========================================
+
+        /*
+        do{
+            sum += i;
+            i++;
+        }while(i <= num);
+
+        System.out.println("Sum = " + sum);
+        */
+
+        // ==========================================
+        // QUESTION 3 : Multiplication Table
+        // ==========================================
+
+        /*
+        do{
+            System.out.println(num + " x " + i + " = " + (num * i));
+            i++;
+        }while(i <= 10);
+        */
+
+        // ==========================================
+        // QUESTION 4 : Count Digits
+        // ==========================================
+
+        /*
+        int count = 0;
+
+        do{
+            count++;
+            temp = temp / 10;
+        }while(temp > 0);
+
+        System.out.println("Digits = " + count);
+        */
+
+        // ==========================================
+        // QUESTION 5 : Reverse Number
+        // ==========================================
+
+        /*
+        do{
+
+            int digit = temp % 10;
+
+            reverse = reverse * 10 + digit;
+
+            temp = temp / 10;
+
+        }while(temp > 0);
+
+        System.out.println("Reverse = " + reverse);
+        */
+
+        // ==========================================
+        // QUESTION 6 : Palindrome Number
+        // ==========================================
+
+        /*
+        do{
+
+            int digit = temp % 10;
+
+            reverse = reverse * 10 + digit;
+
+            temp = temp / 10;
+
+        }while(temp > 0);
+
+        if(reverse == num){
+            System.out.println("Palindrome Number");
+        }
+        else{
+            System.out.println("Not a Palindrome Number");
+        }
+        */
+
+        // ==========================================
+        // QUESTION 7 : Sum of Digits
+        // ==========================================
+
+        /*
+        do{
+
+            int digit = temp % 10;
+
+            sum += digit;
+
+            temp = temp / 10;
+
+        }while(temp > 0);
+
+        System.out.println("Sum = " + sum);
+        */
+
+        // ==========================================
+        // QUESTION 8 : Decimal to Binary
+        // ==========================================
+
+        /*
+        do{
+
+            int rem = temp % 2;
+
+            result = result + (rem * place);
+
+            place = place * 10;
+
+            temp = temp / 2;
+
+        }while(temp > 0);
+
+        System.out.println("Binary = " + result);
+        */
+
+        // ==========================================
+        // QUESTION 9 : Binary to Decimal
+        // ==========================================
+
+        /*
+        do{
+
+            int digit = temp % 10;
+
+            result = result + (digit * power);
+
+            power = power * 2;
+
+            temp = temp / 10;
+
+        }while(temp > 0);
+
+        System.out.println("Decimal = " + result);
+        */
+
+        // ==========================================
+        // QUESTION 10 : Menu Driven Calculator
+        // ==========================================
+
+        /*
+        int choice;
+
+        do{
+
+            System.out.println("\n1.Addition");
+            System.out.println("2.Subtraction");
+            System.out.println("3.Multiplication");
+            System.out.println("4.Division");
+            System.out.println("5.Exit");
+
+            System.out.print("Enter Choice: ");
+            choice = sc.nextInt();
+
+            if(choice >= 1 && choice <= 4){
+
+                System.out.print("Enter First Number: ");
+                int a = sc.nextInt();
+
+                System.out.print("Enter Second Number: ");
+                int b = sc.nextInt();
+
+                switch(choice){
+
+                    case 1:
+                        System.out.println("Addition = " + (a + b));
+                        break;
+
+                    case 2:
+                        System.out.println("Subtraction = " + (a - b));
+                        break;
+
+                    case 3:
+                        System.out.println("Multiplication = " + (a * b));
+                        break;
+
+                    case 4:
+                        if(b != 0)
+                            System.out.println("Division = " + (a / b));
+                        else
+                            System.out.println("Cannot divide by zero");
+                        break;
+                }
+
+            }
+
+        }while(choice != 5);
+
+        System.out.println("Program Exited.");
+        */
+
+//         sc.close();
+//     }
+// }
+
+
+
 
 
