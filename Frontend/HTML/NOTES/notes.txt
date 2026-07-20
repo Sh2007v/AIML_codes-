@@ -11,4 +11,91 @@ HTML TAGS
 HTML Attributes
     Syntax: <tagname attribute="value">Content</tagname>
     example: <p style="color:red;">Hello</p>
+    1.href : <a href="https://www.google.com">Visit Google</a>
+    2.src : <img src="image.jpg">
+    3.alt : <img src="image.jpg" alt="Nature Image">
+    4.style : <p style="color:red;">This is a red paragraph.</p>
+    5.lang : <html lang="en"> or <html lang="en-US">
+    6.title : <p title="I'm a tooltip">Hover over me</p>  provides extra info about the elem.
+
+HTML Headings
+Decreasing importance :
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+Heading hierarchy
+    <h1> → Main page title (use only one per page)
+    <h2> → Main sections
+    <h3> → Subsections
+    <h4>–<h6> → Further subheadings as needed
+
+Changing Heading Size:
+    <h1 style="font-size:60px;">Heading 1</h1>
+
+
+HTML Paragraphs
+    e.g.    <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+
+    HTML ignores the spaces added by the coder.
+    <hr>: Horizontal Rule: creates a horizontal line to seperate sections
+    e.g. : 
+        <h1>Introduction</h1>
+        <p>Welcome to HTML.</p>
+
+        <hr>
+
+        <h2>Conclusion</h2>
+        <p>Thank you.</p>
+
+    <br>: creates a line break.
+    <pre>: displays text exactly as input in HTML source
+
+HTML Style
+    Syntax: <tagname style="property:value;">
+    e.g. : <p style="color:red;">Hello World</p>
+
+    common CSS properties used in HTML styles
+        1.<body style="background-color:powderblue;">
+        2.<h1 style="background-color:yellow;">Heading</h1>
+        3.<p style="color:red;">This is a paragraph.</p>
+        4.<p style="font-size:20px;">Large Text</p>
+        5.<h1 style="text-align:center/justify/right/left;">Centered Heading</h1>
+        6.<h1 style="font-family:Verdana;">Heading</h1>
+        7.
+        
     
+    complete e.g. :
+    <!DOCTYPE html>
+    <html>
+    <body style="background-color:lightblue;">
+
+    <h1 style="color:blue; font-family:Verdana; text-align:center;">
+    Welcome
+    </h1>
+
+    <p style="color:red; font-size:20px;">
+    This is a styled paragraph.
+    </p>
+
+    </body>
+    </html>
+
+HTML Text Formatting
+    1.<b>: Text is bold
+    2.<strong>: important text
+    3.<i>: Italic text
+    4.<em>: Emphasized text
+    5.<small>: Smaller text
+    6.<mark>: Highlighted text
+    7.<del>: Deleted Text
+    8.<ins>: Inserted text
+    9.
+
+
+
+
