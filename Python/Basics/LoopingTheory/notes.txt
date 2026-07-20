@@ -1,0 +1,24 @@
+3. While loop
+    a. Entry controlled loop
+    b. used when the num of iterations is not known in advance.
+    
+    Syntax:
+        while condition:
+            # Code to execute
+            updation
+
+4. For loop
+    a.used to execute a block of code a fixed number of times
+
+   Syntax:
+        for variable in sequence:
+            # Code to execute
+    b. range() function is commonly used with a for loop
+        
+        Syntax:
+            range(start, stop, step)
+        e.g. :
+            for i in range(1, 6, 2):
+                print(i)
+    
+        
