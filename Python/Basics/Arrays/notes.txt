@@ -1,0 +1,29 @@
+Arrays
+
+:collection of elements of same type.
+
+Taking user input:
+n = int(input("Enter the size of the array: "))
+
+arr = []
+
+for i in range(n):
+    num = int(input("Enter element: "))
+    arr.append(num)
+
+print("Array =", arr)
+
+Accessing array elements
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[0])
+print(numbers[2])
+
+Traversing an Array
+arr = [5, 10, 15, 20]
+
+for i in arr:
+    print(i)
+
+
+
