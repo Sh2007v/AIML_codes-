@@ -1,0 +1,125 @@
+Arrays
+    a. collection of same type of data
+
+    Taking input:
+
+        import java.util.Scanner;
+
+        public class Main {
+
+            public static void main(String[] args) {
+
+                Scanner sc = new Scanner(System.in);
+
+                int[] arr = new int[5];
+
+                for(int i = 0; i < arr.length; i++){
+                    arr[i] = sc.nextInt();
+                }
+
+                sc.close();
+            }
+        }
+    
+    Most Important Syntax to remember:
+
+            int[] arr = new int[5];
+
+            for(int i = 0; i < arr.length; i++){
+                arr[i] = sc.nextInt();
+            }
+
+            for(int i = 0; i < arr.length; i++){
+                System.out.print(arr[i] + " ");
+            }   
+    Most Important methods to remember:
+    
+    import java.util.Arrays; // most impotant thing to do.
+    
+    arr.length – Returns the total number of elements in the array.
+    
+    Arrays.toString() – Converts the entire array into a readable string format.
+    
+    Arrays.sort() – Sorts the array in ascending order.
+    
+    Arrays.binarySearch() – Searches for an element in a sorted array and returns its index.  If the element is not found, it returns a negative value.
+    
+    Arrays.equals() – Compares two arrays and returns true if both arrays have the same 
+    elements in the same order; otherwise, it returns false.
+    
+    Arrays.fill() – Fills every element of the array with the specified value.
+    
+    Arrays.copyOf() – Creates a complete copy of the original array.
+    
+    Arrays.copyOfRange() – Copies elements from a specified range of the array. The start index is included, and the end index is excluded.
+
+    e.g:
+    
+    arr.length
+    Example: System.out.println(arr.length);
+
+    Arrays.toString()
+    Example: System.out.println(Arrays.toString(arr));
+
+    Arrays.sort()
+    Example: Arrays.sort(arr);
+
+    Arrays.binarySearch()
+    Example: int index = Arrays.binarySearch(arr, 30);
+
+    Arrays.equals()
+    Example: System.out.println(Arrays.equals(arr1, arr2));
+
+    Arrays.fill()
+    Example: Arrays.fill(arr, 100);
+
+    Arrays.copyOf()
+    Example: int[] copy = Arrays.copyOf(arr, arr.length);
+
+    Arrays.copyOfRange()
+    Example: int[] range = Arrays.copyOfRange(arr, 1, 4);
+
+
+
+Practice Questions
+
+Find the maximum element in an array.
+Find the minimum element in an array.
+Calculate the sum of all elements.
+Calculate the average of array elements.
+Count even and odd numbers.
+Search an element (Linear Search).
+Reverse an array.
+Find the second largest element.
+Merge two arrays using Arrays.copyOf() and System.arraycopy().
+Remove duplicate elements from an array.
+Find the third largest element.
+Check whether the array is sorted.
+Find all pairs whose sum equals a given number.
+Rotate the array to the left by one position.
+Rotate the array to the right by one position.
+Find the frequency of each element.
+Find the common elements between two arrays.
+Find the missing number in an array.
+Find the equilibrium index of an array.
+Merge two sorted arrays into one sorted array.
+Matrix Addition
+Matrix Multiplication
+Matrix Transpose
+Find Sum of Primary Diagonal
+Find Sum of Secondary Diagonal
+Check Symmetric Matrix
+Find Maximum Element in Matrix
+Find Minimum Element in Matrix
+Count Even and Odd Elements
+Find Row with Maximum Sum
+Spiral Traversal of Matrix
+Check Sparse Matrix
+Search an Element in Matrix
+Check Upper Triangular Matrix
+Check Lower Triangular Matrix
+Find Saddle Point
+Count Even and Odd Elements in Matrix
+Find Row Having Maximum Sum
+Find Column Having Maximum Sum
+Print Boundary Elements of a Matrix
