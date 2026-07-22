@@ -1,0 +1,40 @@
+| No. | Method               | Purpose                                                  | Example                                                  |
+| --- | -------------------- | -------------------------------------------------------- | -------------------------------------------------------- |
+| 1   | `length()`           | Returns the length of the string                         | `"Java".length()` → `4`                                  |
+| 2   | `charAt(index)`      | Returns the character at the specified index             | `"Java".charAt(2)` → `'v'`                               |
+| 3   | `equals()`           | Compares two strings (case-sensitive)                    | `"Java".equals("Java")` → `true`                         |
+| 4   | `equalsIgnoreCase()` | Compares two strings ignoring case                       | `"JAVA".equalsIgnoreCase("java")` → `true`               |
+| 5   | `compareTo()`        | Compares two strings lexicographically                   | `"Apple".compareTo("Banana")` → Negative value           |
+| 6   | `toUpperCase()`      | Converts the string to uppercase                         | `"java".toUpperCase()` → `"JAVA"`                        |
+| 7   | `toLowerCase()`      | Converts the string to lowercase                         | `"JAVA".toLowerCase()` → `"java"`                        |
+| 8   | `concat()`           | Joins two strings                                        | `"Hello".concat(" World")` → `"Hello World"`             |
+| 9   | `contains()`         | Checks whether a string contains a substring             | `"Java Programming".contains("Java")` → `true`           |
+| 10  | `substring()`        | Extracts a part of the string                            | `"Programming".substring(3,7)` → `"gram"`                |
+| 11  | `indexOf()`          | Returns the first occurrence index of a character/string | `"Programming".indexOf('g')` → `3`                       |
+| 12  | `lastIndexOf()`      | Returns the last occurrence index of a character/string  | `"Programming".lastIndexOf('g')` → `10`                  |
+| 13  | `replace()`          | Replaces characters or substrings                        | `"Java".replace('a','o')` → `"Jovo"`                     |
+| 14  | `trim()`             | Removes leading and trailing spaces                      | `"  Java  ".trim()` → `"Java"`                           |
+| 15  | `split()`            | Splits the string into an array                          | `"Java Python C".split(" ")` → `["Java", "Python", "C"]` |
+
+Practice Questions
+
+Count Vowels & Consonants
+Reverse String
+Palindrome String
+Count Words
+Character Frequency
+Remove Spaces
+Anagram Check
+First Non-Repeated Character
+Count Alphabets, Digits & Special Characters
+Longest Word
+Word Frequency
+Remove Duplicate Characters
+Longest Common Prefix
+String Rotation Check
+String Compression
+Highest Frequency Character
+Print Duplicate Characters
+Longest Palindromic Word
+Isomorphic Strings
+Run Length Encoding
