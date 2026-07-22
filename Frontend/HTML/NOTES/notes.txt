@@ -94,8 +94,254 @@ HTML Text Formatting
     6.<mark>: Highlighted text
     7.<del>: Deleted Text
     8.<ins>: Inserted text
-    9.
+    9.<sub>: Text is slightly below thr main line.
+    10.<sup>: Text is slightly above the main line.
+
+HTML Formatting Elements.
+    <b>	Displays bold text without extra importance.
+    <strong> Displays important text (usually bold).
+    <i>	Displays italic text or alternate voice/mood.
+    <em>	Displays emphasized text (usually italic).
+    <mark>	Highlights or marks text.
+    <small>	Displays text in a smaller font size.
+    <del>	Displays deleted text with a strikethrough.
+    <ins>	Displays inserted text with an underline.
+    <sub>	Displays subscript text (e.g., H₂O).
+    <sup>	Displays superscript text (e.g., x²).
+
+HTML Links
+    <a>:
+        Syntax: <a href="URL">Link Text</a>
+        e.g. : <a href="https://www.google.com">Visit Google</a>
+
+    target attribute: 
+        specifies where the linked page should be displayed
+        _self	Opens in the same tab (default).
+        _blank	Opens in a new tab or window.
+        _parent	Opens in the parent frame.
+        _top	Opens in the full browser window.
+    
+    Absolute URL : 
+        contains complete web address
+        e.g: <a href="https://www.google.com">Google</a>
+
+    Relative URL :
+        refers to a file within the same website.
+        e.g: <a href="about.html">About Us</a>
+
+    Image as a link:
+        an image can be made clickable as well.
+        e.g:
+            <a href="home.html">
+            <img src="logo.png" alt="Logo">
+            </a>
+    
+    Email Link :
+    Syntax: <a href="mailto:abc@example.com">Send Email</a>
+
+    Button as a link:
+    <button onclick="document.location='home.html'">Home</button>
+
+    title attribute:
+        displays the meaning when mouse is hovered
+        <a href="about.html" title="Go to About Page">About Us</a>
+
+HTML Page Title:
+    <title>: used to specify title of webpage
+    Syntax:
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>HTML Tutorial</title>
+            </head>
+        <body>
+
+                Content goes here...
+
+        </body>
+        </html>
+
+HTML TABLES
+    used to display data in form of rows and columns
+    <table> : table is created using this.
+    <tr> : table row
+    <td> : table data
+    <th> : table header   (bold+Centered)
+
+    Tag	        Purpose
+    <caption>	Adds a title/caption to the table
+    <thead>	    Groups the table header
+    <tbody>	    Groups the table body
+    <tfoot>	    Groups the table footer
+    <colgroup>	Groups one or more columns for formatting
+    <col>	    Defines properties for columns inside <colgroup>
+
+    Table Border : 
+        1. Adding a border
+            to use border property on <table>,<th> and<td>
+                table, th, td {
+                    border: 1px solid black;
+                }
+        
+        2. Collapsed Borders :
+            table borders are double by default. So do this to collapse them.
+            
+            e.g. :
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+        3. Styling tables borders :
+            
+            e.g: 
+            table, th, td {
+                border: 1px solid white;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                background-color: #96D4D4;
+            }
+        
+        4. Rounded Borders : 
+
+            e.g:
+                table, th, td {
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+        
+        5. Border Styles :
+            e.g:
+                th, td {
+                    border-style: dotted;
+                }
+            
+            common_values:
+                solid
+                dotted
+                dashed
+                double
+                groove
+                ridge
+                inset
+                outset
+                none
+                hidden
+        
+        6. Border Color : 
+            e.g:
+                th, td {
+                    border-color: #96D4D4;
+                }
 
 
+        Complete_Example
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>HTML Table Border Properties</title>
 
+                    <style>
 
+                        body{
+                            font-family: Arial, sans-serif;
+                            background-color: #f4f4f4;
+                            margin: 20px;
+                        }
+
+                        h2{
+                            text-align: center;
+                        }
+
+						table{
+							width: 70%;
+							margin: auto;
+
+							/* Border Properties */
+							border: 3px solid black;
+							border-collapse: collapse;
+							border-radius: 12px;
+
+							overflow: hidden;
+						}
+
+						th, td{
+
+							border: 2px dashed blue;
+							border-color: darkgreen;
+							padding: 12px;
+							text-align: center;
+							background-color: #b2f2bb;
+						}
+
+						th{
+							background-color: #4CAF50;
+							color: white;
+						}
+
+						tr:nth-child(even){
+							background-color: #e6ffe6;
+						}
+
+						tr:hover td{
+							background-color: lightyellow;
+						}
+
+					</style>
+				</head>
+
+				<body>
+
+						<h2>Student Record</h2>
+
+						<table>
+
+							<tr>
+								<th>Roll No</th>
+								<th>Name</th>
+								<th>Course</th>
+								<th>Marks</th>
+							</tr>
+
+							<tr>
+								<td>101</td>
+								<td>Shahbaaz</td>
+								<td>CSE-AIML</td>
+								<td>92</td>
+							</tr>
+
+							<tr>
+								<td>102</td>
+								<td>Aman</td>
+								<td>CSE</td>
+								<td>88</td>
+							</tr>
+
+							<tr>
+								<td>103</td>
+								<td>Rahul</td>
+								<td>ECE</td>
+								<td>81</td>
+							</tr>
+
+							<tr>
+								<td>104</td>
+								<td>Simran</td>
+								<td>IT</td>
+								<td>95</td>
+							</tr>
+
+						</table>
+
+				</body>
+			</html>
+
+    Table Sizes:
+        1.Table Width
+            e.g:
+                <table style="width:100%;">  <!-----Full page width------>
+                
