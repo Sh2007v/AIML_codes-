@@ -109,6 +109,7 @@ public class practice {
 
 
 //Sum and average of an array
+
 // import java.util.Scanner;
 // public class arrays_rev{
 //     public static void main(String[] args){
@@ -232,3 +233,5 @@ public class practice {
 // }
     
 }
+
+
