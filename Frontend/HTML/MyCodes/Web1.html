@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -107,4 +107,192 @@
     </div>
 
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SignUp Form</title>
+<style>
+  body {
+    background-color: #1c3c58;
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  
+  fieldset {
+    width: 620px;
+    border: 5px double #2dcddc;
+
+    background-color: #1c3c58;
+    padding: 34px 26px 22px 26px;
+    box-shadow: 0 0 0 1px #123044 inset;
+  }
+
+  legend {
+    color: #83cedd;
+    font-style: italic;
+    font-size: 15px;
+    padding: 0 10px;
+    margin-left: 6px;
+  }
+
+  
+  .panel {
+    background-color: #8794a1c7;
+    border: 1px solid #16324a;
+    box-shadow: 4px 7px 8px  rgb(230, 222, 222);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td {
+    border: 1px solid #5c7a96;
+    padding: 9px 14px;
+    color: #14324a;
+    font-size: 14px;
+  }
+
+  .title-row td {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  td.label {
+    white-space: nowrap;
+    width: 130px;
+  }
+
+  td.input-cell {
+    width: 180px;
+  }
+
+  
+
+  input[type="text"],
+  input[type="email"] {
+    width: 140px;
+    padding: 5px 6px;
+    border: 1px solid #201d1d;
+    background-color: rgb(95, 214, 95);
+    box-sizing: border-box;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    background-color: rgb(216, 199, 199);
+    outline: 1px solid #296493;
+  }
+
+  .gender-cell label {
+    margin-right: 18px;
+    white-space: nowrap;
+  }
+
+  .button-row td {
+    text-align: center;
+    padding: 16px;
+  }
+
+  button {
+    background: linear-gradient(to bottom, #acecec, #86d7e6);
+    border: 1px solid #178196;
+    box-shadow: 3px 5px 4px rgba(227, 221, 221, 0.3);
+    border-radius:7px;
+    padding: 5px 20px;
+    margin: 0 6px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #14324a;
+    cursor: pointer;
+  }
+
+  button:active {
+    
+    transform: translate(2px, 2px);
+  }
+
+  .footer-text {
+    text-align: center;
+    color: #bfc3c6;
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 18px;
+  }
+  .box{
+    border:3px double rgb(122, 122, 235);
+    box-shadow: 3px 4px 5px rgb(244, 238, 238) inset;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<fieldset>
+  <legend>SignUp Form</legend>
+
+  <div class="panel">
+    <table>
+      <tr class="box">
+        <td colspan="3">Please fill the below SignUp form</td>
+      </tr>
+
+      <tr>
+        <td class="label">Username</td>
+        <td class="input-cell"><input type="text" name="username" required></td>
+        <td class="spacer"></td>
+      </tr>
+
+      <tr>
+        <td class="label">First name</td>
+        <td class="input-cell"><input type="text" name="firstname" required></td>
+        <td class="spacer"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Last name</td>
+        <td class="input-cell"><input type="text" name="lastname" required></td>
+        <td class="spacer"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Email</td>
+        <td class="input-cell"><input type="email" name="email" required></td>
+        <td class="spacer"></td>
+      </tr>
+
+      <tr>
+        <td class="label">Gender</td>
+        <td colspan="2" class="gender-cell">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </td>
+      </tr>
+
+      <tr class="button-row">
+        <td colspan="3">
+          <button type="submit">SUBMIT</button>
+          <button type="reset">RESET</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="footer-text">Prepared by: Shahbaaz Singh Virdi</div>
+</fieldset>
+
+</body>
 </html>
+
+
