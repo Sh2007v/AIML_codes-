@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Color Assignment</title>
+
+    <style>
+        body{
+            font-family:Arial, sans-serif;
+            text-align:center;
+            margin-top:50px;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            gap:40px;
+        }
+
+        .cell{
+            position:relative;
+        }
+
+        .box{
+            width:180px;
+            height:220px;
+            border:2px solid black;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            font-size:30px;
+        }
+
+        input{
+            width:20px;
+            height:20px;
+            position:absolute;
+            top:20px;
+            left:50%;
+            transform:translateX(-50%);
+            z-index:1;
+        }
+
+        /* Red */
+        #red:checked ~ .redBox{
+            background:red;
+            color:white;
+        }
+
+        /* Green */
+        #green:checked ~ .greenBox{
+            background:green;
+            color:white;
+        }
+
+        input:checked{
+            display:none;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="cell">
+        <input type="checkbox" id="red">
+        <div class="box redBox">
+            Red
+        </div>
+    </div>
+
+    <div class="cell">
+        <input type="checkbox" id="green">
+        <div class="box greenBox">
+            Green
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
