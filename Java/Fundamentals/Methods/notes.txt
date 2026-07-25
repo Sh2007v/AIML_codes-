@@ -1,0 +1,13 @@
+Practice Questions
+
+Factorial
+Prime Number
+Greatest of Three Numbers
+Armstrong Number
+Reverse Number
+Palindrome Number
+GCD (HCF)
+LCM
+Sum of Digits
+Simple Calculator Using Methods
+
