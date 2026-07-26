@@ -1,0 +1,28 @@
+Strategy
+
+
+Poblem Solving Map
+
+Learn Concept
+      ↓
+ChatGPT (or one lecture)
+      ↓
+GFG (8–15 problems)
+      ↓
+LeetCode (2–5 problems)
+      ↓
+Codeforces (3–5 problems/week)
+
+I recommend this sequence:
+✅ Learn Linear Search
+✅ Solve 15–20 GFG Linear Search problems
+➡️ Start Binary Search
+✅ Solve 15–20 GFG Binary Search problems
+➡️ Continue with the next Arrays topics (rotation, move zeros, etc.)
+✅ Complete the entire Arrays module on GFG.
+
+Only after you complete the Arrays module:
+
+Solve 10–15 LeetCode Easy Array problems to reinforce interview-style thinking.
+Continue solving 3–5 Codeforces problems per week to maintain competitive programming skills.
+
