@@ -68,6 +68,43 @@ Array:
         //Assigning the value
         arr[index] = insert_value;
 
-        
+        /////////////////
+        //LINEAR SEARCH//
+        /////////////////
+
+// VERY IMPORTANT QUESTIONS (LINEAR SEARCH)
+Reverse an Array
+Remove Duplicates from Sorted Array
+Find First Non-Repeating Element
+Find Majority Element
+Union of Two Arrays
+Intersection of Two Arrays
+Find Pair with Given Sum
+Maximum Consecutive Ones
+Find Peak Element
+Check if Array is a Subset of Another Array        
     
+
+        BINARY SEARCH
+
+        .works for sorted array
+        .Core logic :
+            while (low <= high) {
+
+                int mid = (low + high) / 2;
+
+                if (arr[mid] == key)
+                    return mid;
+
+                else if (key < arr[mid])
+                    high = mid - 1;
+
+                else
+                    low = mid + 1;
+            }
+
+        
+
+
+
 
