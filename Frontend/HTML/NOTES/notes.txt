@@ -344,4 +344,176 @@ HTML TABLES
         1.Table Width
             e.g:
                 <table style="width:100%;">  <!-----Full page width------>
-                
+        2. Collumn Width
+            e.g:
+                <th style="width:70%;">Firstname</th>
+        3. Row Height
+            e.g:
+                <tr style="height:200px;">
+        
+        Units Used 
+            % → Relative to the parent element (responsive).
+            px → Fixed size in pixels.
+        
+    HTML TABLE HEADERS
+        . created by using <th>
+        e.g:
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+
+                <tr>
+                    <td>John</td>
+                    <td>20</td>
+                </tr>
+            </table> 
+
+        1. Vertical Table Headers
+            .headers are placed in first col
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>John</td>
+                </tr>
+
+                <tr>
+                    <th>Age</th>
+                    <td>20</td>
+                </tr>
+            </table>
+        
+        2. Aligning Table Headers
+            .to align the table
+            e.g: th{
+                    text-align: left;
+                }
+        
+        3. Header for Multiple Columns
+            .allows header to span accross multiple cols
+            e.g: <table>
+                        <tr>
+                            <th colspan="2">Name</th>
+                            <th>Age</th>
+                        </tr>
+
+                        <tr>
+                            <td>John</td>
+                            <td>Smith</td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+        4. Table Caption
+            .adds a title to the entire table
+            e.g: <table>
+                    <caption>Student Record</caption>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Marks</th>
+                    </tr>
+
+                    <tr>
+                        <td>John</td>
+                        <td>95</td>
+                    </tr>
+                </table>
+        
+HTML LISTS
+    .to group related items
+        
+        Unordered Lists(<ul>)
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        
+        Ordered Lists(<ol>)
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+        
+        Description Lists
+            .used to display terms and their descriptions
+            e.g.:
+                <dl>
+                    <dt>Coffee</dt>       <!----Term in list--->
+                    <dd>Black hot drink</dd>    <!-----Description----->
+
+                    <dt>Milk</dt>
+                    <dd>White cold drink</dd>
+                </dl>
+
+    HTML UNORDERED LISTS
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+    List-Marker-Types
+        ul{
+            list-style-type: square,disc,square,none;
+        }
+
+    Nested Lists
+        <ul>
+            <li>Tea</li>
+        <ul>
+            <li>Green Tea</li>
+            <li>Black Tea</li>
+        </ul>
+    </ul>
+
+    HTML ORDERED LISTS
+          e.g: 
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+        type attribute
+            | Value | Output                                |
+            | ----- | ------------------------------------- |
+            | `1`   | Numbers (default)                     |
+            | `A`   | Uppercase letters (A, B, C)           |
+            | `a`   | Lowercase letters (a, b, c)           |
+            | `I`   | Uppercase Roman numerals (I, II, III) |
+            | `i`   | Lowercase Roman numerals (i, ii, iii) |
+
+            e.g.:
+            <ol type="A">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+            
+            start attribute
+                <ol start="50">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            
+            Nested Ordered Lists
+            <ol>
+                <li>Tea
+                    <ol>
+                        <li>Green Tea</li>
+                        <li>Black Tea</li>
+                    </ol>
+                </li>
+            </ol>
+
+BLOCK LEVEL ELEMENTS
+    .always start on a new line.
+    .occupies full width
+    .margin is added automatically before and after it.
+
+INLINE ELEMENTS
+    .do 
+        
