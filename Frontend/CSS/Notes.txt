@@ -1,0 +1,20 @@
+CSS SYNTAX:
+    selector {
+        property: value;
+    }
+    e.g.:
+        p {
+            color: red;
+            text-align: center;
+        }
+
+CSS Selectors
+    .used to select HTML tags for styling
+
+    Types:
+        Simple Selectors – Select elements by name, id, or class.
+        Combinator Selectors – Select elements based on relationships.
+        Pseudo-class Selectors – Select elements in a specific state (e.g., :hover).
+        Pseudo-element Selectors – Style specific parts of an element (e.g., ::first-letter).
+        Attribute Selectors – Select elements based on attributes.
+CSS Grid Layout
