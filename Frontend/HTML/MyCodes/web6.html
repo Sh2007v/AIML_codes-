@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Grid Layout - Assignment 1</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.container{
+    display:grid;
+    width:100vw;
+    height:100vh;
+
+    grid-template-columns:3fr 1fr;
+    grid-template-rows:100px 1fr;
+}
+
+.header{
+    background:blue;
+    color:white;
+    text-align:center;
+    padding:30px;
+    grid-column:1/3;
+}
+
+.content{
+    background: lightgreen;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.content p{
+    text-align:justify;
+    line-height:1.6;
+    margin-bottom:10px;
+}
+
+.ads{
+    background:khaki;
+    text-align:center;
+    padding-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+
+    <div class="content">
+    <h2>Content</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, recusandae.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illum. Asperiores, provident. Molestiae quos rem adipisci perspiciatis laboriosam fugiat explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, officia. Ipsa quia voluptas nostrum, nemo minima illum. Quidem accusamus, eligendi deserunt cupiditate temporibus natus laborum asperiores! Doloremque, molestias.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deleniti maxime autem eaque, distinctio quae aperiam, quas magnam rerum facere expedita. Officiis asperiores recusandae illum laboriosam reprehenderit dolorum!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sint. Eaque, adipisci. Tempore molestiae dolorem cumque veniam. Earum, magni quasi. Dolore repudiandae saepe laudantium necessitatibus, minima nam aliquam!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat illum, dolorum libero perspiciatis molestias temporibus fugiat exercitationem eveniet. Molestias quo similique ipsa. Ipsum, praesentium asperiores. Totam repudiandae maxime.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia consequatur porro quas deserunt repudiandae excepturi iste architecto! Atque rerum, modi temporibus iure amet, recusandae asperiores expedita, provident magni voluptas.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, natus. Hic laborum recusandae cumque, exercitationem eligendi maxime minus distinctio eaque, repellendus voluptate tenetur beatae reprehenderit doloribus nemo pariatur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur saepe maxime, exercitationem possimus, illum deserunt vitae quia esse error asperiores. Repudiandae consequatur tempora dolorum molestias eveniet.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatum. Tempore expedita esse asperiores quisquam, excepturi libero dolorem deserunt, quibusdam aspernatur exercitationem pariatur, quos eligendi molestiae!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, recusandae.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, illum. Asperiores, provident. Molestiae quos rem adipisci perspiciatis laboriosam fugiat explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, harum.</p>
+</div>
+
+    <div class="ads">
+        <h2>Advertisements</h2>
+    </div>
+
+</div>
+
+</body>
+</html>
