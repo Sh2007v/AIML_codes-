@@ -1,0 +1,72 @@
+//USER INPUT FORMAT QUESTIONS
+import java.util.Scanner;
+
+class Parent {
+
+    int length;
+    int breadth;
+
+    Parent(int length, int breadth) {
+
+        this.length = length;
+        this.breadth = breadth;
+
+    }
+
+}
+
+class Child extends Parent {
+
+    int length;
+    int breadth;
+
+    Child(int parentLength, int parentBreadth, int childLength, int childBreadth) {
+
+        super(parentLength, parentBreadth);
+
+        this.length = childLength;
+        this.breadth = childBreadth;
+
+    }
+
+    void display() {
+
+        System.out.println("\nChild Dimensions");
+        System.out.println("Length : " + length);
+        System.out.println("Breadth : " + breadth);
+
+        System.out.println("\nParent Dimensions");
+        System.out.println("Length : " + super.length);
+        System.out.println("Breadth : " + super.breadth);
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Parent Length: ");
+        int pLength = sc.nextInt();
+
+        System.out.print("Enter Parent Breadth: ");
+        int pBreadth = sc.nextInt();
+
+        System.out.print("Enter Child Length: ");
+        int cLength = sc.nextInt();
+
+        System.out.print("Enter Child Breadth: ");
+        int cBreadth = sc.nextInt();
+
+        Child c = new Child(pLength, pBreadth, cLength, cBreadth);
+
+        c.display();
+
+        sc.close();
+
+    }
+
+}
