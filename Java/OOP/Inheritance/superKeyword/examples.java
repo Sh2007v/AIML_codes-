@@ -157,3 +157,31 @@
 //     }
 
 // }
+import java.util.Scanner;
+
+class Parent{
+    int length = 10;
+    int breadth = 20;
+}
+
+class Child extends Parent{
+    int length = 12;
+    int breadth = 14;
+
+    void display(){
+        System.out.println("Child length = "+length);
+        System.out.println("Child breadth = "+breadth);
+        System.out.println("Parent length = "+super.length);
+        System.out.println("Parent breadth = "+super.breadth);
+    }
+}
+
+public class examples{
+    public static void main(String[] args){
+        
+        Child c = new Child();
+        c.display();
+        
+    }
+}
+
