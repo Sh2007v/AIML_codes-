@@ -17,4 +17,95 @@ CSS Selectors
         Pseudo-class Selectors – Select elements in a specific state (e.g., :hover).
         Pseudo-element Selectors – Style specific parts of an element (e.g., ::first-letter).
         Attribute Selectors – Select elements based on attributes.
-CSS Grid Layout
+
+    Grouping Selectors
+        1.Universal Selector (*):
+            to apply style on every element
+            *{
+                text-align: center;
+                color: blue;
+            }
+        2.Grouping Selector(,):
+            to apply style on particular gtoup of elements
+            h1, h2, p{
+                text-align: center;
+                color: red;
+            }
+        | Selector           | Purpose                                                |
+        | ------------------ | ------------------------------------------------------ |
+        | `#id`              | Selects an element with a specific **id**              |
+        | `.class`           | Selects all elements with a specific **class**         |
+        | `*`                | Selects **all** HTML elements                          |
+        | `element`          | Selects all elements of a specific tag (e.g., `p`)     |
+        | `element, element` | Selects multiple elements together (e.g., `h1, h2, p`) |
+
+    External CSS
+
+        <head>
+            <link rel="stylesheet" href="style.css">    
+        </head>
+
+    Internal CSS 
+        <head>
+            <style>
+                h1{
+                    color: blue;
+                }
+            </style>
+        </head>
+
+    Inline CSS
+        <h1 style="color:red;">Hello World</h1>
+    
+    CSS COLORS
+        Background Color : 
+            h1{
+                 background-color: DodgerBlue;
+            }
+        Text Color : 
+            p{
+                color: Tomato;
+            }
+        Border Color :
+            h1{
+                border: 2px solid Violet;
+            }
+        Color Formats:
+            background-color: Tomato;
+            background-color: rgb(255, 99, 71);
+            background-color: #ff6347;
+            background-color: hsl(9, 100%, 64%);
+            background-color: rgba(255, 99, 71, 0.5);
+            background-color: hsla(9, 100%, 64%, 0.5);
+        Background-Color:
+
+            1.background-color : 
+                body{
+                    background-color: lightblue;
+                }
+
+            2.Background for different elements
+                    h1{
+                        background-color: green;
+                    }
+
+                    p{
+                        background-color: yellow;
+                    }
+
+                    div{
+                        background-color: lightblue;
+                    }
+            3. Opacity:
+                controls the transparency of elements
+                    div{
+                        background-color: green;
+                        opacity: 0.3;
+                    }
+            4. RGBA:
+                rgba(red, green, blue, alpha)    
+                
+                div{
+                    background: rgba(0, 128, 0, 0.3);
+                }
+        
