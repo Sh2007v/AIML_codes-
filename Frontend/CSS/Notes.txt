@@ -109,3 +109,63 @@ CSS Selectors
                     background: rgba(0, 128, 0, 0.3);
                 }
         
+        Background Image:
+            background-image: url("image.jpg");
+        
+        Background Image for certain elements
+            p{
+                background-image: url("paper.gif");
+            }
+       <!---- Background Image Repeat---->
+
+        CSS Borders
+            1. border-style : 
+                p.dotted{
+                    border-style: dotted;
+                }
+
+                p.dashed{
+                    border-style: dashed;
+                }
+
+                p.solid{
+                    border-style: solid;
+                }
+
+                p.double{
+                    border-style: double;
+                }
+
+            2.Multiple Border Styles:
+                p{
+                    border-style: dotted dashed solid double;
+                }
+
+            | Property       | Purpose                      |
+            | -------------- | ---------------------------- |
+            | `border-style` | Specifies the type of border |
+            | `dotted`       | Dotted border                |
+            | `dashed`       | Dashed border                |
+            | `solid`        | Solid border                 |
+            | `double`       | Double border                |
+            | `groove`       | 3D grooved border            |
+            | `ridge`        | 3D ridged border             |
+            | `inset`        | 3D inset border              |
+            | `outset`       | 3D outset border             |
+            | `none`         | Removes the border           |
+            | `hidden`       | Hides the border             |
+
+        CSS Margins
+            p{
+                margin-top: 100px;
+                margin-right: 150px;
+                margin-bottom: 100px;
+                margin-left: 80px;
+            }
+        Margin values:
+            auto : browser calculates the margin
+            length : fixed value
+            % : percentage of the parent element's width
+            inherit : inherits the margin values from parent.
+            
+
