@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Layout</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    display:grid;
+    width:100vw;
+    height:100vh;
+
+    grid-template-columns:70px 300px 1fr;
+    grid-template-rows:70px 1fr 60px;
+
+    grid-template-areas:
+    "sidebar search contact"
+    "sidebar chats messages"
+    "sidebar chats type";
+}
+
+/* Sidebar */
+
+.sidebar{
+    grid-area:sidebar;
+    background:#202c33;
+    color:white;
+    text-align:center;
+    padding-top:20px;
+    font-size:22px;
+}
+
+/* Search */
+
+.search{
+    grid-area:search;
+    background:#111b21;
+    color:white;
+    padding:22px;
+    border-right:1px solid #dcdcdc;
+    border-bottom:1px solid #dcdcdc;
+}
+
+/* Contact */
+
+.contact{
+    grid-area:contact;
+    background:#202c33;
+    color:white;
+    padding:22px;
+    border-bottom:1px solid #dcdcdc;
+}
+
+/* Chats */
+
+.chats{
+    grid-area:chats;
+    background:white;
+    overflow-y:auto;
+    border-right:1px solid #dcdcdc;
+}
+
+.chat{
+    padding:18px;
+    border-bottom:1px solid #eeeeee;
+    transition:0.3s;
+}
+
+.chat:hover{
+    background:#f5f5f5;
+    cursor:pointer;
+}
+
+/* Messages */
+
+.messages{
+    grid-area:messages;
+    background-image:url("WChats.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* Type */
+
+.type{
+    grid-area:type;
+    background:#f0f2f5;
+    color:#666;
+    padding:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+        🟢
+        <br><br>
+        💬
+        <br><br>
+        ⚙️
+    </div>
+
+    <!-- Search -->
+
+    <div class="search">
+        🔍 Search
+    </div>
+
+    <!-- Contact -->
+
+    <div class="contact">
+        👤 Gurkeerat Singh
+    </div>
+
+    <!-- Chats -->
+
+<div class="chats">
+
+    <div class="chat">
+        <div class="top">
+            <b>👤 Abc</b>
+            <small>9:30</small>
+        </div>
+        <small>Hello!</small>
+    </div>
+
+    <div class="chat">
+        <div class="top">
+            <b>👤 Harpreet Singh</b>
+            <small>9:10</small>
+        </div>
+        <small>Typing...</small>
+    </div>
+
+    <div class="chat">
+        <div class="top">
+            <b>👤 Abc</b>
+            <small>Yesterday</small>
+        </div>
+        <small>Okay 👍</small>
+    </div>
+
+    <div class="chat">
+        <div class="top">
+            <b>👤 Abc</b>
+            <small>Yesterday</small>
+        </div>
+        <small>See you!</small>
+    </div>
+
+    <div class="chat">
+        <div class="top">
+            <b>👤 Abc</b>
+            <small>8:45</small>
+        </div>
+        <small>Good Morning</small>
+    </div>
+
+    <div class="chat">
+        <div class="top">
+            <b>👤 Abc</b>
+            <small>7:20</small>
+        </div>
+        <small>Thanks!</small>
+    </div>
+
+    <div class="chat">
+        <div class="top">
+            <b>👤 Abc</b>
+            <small>6:55</small>
+        </div>
+        <small>Okay</small>
+    </div>
+
+    <div class="chat">
+        <div class="top">
+            <b>👤 Abc</b>
+            <small>5:40</small>
+        </div>
+        <small>See you</small>
+    </div>
+    <div class="chat">👤 Abc</div>
+    <div class="chat">👤 Abc</div>
+    <div class="chat">👤 Abc</div>
+    <div class="chat">👤 Abc</div>
+    <div class="chat">👤 Abc</div>
+
+</div>
+
+    <!-- Messages -->
+
+    <div class="messages">
+    </div>
+
+    <!-- Type -->
+
+    <div class="type">
+        😊 Type a message...
+    </div>
+
+</div>
+
+</body>
+</html>
