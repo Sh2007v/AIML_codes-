@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chess Board</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    text-align:center;
+    background:white;
+    padding-top:80px;
+}
+
+
+input{
+    width:22px;
+    height:22px;
+    accent-color:green;
+    cursor:pointer;
+    vertical-align:middle;
+}
+
+label{
+    font-size:20px;
+    margin-left:8px;
+    cursor:pointer;
+}
+
+
+.board{
+    width:400px;
+    height:400px;
+    margin:25px auto;
+
+    display:grid;
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows:repeat(8,1fr);
+
+    border:8px solid black;
+    box-shadow:10px 10px 12px gray;
+}
+
+.white{
+    background:white;
+}
+
+.black{
+    background:black;
+}
+
+
+input:checked ~ .board .black{
+    background:maroon;
+}
+
+input:checked ~ .board .white{
+    background:yellow;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<input type="checkbox" id="change">
+<label for="change">Change Colors</label>
+
+<div class="board">
+
+<div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div>
+
+<div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div>
+
+<div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div>
+
+<div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div>
+
+<div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div>
+
+<div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div>
+
+<div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div>
+
+<div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div><div class="black"></div><div class="white"></div>
+
+</div>
+
+</body>
+</html>
