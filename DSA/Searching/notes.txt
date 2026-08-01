@@ -1,0 +1,110 @@
+Array:
+    Homogenous
+    Contiguous
+    Indexed
+    O(1) Direct Access
+    Base Address formula : address+(index*word_size);
+
+    Anatomy:
+        declaration:
+            data_type
+            name
+            size
+        Memory math:
+            locating elements
+                A[k] = (BaseAddress+word_size*(k-lower_bound));
+    
+    Traversal:
+
+        //old_method
+            for(int i=0;i<arr.length;i++){
+                System.out.println(arr[i]+" ");
+            }
+        //new_method
+            for(num:arr){
+                System.out.print(num+" ");
+            }
+    
+    Searching:
+
+        Linear Search
+            .works on unsorted arrays
+            .elem by elem scanning
+            : if(arr[i]==target){
+                return i;
+            }
+            .O(n)
+        
+        Binary Search
+            .works on sorted arrays
+            .divide & conquer rule , tree halving
+
+        
+    Updating:
+        arr[i] = 50;
+        O(1) i.e constant time
+
+    Reversing:
+        while(left<right){
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+            left++;
+            right--; 
+            Time Complexity: O(n);
+        }
+    
+    Sorting:
+        Arrays.sort(arr_name);
+        TC: depends on algorithm
+
+    Insertion:
+        
+        //Shifting elements to create room
+        for(int i=size;i>index;i--){
+            arr[i] = arr[i-1];
+        }
+
+        //Assigning the value
+        arr[index] = insert_value;
+
+        /////////////////
+        //LINEAR SEARCH//
+        /////////////////
+
+// VERY IMPORTANT QUESTIONS (LINEAR SEARCH)
+Reverse an Array
+Remove Duplicates from Sorted Array
+Find First Non-Repeating Element
+Find Majority Element
+Union of Two Arrays
+Intersection of Two Arrays
+Find Pair with Given Sum
+Maximum Consecutive Ones
+Find Peak Element
+Check if Array is a Subset of Another Array        
+    
+
+        BINARY SEARCH
+
+        .works for sorted array
+        .Core logic :
+            while (low <= high) {
+
+                int mid = (low + high) / 2;
+
+                if (arr[mid] == key)
+                    return mid;
+
+                else if (key < arr[mid])
+                    high = mid - 1;
+
+                else
+                    low = mid + 1;
+            }
+
+        
+
+
+
+
