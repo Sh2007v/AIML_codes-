@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <div class = "container">
+            <div class = "square"></div>
+        </div>
+        <div class ="load">Loading...</div>
+    </body>
+    <style>
+        .container{
+            width:220px;
+            margin: auto;
+            border: 2px solid navy;
+        }
+        .square{
+            width:20px;
+            height:20px;
+            background: red;
+            position: relative;
+            animation: mymoves 5s 1 linear forwards;
+        }
+        @keyframes mymoves{
+            0%{width:0px;top:0px;}
+            25%{width:55px;top:0px;}
+            50%{width:105px;top:0px;}
+            75%{width:155px;top:0px;}
+            100%{width:220px;top:0px;}
+        }
+        .load{
+            width: 400px;
+            margin: auto;
+        }
+    </style>
+</html>
