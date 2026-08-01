@@ -167,5 +167,9 @@ CSS Selectors
             length : fixed value
             % : percentage of the parent element's width
             inherit : inherits the margin values from parent.
+        
+        Padding :
+            space inside an element, btw content and the border
+            
             
 
