@@ -1,0 +1,36 @@
+<html>
+    <ol class="custom-steps">
+        <li>Create account</li>
+        <li>Verify</li>
+        <li>Setup</li>
+    </ol>
+    <style>
+        ol.custom-steps{
+            list-style: none;
+            counter-reset: count;
+        }
+        ol.custom-steps li{
+            position: relative;
+            margin-bottom: 20px;
+            padding-left:45px;
+            min-height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        ol.custom-steps li::before{
+            counter-increment:count;
+            content: counter(count);
+            display:flex;
+            position:absolute;
+            left:0;
+            width:30px;
+            height: 30px;
+            background-color: lightseagreen;
+            color:ghostwhite;
+            font-weight:bold;
+            border-radius:50%;
+            align-items:center;
+            justify-content:center;
+        }
+    </style>
+</html>
