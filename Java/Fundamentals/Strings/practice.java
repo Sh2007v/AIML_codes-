@@ -842,3 +842,333 @@
 //         sc.close();
 //     }
 // }
+
+//REVERSE THE STRING 
+
+// import java.util.Scanner;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the string: ");
+//         String str = sc.nextLine();
+
+//         String rev = "";
+
+//         for(int i=str.length()-1 ;i>=0; i--){
+//             rev += str.charAt(i);
+//         }
+//         System.out.println("Reversed String: "+rev);
+//     }
+// }
+
+
+//PALINDROME STRING OR  NOT
+// import java.util.Scanner;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the string :");
+//         String str = sc.nextLine();
+
+//         String temp = str;
+
+//         String rev = "";
+
+//         for(int i=str.length();i>=0;i--){
+//             rev+= temp.charAt(i);
+//         }
+
+//         if(rev == temp){
+//             System.out.println("Palindrome String");
+//         }
+//         else{
+//             System.out.println("Not a Palindrome String");
+//         }
+
+//     }
+// }
+
+//ALSO THERE IS ANOTHER METHOD
+
+// //TO FIND THE LENGTH OF STRING
+// import java.util.Scanner;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the string : ");
+//         String Str = sc.nextLine().trim();
+
+//         String words[] =  Str.split("\\s+");
+
+//         System.out.println(words.length);
+        
+//     }
+// }
+
+//CHECK WETHER THE CHARACTER EXISTS OR NOT
+
+// import java.util.Scanner;
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the String : ");
+//         String str = sc.nextLine();
+
+//         System.out.println("Enter the character to check : ");
+//         char ch = sc.next().charAt(0);
+
+//         if(str.indexOf(ch)!=-1){
+//             System.out.println("Found");
+//         }
+//         else{
+//             System.out.println("Not Found");
+//         }
+//     }
+// }
+
+//REPLACE CHARACTER IN A STRING
+
+// import java.util.Scanner;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the String : ");
+//         String str = sc.nextLine();
+
+//         System.out.println("Enter the old character : ");
+//         char old_char = sc.next().charAt(0);
+
+//         System.out.println("Enter the new character : ");
+//         char new_char = sc.next().charAt(0);
+
+//         System.out.println("New String: "+str.replace(old_char,new_char));
+//     }
+// }
+
+//COMPARE TWO STRINGS
+
+// import java.util.Scanner;
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the 1st String : ");
+//         String s1 = sc.nextLine();
+
+//         System.out.println("Enter the 2nd String : ");
+//         String s2 = sc.nextLine();
+
+//         if(s1.equalsIgnoreCase(s2)){
+//             System.out.println("Strings are equal regardless of case");
+//         }
+//         else{
+//             System.out.println("Strings are not equal");
+//         }
+//     }
+// }
+
+//FIND FREQUENCY OF A CHARACTER
+
+// import java.util.Scanner;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the String : ");
+//         String str = sc.nextLine();
+
+//         System.out.println("Enter the character : ");
+//         char ch = sc.next().charAt(0);
+
+//         int ct = 0;
+
+//         for(int i =0;i<str.length();i++){
+//             if(str.charAt(i)==ch){
+//                 ct++;
+//             }
+//         }
+//         System.out.println("The frequency of Character : "+ct);
+//     }
+// }
+
+//Count Vowels, Consonants, Digits, and Special Characters
+// import java.util.Scanner;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the String : ");
+//         String str = sc.nextLine();
+
+//         int ct_v=0;
+//         int ct_c=0;
+//         int ct_dig=0;
+//         int spec_char=0;
+
+//         String lowerStr = str.toLowerCase();
+
+//         for(int i=0;i<str.length();i++){
+//             char ch = str.charAt(i);
+
+//             if(Character.isDigit(ch)){
+//                 ct_dig++;
+//             }
+//             else if(Character.isLetter(ch)){
+//                 if(lowerStr.charAt(i)=='a' || lowerStr.charAt(i)=='e' || lowerStr.charAt(i)=='i' || lowerStr.charAt(i)=='o'
+//             || lowerStr.charAt(i)=='u'){
+//                 ct_v++;
+//                 }
+//                 else{
+//                     ct_c++;
+//                 }
+//             }
+//             else{
+//                 spec_char++;
+//             }
+//         }
+//         System.out.println("Vowels"+ct_v);
+//         System.out.println("Consonants"+ct_c);
+//         System.out.println("Special Characters"+spec_char);
+//         System.out.println("Digits"+ct_dig);
+//     }
+// }
+
+// CHECK IF THE STRINGS ARE ANAGRAM OR NOT
+
+// import java.util.Scanner;
+// import java.util.Arrays;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter 1st String : ");
+//         String Str1 = sc.nextLine();
+
+//         System.out.println("Enter 2nd String : ");
+//         String Str2 = sc.nextLine();
+
+//         String lowerStr1 = Str1.toLowerCase();
+//         String lowerStr2 = Str2.toLowerCase();
+
+//         char[] a1 = lowerStr1.toCharArray();
+//         char[] a2 = lowerStr2.toCharArray();
+
+//         // String sortedStr1 = sort(lowerStr1);
+//         // String sortedStr2 = sort(lowerStr2);
+
+//         Arrays.sort(a1);
+//         Arrays.sort(a2);
+
+//         String str1 = new String(a1);
+//         String str2 = new String(a2);
+
+//         if(str1.equals(str2)){
+//             System.out.println("Strings are Anagrams.");
+//         }else{
+//             System.out.println("Strings are not Anagrams.");
+//         }
+
+//     }
+// }
+
+//COUNT FREQUENCY OF A CHARACTER IN A STRING
+
+// import java.util.Scanner;
+
+// import java.util.Scanner;
+
+// public class practice {
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.print("Enter a String: ");
+//         String str = sc.nextLine();
+
+//         for (int i = 0; i < str.length(); i++) {
+
+//             // Check if character is already counted
+//             boolean counted = false;
+
+//             for (int k = 0; k < i; k++) {
+//                 if (str.charAt(i) == str.charAt(k)) {
+//                     counted = true;
+//                     break;
+//                 }
+//             }
+
+//             if (counted)
+//                 continue;
+
+//             int count = 0;
+
+//             // Count frequency
+//             for (int j = 0; j < str.length(); j++) {
+//                 if (str.charAt(i) == str.charAt(j)) {
+//                     count++;
+//                 }
+//             }
+
+//             System.out.println(str.charAt(i) + " : " + count);
+//         }
+//     }
+// }
+
+// FIND THE LONGEST WORD IN A SENTENCE
+// import java.util.Scanner;
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         String Str = sc.nextLine().trim();
+//         String[] words = Str.split("\\s+");
+        
+//         String longest = words[0];
+        
+//         for(int i=0;i<Str.length();i++){
+//             if(words[i].length()>longest.length()){
+//                 longest = words[i];
+//             }
+//         }
+        
+//         System.out.println("Longest Word : "+longest);
+//         System.out.println("Length : "+longest.length());
+
+//     }
+// }
+
+// REVERSE EACH WORD IN A STRING
+// import java.util.Scanner;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the String : ");
+//         String Str = sc.nextLine().trim();
+//         String[] words = Str.split("\\s+");
+
+//         for(int i=0;i<words.length;i++){
+//             String rev = "";
+//             for(int j=words[i].length()-1;j>=0;j--){
+//                 rev+=words[i].charAt(j);
+//             }
+//             System.out.print(rev+" ");
+//         }
+
+//     }
+// }
+
+//
