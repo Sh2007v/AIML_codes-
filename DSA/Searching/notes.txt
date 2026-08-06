@@ -72,17 +72,29 @@ Array:
         //LINEAR SEARCH//
         /////////////////
 
-// VERY IMPORTANT QUESTIONS (LINEAR SEARCH)
-Reverse an Array
-Remove Duplicates from Sorted Array
-Find First Non-Repeating Element
-Find Majority Element
+// VERY IMPORTANT QUESTIONS (LINEAR SEARCH) + GFG
+Print Alternate Elements
+Print Leaders in an Array
+Find All Duplicate Elements
+Find the First Non-Repeating Element
+Find the Last Occurrence of an Element
+Count Distinct Elements
+Find the Most Frequent Element
+Find the Least Frequent Element
+Find the Smallest Positive Missing Number (Basic Version)
+Find Pair with Given Sum (Brute Force)
+Check if Pair with Given Difference Exists
+Find Common Elements in Two Arrays
 Union of Two Arrays
 Intersection of Two Arrays
-Find Pair with Given Sum
+Find Majority Element (Brute Force)
+Find Equilibrium Index
+Find Peak Element (Linear Search)
+Check if Array is a Subset of Another Array
+Find the Missing and Repeating Number (Brute Force)
+Find the Element that Appears Once
 Maximum Consecutive Ones
-Find Peak Element
-Check if Array is a Subset of Another Array        
+Stock Buy and Sell – One Transaction (Linear Scan)
     
 
         BINARY SEARCH
@@ -103,7 +115,41 @@ Check if Array is a Subset of Another Array
                     low = mid + 1;
             }
 
-        
+VERY IMPORTANT QUESTIONS +GFG
+
+Bubble Sort an Array
+Bubble Sort in Descending Order
+Optimized Bubble Sort (Using Swapped Flag)
+Count Total Swaps During Bubble Sort
+Count Total Passes in Bubble Sort
+Check Whether an Array is Already Sorted
+Sort Only Even Numbers (Odd numbers remain at their original positions)
+Sort Only Odd Numbers (Even numbers remain at their original positions)
+Bubble Sort Characters of a String
+Bubble Sort Words in a Sentence (Lexicographical Order)
+Find Largest Element After Bubble Sort
+Find Second Largest Element After Bubble Sort
+Find Median After Bubble Sort
+Remove Duplicates After Bubble Sort
+Count Duplicate Elements After Bubble Sort
+Find Missing Number After Bubble Sort
+Move All Zeros to End Using Bubble Sort
+Bubble Sort a 2D Matrix Row-wise
+Bubble Sort Based on Absolute Difference from a Target
+Bubble Sort Strings by Length
+
+GFG :
+Classic Binary Search
+Find the index of a target element in a sorted array.
+First Occurrence of an Element
+If duplicates exist, return the first occurrence.
+Last Occurrence of an Element
+If duplicates exist, return the last occurrence.
+Count Occurrences of an Element
+Use the first and last occurrence to compute the count.
+Find Floor and Ceil of a Target
+Floor = greatest element ≤ target.
+Ceil = smallest element ≥ target.
 
 
 
