@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,inital-scale=1.0">
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">Main Content</div>
+            <div class="box">Sidebar</div>
+        </div>
+    </body>
+    <style>
+        /*Default styles(Mobile-first)*/
+        .container{
+            display: flex;
+            width:50%;
+            flex-direction: column;
+        }
+        .box{
+            padding: 20px;
+            background-color: skyblue;
+            border: 1px solid blue;
+        }
+        /*Responsive adjustment for Tablets and desktops*/
+        @media(min-width: 768px){
+            .container{
+                flex-direction: row;/*switch to horizontal side-by-side*/
+            }
+        }
+    </style>
+</html>
