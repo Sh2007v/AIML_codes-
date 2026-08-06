@@ -28,3 +28,50 @@ Space Complexity:
         Max Comparisons: n(n-1)/2
             For n = 5: 10 comparisons
 
+IMPORTANT QUESTIONS
+✅ 1. Bubble Sort an Array
+✅ 2. Descending Order
+✅ 3. Optimized Bubble Sort
+✅ 4. Count Swaps
+✅ 5. Count Passes
+✅ 6. Check if Sorted
+✅ 7. Sort Only Even Numbers
+✅ 8. Sort Only Odd Numbers
+✅ 11. Largest Element
+✅ 12. Second Largest
+✅ 13. Median
+✅ 14. Remove Duplicates
+✅ 15. Count Duplicate Elements
+
+GFG
+Bubble Sort
+Implement Bubble Sort.
+Wave Array
+Sort the array into wave form.
+Binary Array Sorting
+Sort an array containing only 0s and 1s.
+Sort 0s, 1s and 2s
+Dutch National Flag problem.
+Check if Array is Sorted
+Verify whether an array is sorted.
+Easy–Medium
+Chocolate Distribution Problem
+Sort first, then find the minimum difference.
+Minimum Difference Pair
+Sort the array and find the minimum difference between adjacent elements.
+Union of Two Sorted Arrays
+Intersection of Two Sorted Arrays
+Remove Duplicates from Sorted Array
+Medium
+Merge Without Extra Space
+Merge Two Sorted Arrays
+Kth Smallest Element
+Kth Largest Element
+Inversion Count
+Learn this after Merge Sort as the optimal solution uses Merge Sort.
+More Array + Sorting Practice
+Nearly Sorted Array
+Find the Closest Number
+Count Pairs with Given Sum
+Triplet Sum in Array
+Largest Number Formed from an Array
