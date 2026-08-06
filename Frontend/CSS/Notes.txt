@@ -170,6 +170,215 @@ CSS Selectors
         
         Padding :
             space inside an element, btw content and the border
+                padding-top
+                padding-right
+                padding-bottom
+                padding-left
             
+        | Syntax                          | Meaning                                        |
+        | ------------------------------- | ---------------------------------------------- |
+        | `padding: 20px;`                | All four sides = 20px                          |
+        | `padding: 20px 40px;`           | Top & Bottom = 20px, Left & Right = 40px       |
+        | `padding: 20px 40px 60px;`      | Top = 20px, Left & Right = 40px, Bottom = 60px |
+        | `padding: 20px 40px 60px 80px;` | Top, Right, Bottom, Left respectively          |
+
+            div{
+                padding: 20px;
+            }
+
+        CSS height and width
+            :padding, amrgin and border are not included.
+            | Value     | Description                                               |
+            | --------- | --------------------------------------------------------- |
+            | `auto`    | Default value; browser calculates the size automatically. |
+            | `length`  | Specifies size in `px`, `cm`, `em`, etc.                  |
+            | `%`       | Sets size relative to the parent (containing element).    |
+            | `initial` | Sets the property to its default value.                   |
+            | `inherit` | Inherits the value from the parent element.               |
+
+            div{
+                width: 50%;
+                height: 200px;
+                background-color: powderblue;
+            }
+
+            CSS Box Model:
+                describes how every HTML element is displayed as a rectangular box.
+                Margin
+                 └── Border
+                      └── Padding
+                           └── Content
+                e.g. :
+
+                div{
+                    width: 300px;
+                    border: 15px solid green;
+                    padding: 50px;
+                    margin: 20px;
+                }
+
+                Total width = Width + Left Padding + Right Padding + Left Border + Right Border
+                Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border
+
+                e.g. :
+
+                div{
+                    width: 320px;
+                    height: 50px;
+                    padding: 10px;
+                    border: 5px solid gray;
+                }
+
+                z-index:
+                    element woth higher z-index property lies in front of an element with a lower z-index
+                    works only on positioned values
+                        position: relative
+                        position: absolute
+                        position: fixed
+                        position: sticky
+
+                Syntax:
+                    element{
+                        position: relative;
+                        z-index: 2;
+                    }
+                e.g:
+                    .box1{
+                        position: absolute;
+                        z-index: 1;
+                    }
+
+                    .box2{
+                        position: absolute;
+                        z-index: 3;
+                    }
+
+                opacity:
+                    controls the transparency of an element
+                    0.0 to 1.0
+
+                    e.g. :
+
+                        img{
+                            opacity: 0.5;
+                        }
+                    to create hover effect :
+                        img{
+                            opacity: 0.5;
+                        }
+
+                        img:hover{
+                            opacity: 1;
+                        }
+                    
+                    applying transparent property to container converts the box and the background into 
+                    transparent.
+                    
+                    rgba for background transparency:
+                        to make only the background transparent, do this.
+                            div{
+                                background: rgba(4, 170, 109, 0.3);
+                            }
+                    
+            CSS FlexBox Model
+                Flexbox : to arrange elements horizontally or vertically
+                        : 1d layout
+                Grid    : 2d layout
+                
+                Components:
+                        1.Flex Container : 
+                            Parent element with 
+                                display : flex; or inline-flex;
+                        2.Flex Items :
+                        <html>
+                        <style>
+                            .container{
+                                display:flex;
+                                background-color: red;
+                            }
+                            .container div{
+                                background-color: #f1f1f1;
+                                margin: 10px;
+                                padding: 20px;
+                            }
+                        </style>
+
+                        <div class = "container">
+                            <div> Item 1</div>
+                            <div> Item 2</div>
+                            <div> Item 3</div>
+                        </div>
+                        </html>
+
+                Flex Container
+                    parent element with display : flex or inline-flex;
+                    Properties :
+                        1.flex-direction: 
+                            to control the direction of flex items
+                            1.row: left -> right
+                            2.column: top -> bottom
+                            3.row-reverse: right -> left
+                            4.column-reverse: bottom -> top
+
+                            e.g. : 
+                                .container{
+                                    display: flex;
+                                    flex-direction: row;
+                                }
+                        
+                        2.flex-wrap:
+                            specifies to wrap elements when there is not enough space.
+
+                            nowrap: items remain on one line
+                            wrap: items move to next line
+                            wrap-reverse: items move in reverse order
+
+                            e.g. :
+                                .container{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                }
+                        
+                        3.flex-flow:
+                            shorthand for wrap+direction
+
+                            e.g. :
+                                .container{
+                                    display: flex;
+                                    flex-flow: row reverse;
+                                }
+                        
+                    Flex Box Axis
+                        1. Main Axis :
+                            controlled by flex-direction property.
+                            justify-content works on this axis.
+                        
+                        2.Cross Axis :
+                            perpendicular to main axis
+                            align-items and align-content
+
+                    Flexbox justify-content :
+                        aligns items along the main axis
+                        values:
+                            1.flex-start : items are at the start of the container
+                                        e.g. :
+                                            justify-content: flex-start;
+                            2.flex-end : items are at the end of the container
+                                        e.g.:
+                                            justify-content: flex-end;
+                            3.center : items are at center
+                            4.space-between : 1st item touches start, last item the last and the in 
+                            between have space.
+                            5.space-around : equal space around each item
+                            6.space-evenly : equal space everywhere.
+                            
+                                                                        
+
+                        
+
+
+
+        
+
             
 
