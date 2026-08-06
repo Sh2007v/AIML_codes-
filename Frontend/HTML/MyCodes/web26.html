@@ -1,0 +1,46 @@
+<html>
+    <body>
+        <div class="features-container">
+            <div class="card">Feature Card 1</div>
+            <div class="card">Feature Card 2</div>
+            <div class="card">Feature Card 3</div>
+            <div class="card">Feature Card 4</div>
+        </div>
+        <style>
+             /*Default styles(Mobile-first)*/
+        *{
+            box-sizing: border-box;
+        }
+        .features-container{
+            width:100%;
+        }
+        .card{
+            background: lightblue;
+            padding:20px;
+            margin-bottom: 15px;
+
+        }
+        /*Tablet View: 2 cols*/
+        @media(min-width: 600px){
+            .card{
+                float: left;
+                width: 45%;
+                /*gap between two cards in a row */
+                margin-right: 4%;
+            }
+        }
+        /*Desktop View : 4 cols*/
+        @media(min-width: 1024px){
+            .features-container{
+                display: flex;
+                justify-content:center;
+            }
+            .card{
+                /*small width to fit in a row*/
+                width: 20%;
+                margin-right: 4%;
+            }
+        }
+        </style>
+    </body>
+</html>
