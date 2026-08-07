@@ -1,0 +1,115 @@
+Correlation Analysis
+    stats method to measure the relation btw two vars
+    tells wether one var changes when another var changes
+    relationship is measured using the correlation coefficient(r)
+
+    Correlation Coefficient(r)
+        -1<r<1
+        indicates:
+            direction of relationship
+            strength of relationship
+        
+        Direction of Correlation
+
+        | Value of r | Direction      | Meaning                                           |
+        | ---------- | -------------- | ------------------------------------------------- |
+        | **r > 0**  | Positive       | Both variables increase or decrease together.     |
+        | **r < 0**  | Negative       | One variable increases while the other decreases. |
+        | **r = 0**  | No Correlation | No linear relationship between the variables.     |
+
+        Strength of Correlation
+
+        | |r| Value     | Strength              |
+        | ------------- | --------------------- |
+        | **0.0 – 0.1** | No correlation        |
+        | **0.1 – 0.3** | Low correlation       |
+        | **0.3 – 0.5** | Medium correlation    |
+        | **0.5 – 0.7** | High correlation      |
+        | **0.7 – 1.0** | Very high correlation |
+    
+    Positive and Negative Correlation
+        Positive Correlation
+            both vars move in same direction
+            one increases, other also increases
+            r>0
+            e.g.:
+                height and shoe size
+                r=+0.95: very high positive correlation
+            
+        Negative Correlation
+            both vars move in opposite direction
+            one var increases, other decreases
+            r<0
+            e.g:
+                screen time and exam score
+                r=-0.54: high negative correlation
+            
+        Weak/No correlation
+            no or little correlation between the vars
+
+    Data Storytelling
+        explaining the meaning of a graph or data in simple words
+        Steps for reading a correlation graph
+            state the vars
+            describe direction
+            mention r
+            give a conclusion
+
+            e.g.:
+
+                Screen Time vs Exam Score
+                The graph shows a downward trend.
+                r = −0.54, indicating a high negative correlation.
+                Conclusion: Students who spend more time on screens tend to 
+                            have lower exam scores.
+    
+    Correlation btw more than two variables
+        Correlation Matrix
+            table showing correlation coefficients between every pair of vars in a 
+            dataset
+            helps analyze multiple variables at same time
+        Correlation Heatmap
+            graphical representation of a correlation matrix using colors
+            red:strong positive correlation
+            blue:strong negative correlation
+            light/pale: little or no correlation
+            diagonal values are 1.00 
+        Types of Correlation Methods
+            1.Pearson Correlation (r):
+                measures the strength and direction of a linear relationship btw two numerical vars
+            2.Spearman Correlation (rho):
+                measures the relationship based on rank of data
+
+                
+Regression Analysis
+    to predict the value of one var based on one or more variable
+    maths eqn used to predict this is called regression model
+
+    Measuring influence
+        determines how much one var affect another
+    Prediction
+        estimates the value of a var using other vars
+
+    Correlation vs Regression
+        Correlation
+            strength and direction of relationship btw vars
+        Regression
+            provides an eqn to predict the values
+
+    Linear Regression
+        used to predict a dependent var using one or more indepen. var
+        Types of Linear Regression:
+            Simple Linear Regression
+                one independent var is used to predict the dependent var
+                eqn: y = mx+c
+
+            Multiple Linear Regression
+                used to predict the dependent var using one or more independent vars.
+            
+            R^2(Coefficient of Determination)
+                measures how well regression model explains the variation
+                Higher R^2 : Better prediction.
+            
+
+
+
