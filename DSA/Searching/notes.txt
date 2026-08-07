@@ -115,7 +115,7 @@ Stock Buy and Sell – One Transaction (Linear Scan)
                     low = mid + 1;
             }
 
-VERY IMPORTANT QUESTIONS +GFG
+VERY IMPORTANT QUESTIONS + GFG
 
 Bubble Sort an Array
 Bubble Sort in Descending Order
