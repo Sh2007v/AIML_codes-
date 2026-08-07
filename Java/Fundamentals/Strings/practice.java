@@ -976,7 +976,7 @@
 //     }
 // }
 
-//FIND FREQUENCY OF A CHARACTER
+//FIND FREQUENCY OF EACH CHARACTER
 
 // import java.util.Scanner;
 
@@ -1171,4 +1171,4 @@
 //     }
 // }
 
-//
+// 
