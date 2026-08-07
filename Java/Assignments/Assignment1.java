@@ -8,7 +8,7 @@ public class Assignment1 {
 
         //hardcode values : row : 3; col : 5;
 
-        int rows=3;
+        int rows = 3;
         int cols = 5;
         //int[][] arr = new int[rows][cols];
 
