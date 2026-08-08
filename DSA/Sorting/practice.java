@@ -554,4 +554,44 @@ public class practice {
 //     }
     
 // }
+
+//FIND THE MINIMUM ELEMENT SELECTED IN EVERY PASS
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter the size of Array : ");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+    
+//     System.out.println("Enter the Array : ");
+        
+//         for(int i=0;i<size;i++){
+//             arr[i] = sc.nextInt();
+//         }
+
+//         //sort it
+//         for(int i=0;i<size-1;i++){
+//             int minIndex = i;
+//             for(int j=i+1;j<size;j++){
+//                 if(arr[minIndex] > arr[j]){
+//                     minIndex = j;
+//                     System.out.print(arr[minIndex]+" ");
+//                 }
+//             }
+//         //swap
+//             int temp = arr[minIndex];
+//             arr[minIndex] = arr[i];
+//             arr[i] = temp;
+
+//         }
+
+//     }
+
+
+
+
+    
+        
 }
+
