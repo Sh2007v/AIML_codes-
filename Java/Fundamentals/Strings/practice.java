@@ -976,7 +976,7 @@
 //     }
 // }
 
-//FIND FREQUENCY OF EACH CHARACTER
+//FIND FREQUENCY OF A CHARACTER
 
 // import java.util.Scanner;
 
@@ -1170,5 +1170,81 @@
 
 //     }
 // }
+
+//CHECK WETHER THE NUMBER IS VALID OR NOT
+
+// import java.util.Scanner;
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+        
+//        // String Str = new String();
+        
+//         System.out.println("Enter the String : ");
+//         String Str = sc.nextLine();
+
+//         int flag = 0;
+
+//         for(int i=0;i<Str.length();i++){
+//             char ch = Str.charAt(i);
+//             if(!Character.isDigit(ch)){
+//                 flag = 1;
+//                 break;
+//             }
+//         }
+//         if(flag==1){
+//             System.out.println("Invalid Number");
+//         }
+//         else{
+//             System.out.println("Valid Number");
+//         }
+//     }
+// }
+
+//PASSWORD STRENGTH CHECKER
+// import java.util.Scanner;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the String : ");
+//         String Str = sc.nextLine();
+
+//         boolean isAnyUpper = false;
+//         boolean isAnyLower = false;
+//         boolean isAnyDigit = false;
+//         boolean isAnySpecial = false;
+//         for(int i=0;i<Str.length();i++){
+//             char ch = Str.charAt(i);
+
+//             if(Character.isUpperCase(ch)){
+//                 isAnyUpper = true;
+//             }
+//             else if(Character.isLowerCase(ch)){
+//                 isAnyLower = true;
+//             }
+//             else if(Character.isDigit(ch)){
+//                 isAnyDigit = true;
+//             }
+//             else{
+//                 isAnySpecial = true;
+//             }
+//         }
+
+//         if(isAnyUpper &&
+//             isAnyLower && 
+//             isAnyDigit && 
+//             Str.length()>=8 &&
+//             isAnySpecial){
+//             System.out.println("Strong Password");
+//         }
+//         else{
+//             System.out.println("Weak Password");
+//         }
+        
+//     }
+// }
+
 
 // 
