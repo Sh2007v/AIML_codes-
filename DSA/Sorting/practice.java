@@ -589,9 +589,227 @@ public class practice {
 //     }
 
 
+// PRINT EVERY MINIMUM ELEMENT SELECTED IN EACH SORTING 
 
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
 
-    
+//     System.out.println("Enter the size : ");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+
+//     System.out.println("Enter the Array : ");
+
+//     for(int i=0;i<size;i++){
+//         arr[i] = sc.nextInt();
+//     }
+
+//     // sort
+
+//     int ct_comp = 0;
+//     int ct_swap = 0;
+
+//     for(int i=0;i<size-1;i++){
+//         int minIndex = i;
+//         for(int j=i+1;j<size;j++){
+//             if(arr[minIndex]>arr[j]){
+//                minIndex =j;
+//                ct_comp ++;
+//             }
+//         }
+//      int temp = arr[minIndex];
+//      arr[minIndex] = arr[i];
+//      arr[i] = temp;
+     
+//      ct_swap++;
+//     }
+
+//     System.out.println("Swaps: "+ct_swap);
+//     System.out.println("Comparsions : "+ct_comp);
+// }
+
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter the Size : ");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+
+//     System.out.println("Enter the array : ");
+//     for(int i=0;i<size;i++){
+//         arr[i] = sc.nextInt();
+//     }
+
+//     //sort
+//     for(int i=0;i<size-1;i++){
+//         int minIndex = i;
+//         for(int j=i+1;j<size;j++){
+//             if(arr[minIndex]>arr[j]){
+//                 minIndex = j;
+//             }
+//         }
         
-}
+//         //swap
+//         int temp = arr[minIndex];
+//         arr[minIndex] = arr[i];
+//         arr[i] = temp;
 
+//         System.out.print(arr[i]+" ");
+        
+//     }
+//     }       
+
+// SECOND SMALLEST DISTINCT ELEMENT AFTER SELECTION SORT
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter the Size : ");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+
+//     System.out.println("Enter the Array : ");
+//     for(int i=0;i<size;i++){
+//         arr[i] = sc.nextInt();
+//     }
+
+//     //sort
+//     for(int i=0;i<size-1;i++){
+//         int minIndex = i;
+//         for(int j=i+1;j<size;j++){
+//             if(arr[minIndex]>arr[j]){
+//                 minIndex = j;
+//             }
+//         }
+//         int temp = arr[minIndex];
+//         arr[minIndex] = arr[i];
+//         arr[i] = temp;
+
+//     }
+//    int sec_min = -1;
+
+//     for(int i = 1; i < size; i++){
+//         if(arr[i] != arr[0]){
+//             sec_min = i;
+//             break;
+//         }
+//     }
+//     if(sec_min == -1){
+//         System.out.println("No second smallest");
+//     }
+//     else{
+//         System.out.println(arr[sec_min]);
+//     }
+    
+//     }
+
+//SORT ONLY THE FIRST K ELEMENTS
+
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter the Size : ");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+//     System.out.println("Enter the Array : ");
+
+//     for(int i=0;i<size;i++){
+//         arr[i] = sc.nextInt();
+//     }
+
+//     System.out.println("Enter the limit K :");
+//     int K = sc.nextInt();
+
+//     for(int i=0;i<K-1;i++){
+//         int minIndex = i;
+//         for(int j=i+1;j<K;j++){
+//             if(arr[minIndex]>arr[j]){
+//                 minIndex = j;
+//             }
+//         }
+//         int temp = arr[minIndex];
+//         arr[minIndex] = arr[i];
+//         arr[i] = temp;
+//     }
+
+//     for(int i=0;i<size;i++){
+//         System.out.print(arr[i]+" ");
+//     }
+
+// }
+
+//CHECK WHETHER SELECTION SORT MAKES ANY SWAP (IS THERE ANY SWAP)
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter the Size : ");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+
+//     System.out.println("Enter the Array : ");
+//     for(int i=0;i<size;i++){
+//         arr[i] = sc.nextInt();
+//     }
+
+//     boolean notSorted = false;
+
+//     for(int i=0;i<size-1;i++){
+//         int minIndex = i;
+//         for(int j=i+1;j<size;j++){
+//             if(arr[minIndex]>arr[j]){
+//                 notSorted = true;
+//                 break;
+//             }
+//         }
+//     }
+//     if(notSorted){
+//         System.out.println("Not Sorted");
+//     }
+//     else{
+//         System.out.println("Sorted");
+//     }
+// }
+
+public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Enter the Size : ");
+    int size = sc.nextInt();
+
+    int[] arr = new int[size];
+    System.out.println("Enter the Array : ");
+
+    for(int i=0;i<size;i++){
+        arr[i] = sc.nextInt();
+    }
+
+    int ct_pass=0;
+
+    System.out.println("Enter the Elem : ");
+    int elem = sc.nextInt();
+
+    for(int i=0;i<size-1;i++){
+        int minIndex = i;
+        for(int j=i+1;j<size;j++){
+            if(arr[minIndex]>arr[j]){
+                minIndex = j;
+                
+                if(arr[minIndex]==elem){
+                    break;
+                }
+                else{
+                    ct_pass++;
+                }
+            }
+        }
+        int temp = arr[minIndex];
+        arr[minIndex] = arr[i];
+        arr[i] = temp;
+    }
+    System.out.println("Pass : "+ct_pass);
+}
+ }
