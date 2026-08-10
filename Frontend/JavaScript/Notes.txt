@@ -1,0 +1,22 @@
+            JAVASCRIPT 
+Lightweight Object Oriented Scripting Language.
+Structured Programming Language
+Weakly typed language: no need to declare type of variable
+interpreted and case-sensitive language
+
+where can we write js?
+    <head> use <script>
+    <body> use <script>
+    .js file use <script>
+    console
+
+
+<script type = "text/JavaScript" src = "js_file_name"></script>
+
+document.write("Hello")
+    document -> object
+    write -> method
+
+inspect mode = ctrl + shift + j (chrome browser)
+JS doesnot understand html, so browser creates a document object model.
+
