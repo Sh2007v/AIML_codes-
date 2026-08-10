@@ -38,3 +38,20 @@ Print Duplicate Characters
 Longest Palindromic Word
 Isomorphic Strings
 Run Length Encoding
+
+
+Count Vowels, Consonants, Digits, and Special Characters
+Check Whether Two Strings Are Anagrams
+Count the Frequency of Each Character
+Find the Longest Word in a Sentence
+Reverse Every Word in a Sentence
+Count the Occurrences of a Word
+Toggle the Case of Each Character
+Password Strength Checker
+
+Placement-Level
+First Non-Repeating Character
+String Compression
+Longest Substring Without Repeating Characters
+Longest Palindromic Substring
+Minimum Characters to Make a String Palindrome
