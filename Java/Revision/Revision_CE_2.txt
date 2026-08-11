@@ -1,0 +1,253 @@
+1. Classes & Objects
+Class
+
+A class is a blueprint/template for creating objects.
+
+class Student {
+    String name;
+    int age;
+
+    void display() {
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+Object
+
+An object is an instance of a class.
+
+Student s1 = new Student();
+
+Here:
+
+Student → class
+s1 → reference variable
+new Student() → creates the object
+
+Then:
+
+s1.name = "Rahul";
+s1.age = 20;
+
+s1.display();
+2. Instance Variables
+
+Variables declared inside a class but outside methods are generally instance variables.
+
+class Student {
+    String name;
+    int age;
+}
+
+Each object gets its own copy:
+
+Student s1 = new Student();
+Student s2 = new Student();
+
+s1.name = "A";
+s2.name = "B";
+
+So:
+
+s1.name → A
+s2.name → B
+3. Methods
+
+Methods define the behavior of an object.
+
+class Student {
+
+    String name;
+    int age;
+
+    void display() {
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+
+Calling:
+
+s1.display();
+
+executes the method for s1.
+
+4. Constructors
+
+A constructor is a special member used to initialize an object.
+
+Rules
+
+A constructor:
+
+Has the same name as the class
+Has no return type
+Executes automatically when an object is created
+
+Example:
+
+class Student {
+
+    String name;
+    int age;
+
+    Student() {
+        name = "Unknown";
+        age = 0;
+    }
+}
+
+When:
+
+Student s = new Student();
+
+the constructor automatically executes.
+
+5. Parameterized Constructor
+
+A constructor can accept values.
+
+class Student {
+
+    String name;
+    int age;
+
+    Student(String n, int a) {
+        name = n;
+        age = a;
+    }
+}
+
+Object:
+
+Student s = new Student("Rahul", 20);
+
+Now:
+
+name = Rahul
+age = 20
+6. this Keyword
+
+this refers to the current object.
+
+The most common use is when parameter names and instance-variable names are the same.
+
+Without this:
+
+class Student {
+
+    String name;
+    int age;
+
+    Student(String name, int age) {
+        name = name;
+        age = age;
+    }
+}
+
+This does not correctly assign the parameter to the instance variable.
+
+With this:
+
+class Student {
+
+    String name;
+    int age;
+
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+Meaning:
+
+this.name → object's name
+name      → constructor parameter
+
+So:
+
+Student s = new Student("Rahul", 20);
+
+results in:
+
+s.name = Rahul
+s.age  = 20
+7. Constructor Overloading
+
+A class can have multiple constructors with different parameter lists.
+
+class Student {
+
+    String name;
+    int age;
+
+    Student() {
+        name = "Unknown";
+        age = 0;
+    }
+
+    Student(String name) {
+        this.name = name;
+    }
+
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+This is constructor overloading.
+
+8. this() — Constructor Chaining
+
+this() calls another constructor of the same class.
+
+class Student {
+
+    String name;
+    int age;
+
+    Student() {
+        this("Unknown", 0);
+    }
+
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+So:
+
+Student s = new Student();
+
+calls the first constructor, which then calls the second constructor.
+
+⚡ Exam Differences You Must Know
+Class vs Object
+
+Class	                                                        Object
+
+Blueprint	                                                Instance of class
+Logical entity	                                            Real runtime entity
+Doesn't represent a specific object	                        Represents a specific object
+
+Constructor vs Method
+
+Constructor	                                                      Method
+
+Same name as class	                                            Can have any valid name
+No return type	                                                May have a return type
+Called automatically during object creation	                    Called explicitly
+Initializes objects	                                            Performs operations
+
+this vs this()
+
+this.name
+
+→ Refers to the current object's variable
+
+this()
+
+→ Calls another constructor of the same class
