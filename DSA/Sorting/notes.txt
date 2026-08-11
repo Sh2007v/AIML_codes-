@@ -107,5 +107,7 @@ Largest Number Formed from an Array
 
         swap(arr[i], arr[minIndex])
     
+// INSERTION SORT
+idea : Take one element and insert it into its correct position among the elements to its left.
 
 
