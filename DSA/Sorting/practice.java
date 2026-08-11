@@ -774,42 +774,57 @@ public class practice {
 //     }
 // }
 
-public static void main(String[] args){
-    Scanner sc = new Scanner(System.in);
+// Find the Number of Passes Required to Place a Given Element
+    // public static void main(String[] args) {
+    //     Scanner sc = new Scanner(System.in);
+
+    //     System.out.println("Enter the Size : ");
+    //     int size = sc.nextInt();
+
+    //     int[] arr = new int[size];
+
+    //     System.out.println("Enter the Array : ");
+    //     for (int i = 0; i < size; i++) {
+    //         arr[i] = sc.nextInt();
+    //     }
+
+    //     System.out.println("Enter the Element : ");
+    //     int elem = sc.nextInt();
+
+    //     int pass = -1;
+
+    //     // Selection Sort
+    //     for (int i = 0; i < size - 1; i++) {
+
+    //         int minIndex = i;
+
+    //         // Find minimum
+    //         for (int j = i + 1; j < size; j++) {
+    //             if (arr[j] < arr[minIndex]) {
+    //                 minIndex = j;
+    //             }
+    //         }
+
+    //         // Swap
+    //         int temp = arr[i];
+    //         arr[i] = arr[minIndex];
+    //         arr[minIndex] = temp;
+
+    //         // Check after completing the pass
+    //         if (arr[i] == elem) {
+    //             pass = i + 1;
+    //             break;
+    //         }
+    //     }
+
+    //     if (pass != -1) {
+    //         System.out.println("Pass : " + pass);
+    //     } else {
+    //         System.out.println("Element not found in required pass");
+    //     }
+    // }
+
     
-    System.out.println("Enter the Size : ");
-    int size = sc.nextInt();
-
-    int[] arr = new int[size];
-    System.out.println("Enter the Array : ");
-
-    for(int i=0;i<size;i++){
-        arr[i] = sc.nextInt();
-    }
-
-    int ct_pass=0;
-
-    System.out.println("Enter the Elem : ");
-    int elem = sc.nextInt();
-
-    for(int i=0;i<size-1;i++){
-        int minIndex = i;
-        for(int j=i+1;j<size;j++){
-            if(arr[minIndex]>arr[j]){
-                minIndex = j;
-                
-                if(arr[minIndex]==elem){
-                    break;
-                }
-                else{
-                    ct_pass++;
-                }
-            }
-        }
-        int temp = arr[minIndex];
-        arr[minIndex] = arr[i];
-        arr[i] = temp;
-    }
-    System.out.println("Pass : "+ct_pass);
 }
- }
+
+
