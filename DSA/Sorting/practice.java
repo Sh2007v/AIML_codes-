@@ -825,6 +825,112 @@ public class practice {
     // }
 
     
+// INSERTION SORT PRACTICE
+
+// COUNT COMPARISONS AND SHIFTS
+
+
+//     static void insertionSort(int[] arr) {
+
+//         int comparisons = 0;
+//         int shifts = 0;
+
+//         for (int i = 1; i < arr.length; i++) {
+
+//             int key = arr[i];
+//             int j = i - 1;
+
+//             while (j >= 0) {
+
+//                 comparisons++;
+
+//                 if (arr[j] > key) {
+//                     arr[j + 1] = arr[j];
+//                     shifts++;
+//                     j--;
+//                 }
+//                 else {
+//                     break;
+//                 }
+//             }
+
+//             arr[j + 1] = key;
+//         }
+
+//         System.out.println("Sorted Array:");
+
+//         for (int i = 0; i < arr.length; i++) {
+//             System.out.print(arr[i] + " ");
+//         }
+
+//         System.out.println();
+//         System.out.println("Comparisons: " + comparisons);
+//         System.out.println("Shifts: " + shifts);
+//     }
+
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the size:");
+//         int size = sc.nextInt();
+
+//         int[] arr = new int[size];
+
+//         System.out.println("Enter the array:");
+
+//         for (int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         insertionSort(arr);
+// }
+
+// 2. COUNT NUMBER OF SHIFTS
+
+ static void insertionSort(int[] arr) {
+
+        int ct_shift = 0;
+
+        for(int i = 1; i < arr.length; i++) {
+
+            int key = arr[i];
+            int j = i - 1;
+
+            while(j >= 0 && arr[j] > key) {
+
+                arr[j + 1] = arr[j];
+                ct_shift++;
+                j--;
+            }
+
+            arr[j + 1] = key;
+        }
+
+        System.out.println("Shifts: " + ct_shift);
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the size : ");
+        int size = sc.nextInt();
+
+        int[] arr = new int[size];
+
+        System.out.println("Enter the Array : ");
+
+        for(int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        insertionSort(arr);
+    }
+
+//3 
 }
+
+
 
 
