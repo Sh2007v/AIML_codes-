@@ -1,0 +1,7 @@
+Pandas
+    used to manipulate datasets
+    import pandas as pd
+    1.Series:
+        single column of table
+        1d array with different data-types
+        
