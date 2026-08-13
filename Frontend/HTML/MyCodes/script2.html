@@ -1,0 +1,47 @@
+<!-- //innerHTML property
+<html>
+    
+</div>
+<script>
+    let obj = document.getElementById("myheading");
+    obj.innerHTML = "<h2>innerHTML Example</h2>";
+    </script>
+    <div id="myheading" style="border-style:solid; width: fit-content; margin: auto;">
+<div></div>
+
+</html> -->
+
+<!-- inner text property -->
+<!-- 
+<html>
+    <h2 id="myheading" style="width: fit-content; margin:auto"></h2>
+    <script>
+        document.getElementById("myheading").innerText = "InnerText Property.";
+    </script>
+</html> -->
+
+<html>
+    <table width="40%" border="2">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td id="name"></td>
+            <td id="email"></td>
+            <td id="city"></td>
+        </tr>
+    </table>
+    <script>
+        
+        var nm = prompt("Enter your Name: ");
+        var em = prompt("Enter your mail id: ");
+        var ct = prompt("Enter your City: ");
+
+        document.getElementById("name").innerText = nm;
+        document.getElementById("email").innerText = em;
+        document.getElementById("city").innerText = ct;
+    
+    </script>
+</html>
