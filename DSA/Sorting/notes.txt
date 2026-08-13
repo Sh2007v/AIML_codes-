@@ -193,7 +193,9 @@ public class InsertionSort {
             // Shift elements of arr[0..i-1] that are greater than key
             // to one position ahead of their current position
             while (j >= 0 && arr[j] > key) {
+                //comparison happened here
                 arr[j + 1] = arr[j];
+                //shift happened here
                 j--;
             }
             
@@ -239,6 +241,8 @@ public class InsertionSort {
 * **Space Complexity**: $O(1)$ auxiliary space (in-place sorting).
 * **Stability**: **Stable** (preserves the relative order of duplicate elements).
 * **Key Advantage**: Highly efficient for small datasets or arrays that are already nearly sorted.
+
+
 
 
 
