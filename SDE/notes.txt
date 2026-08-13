@@ -110,6 +110,58 @@ Regression Analysis
                 measures how well regression model explains the variation
                 Higher R^2 : Better prediction.
             
+    EDA Techniques
+        process of examining, summarizing, and visualizing a dataset to 
+        understand its structure, patterns, relationships
+
+        1. Data inspection
+            understand what data contains
+            common checkings:
+                Number of rows and columns
+                Column names
+                Data types
+                First/last few records
+                Basic information about the dataset
+        
+        2.Descriptive Stats:
+            to get a quick numerical summary of the data
+            common methods:
+                Common measures:
+                    Mean
+                    Median
+                    Mode
+                    Minimum
+                    Maximum
+                    Standard deviation
+                    Quartiles
+        
+        3.Missing Value Analysis
+            working with missing values
+
+        4.Data Visualisation
+            
+            | Graph            | Main Purpose                             |
+            | ---------------- | ---------------------------------------- |
+            | **Histogram**    | Understand distribution                  |
+            | **Bar Chart**    | Compare categories                       |
+            | **Box Plot**     | Detect outliers and spread               |
+            | **Scatter Plot** | Study relationship between two variables |
+            | **Line Chart**   | Observe trends over time                 |
+            | **Heatmap**      | Study correlations between variables     |
+        
+        5.Outlier Detection
+            outlier is an unusual high or low value compared with rest of data.
+        
+        6.Correlation Analysis
+            understanding the relation btwn numerical values.
+        
+        7.Data distribution Analysis
+            examine how values are distributed
+            histogram is used commonly
+            
+
+
+            
 
 
 
