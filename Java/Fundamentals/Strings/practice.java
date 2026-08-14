@@ -360,7 +360,7 @@
 //         Scanner sc = new Scanner(System.in);
 
 //         System.out.print("Enter a Sentence: ");
-//         String str = sc.nextLine();
+//         String str = sc.nextLine(); 
 
 //         String[] words = str.trim().split("\\s+");
 
