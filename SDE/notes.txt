@@ -158,7 +158,8 @@ Regression Analysis
         7.Data distribution Analysis
             examine how values are distributed
             histogram is used commonly
-            
+
+        
 
 
             
