@@ -888,49 +888,175 @@ public class practice {
 
 // 2. COUNT NUMBER OF SHIFTS
 
- static void insertionSort(int[] arr) {
+//  static void insertionSort(int[] arr) {
 
-        int ct_shift = 0;
+//         int ct_shift = 0;
 
-        for(int i = 1; i < arr.length; i++) {
+//         for(int i = 1; i < arr.length; i++) {
 
-            int key = arr[i];
-            int j = i - 1;
+//             int key = arr[i];
+//             int j = i - 1;
 
-            while(j >= 0 && arr[j] > key) {
+//             while(j >= 0 && arr[j] > key) {
 
-                arr[j + 1] = arr[j];
-                ct_shift++;
-                j--;
-            }
+//                 arr[j + 1] = arr[j];
+//                 ct_shift++;
+//                 j--;
+//             }
 
-            arr[j + 1] = key;
-        }
+//             arr[j + 1] = key;
+//         }
 
-        System.out.println("Shifts: " + ct_shift);
+//         System.out.println("Shifts: " + ct_shift);
+//     }
+
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the size : ");
+//         int size = sc.nextInt();
+
+//         int[] arr = new int[size];
+
+//         System.out.println("Enter the Array : ");
+
+//         for(int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+
+//         insertionSort(arr);
+//     }
+
+//3 SORT THE ARRAY IN DESCENDING ORDER
+
+// static void reverseSort_Insertion(int[] arr){
+//     for(int i=1;i<arr.length;i++){
+        
+//         int key = arr[i];
+//         int j = i-1;
+
+//         while(j>=0 && arr[j]<key){
+
+//             arr[j+1] = arr[j];
+//             j--;
+
+//         }
+//         arr[j+1] = key;
+
+//     }
+//     for(int i=0;i<arr.length;i++){
+//         System.out.print(arr[i]+" ");
+//     }
+// }
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//      System.out.println("Enter the size : ");
+//         int size = sc.nextInt();
+
+//         int[] arr = new int[size];
+
+//         System.out.println("Enter the Array : ");
+
+//         for(int i = 0; i < size; i++) {
+//             arr[i] = sc.nextInt();
+//         }
+//         reverseSort_Insertion(arr);
+//     }
+
+//4 FIND KTH LARGEST ELEMENT (duplicates have seperate unique position)
+
+// static void k_largest(int[] arr, int k){
+//     for(int i=1;i<arr.length;i++){
+        
+//         int key = arr[i];
+//         int j = i-1;
+
+          //  descending order
+//         while(j>=0 && arr[j]<key){
+            
+//             arr[j+1] = arr[j];
+//             j--;
+
+//         }
+//         arr[j+1] = key;
+//     }
+//     System.out.println(arr[k-1]);
+// }
+
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter the size : ");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+
+//     System.out.println("Enter the Array : ");
+//     for(int i=0;i<size;i++){
+//         arr[i] = sc.nextInt();
+//     }
+
+//     System.out.println("Enter kth index: ");
+//     int k = sc.nextInt();
+
+//     k_largest(arr,k);
+
+
+// }
+
+//similar approach for k_smallest
+//sort the array in descending order, then 
+//soutpln(arr[k-1]);
+
+
+// static void checkSorted(int[] arr){
+//     int flag=0;
+//     for(int i=1;i<arr.length;i++){
+        
+//         int key = arr[i];
+//         int j =i-1;
+        
+        
+//         while(j>=0) {
+//             if(arr[j]>key){
+//             flag=1;
+//             break;    
+//         }
+//         j--;
+//     }
+// }
+// if(flag==1){
+//     System.out.println("Not Sorted");
+// }
+// else{
+//     System.out.println("Sorted");
+// }
+// }
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter the size: ");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+
+//     System.out.println("Enter the Array: ");
+//     for(int i=0;i<arr.length;i++){
+//         arr[i] = sc.nextInt();
+//     }
+//     checkSorted(arr);
+//     }
+
+void findPosition(int[] arr){
+    for(int i=1;i<arr.length;i++){
+        
+        int key = arr[i];
+        int j=i-1;
+
+        
     }
-
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter the size : ");
-        int size = sc.nextInt();
-
-        int[] arr = new int[size];
-
-        System.out.println("Enter the Array : ");
-
-        for(int i = 0; i < size; i++) {
-            arr[i] = sc.nextInt();
-        }
-
-        insertionSort(arr);
-    }
-
-//3 
 }
-
-
-
+}
 
