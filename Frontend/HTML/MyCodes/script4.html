@@ -1,0 +1,49 @@
+<!-- <html>
+    <script>
+        num = parseInt(prompt("Enter a number : "));
+
+        // for(i=1;i<11;i++){
+        //     var prod = num*i;
+        //     console.log(`${num}*${i}=${prod}`)
+        // }
+
+        //from 1 to 30 check which num is div by 3 and 5
+
+
+    //     var i =1
+    //     for(i=0;i<25;i++){
+    //         if(i%2==0){
+    //         console.table(i+" ");
+    //     }else{
+    //         console.table(i+" ");
+    //     }
+    // }
+
+    let items = parseInt(prompt("How many Items to add ?"));
+    let style = prompt("What number style you want?");
+    for(let i=0;i<items;i++){
+        let enter_items = (prompt("Enter item "+(i+1)));
+        document.write(enter_items)+" ";
+    }
+    </script>
+</html> -->
+<!DOCTYPE >
+<html>
+<body>
+
+<script>
+    let count = parseInt(prompt("How many items do you want to add?"));
+
+    let style = prompt("Enter list style: ");
+
+    document.write(<ol type='${style}'>);
+
+    for (let i = 1; i <= count; i++) {
+        let item = prompt(Enter item ${i}:);
+        document.write(<li>${item}</li>);
+    }
+    document.write("</ol>");
+</script>
+
+</body>
+</html>
