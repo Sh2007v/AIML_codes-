@@ -1,0 +1,24 @@
+(DCL)
+    Revoke and Grant
+        Grant: grants privilege to users
+        Syntax:
+            1.Grant unique privelage:
+                grant privelage
+                on db_name.t_name
+                to 'username'@'localhost';
+            2.Grant multiple privelage:
+                grant p1,p2,p3
+                on db_name.t_name
+                to 'username'@'localhost'
+
+        Revoke: removes privelage
+        Syntax:
+            1.
+            revoke privelage
+            on db_name.t_name
+            from 'username'@'localhost'
+        
+
+        
+              
+        
