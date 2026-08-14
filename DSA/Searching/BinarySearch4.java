@@ -1,7 +1,7 @@
 // 5 quality programs for linear search
 
 //Search an element in an array
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // public class LinearSearch1 {
 //     public static void main(String[] args) {
@@ -37,7 +37,7 @@ import java.util.Scanner;
 // }
 
 //Find the index of an Element
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // public class LinearSearch2 {
 //     public static void main(String[] args) {
