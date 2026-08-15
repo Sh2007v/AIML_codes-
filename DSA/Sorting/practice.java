@@ -1049,14 +1049,40 @@ public class practice {
 //     checkSorted(arr);
 //     }
 
-void findPosition(int[] arr){
+static void findPosition(int[] arr){
+    int pos = 0;
     for(int i=1;i<arr.length;i++){
         
         int key = arr[i];
         int j=i-1;
 
-        
+        while(j>=0){
+            if(arr[j]>key){
+                arr[j+1] = arr[j];
+                j--;
+            }
+            else{
+                pos = i;
+                break;
+            }
+        }   
     }
+    System.out.println(pos);
 }
+public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Enter the size : ");
+    int size = sc.nextInt();
+
+    int[] arr = new int[size];
+
+    System.out.println("Enter the array : ");
+    for(int i=0;i<size;i++){
+        arr[i] = sc.nextInt();
+    }
+
+    findPosition(arr);
+    }
 }
 
