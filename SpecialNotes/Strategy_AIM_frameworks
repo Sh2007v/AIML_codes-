@@ -54,3 +54,47 @@ Understand a topic → Solve 5–10 core problems → Move to the next topic →
 | **10:30 PM**      | **STOP + SLEEP**                       | 😴         |
 
 
+
+DSA roadmap
+Arrays
+ ↓
+Linear Search ✅
+ ↓
+Binary Search ✅
+ ↓
+Bubble Sort ✅
+ ↓
+Selection Sort ✅
+ ↓
+Insertion Sort DONE
+ ↓
+Two Pointers <- I AM HERE
+ ↓
+Sliding Window
+ ↓
+Strings
+ ↓
+HashMap / HashSet
+ ↓
+Recursion
+ ↓
+Linked List
+ ↓
+Stack / Queue
+ ↓
+──────────────
+Merge Sort
+Quick Sort
+──────────────
+ ↓
+Trees
+ ↓
+BST
+ ↓
+Heap
+ ↓
+Graphs
+ ↓
+Greedy
+ ↓
+DP
