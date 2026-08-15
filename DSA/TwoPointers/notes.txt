@@ -1,0 +1,63 @@
+TWO POINTERS:
+    we use to vars to traverse an array/string
+    goal: to reduce a problem from O(n²) → O(n).
+
+    basic approach(sum problem):
+        int left = 0;
+        int right = arr.length-1;
+       
+        while(left<right){
+            int sum = arr[left]+arr[right];
+            if(sum==target){
+                //found
+                break;
+            }
+            else if(sum<target){
+                left++;
+            }else{
+                right--;
+            }
+        }
+    
+    works because array is sorted
+
+        OPPOSITE DIRECTION POINTERS
+            two pointers start at different ends and move towrds each other.
+            used: when we have to compare first elem with last elem.
+        
+        SAME DIRECTION POINTERS
+            two pointers start with difference of unity in the same direction
+            slow = 0;
+            fast = 1;
+            used: when we have to compare adjacent elements
+                    one pointer explores while other holds a position
+            
+            basic approach(pair difference problem):
+
+            int left = 0;
+            int right = 1;
+
+            while(right<arr.length){
+                int diff = arr[right] - arr[left];
+                if(diff == target){
+                    //found
+                    break;
+                }else if(diff<target){
+                    right++;
+                }else{
+                    left++;
+                    if(left == right){
+                        right++;
+                    }
+                }
+            }
+        
+
+        
+
+
+
+
+
+        
+            
