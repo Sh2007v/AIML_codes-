@@ -1,3 +1,27 @@
+Nested queires
+    Syntax:
+        select col_name
+        from table_name
+        where col_name (condition) (
+            select col_name
+            from table_name
+            where col_name;
+        );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 (DCL)
     Revoke and Grant
         Grant: grants privilege to users
