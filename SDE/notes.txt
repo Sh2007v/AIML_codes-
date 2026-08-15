@@ -158,6 +158,53 @@ Regression Analysis
         7.Data distribution Analysis
             examine how values are distributed
             histogram is used commonly
+        
+    Skewness
+        describes how asymmetric the given data is.
+
+        Types:
+            | Type                 | Shape             | Mean vs Median | Skew Value |
+            | -------------------- | ----------------- | -------------- | ---------- |
+            | **Right / Positive** | Long tail → right | Mean > Median  | > 0        |
+            | **Left / Negative**  | Long tail ← left  | Mean < Median  | < 0        |
+            | **Symmetric**        | Balanced          | Mean ≈ Median  | ≈ 0        |
+        
+        Handling strong skewness
+            log transformation : log_income = np.log1p(income)
+            makes the distribution more balanced
+
+        Important functions:
+            income.skew()       # Check skewness
+            np.log1p(income)     # Log transformation
+            np.expm1(value)      # Reverse log transformation
+
+        Outlier
+            value that lies far away from most of values
+                :genuine extreme value
+                :data-entry error
+            detected by z-value, IQR and boxplots
+            
+            Types:
+                1.Point outlier :
+                    a single value far from the rest of values
+                2.Contextual outlier:
+                    value normal in general cases but exceptional in some contexts
+                3.Collective outlier:
+                    group of values forming difference
+        
+            IQR vs Z-Score
+                IQR - skewed data
+                Z-score - symmetric data
+            
+            Handling outliers
+                Remove:
+                    remove observation when :
+                        it is data entry error
+                Cap:
+                    replace the value when:
+                        it is real but unusallly very high / low
+                
+
 
         
 
