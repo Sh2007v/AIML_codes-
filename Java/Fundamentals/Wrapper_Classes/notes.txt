@@ -25,3 +25,26 @@ WRAPPER CLASSES
             int x = obj;       // Unboxing
 
     
+    Important wrapper methods
+
+| Method                     | Purpose                 | Syntax                       | Original / Old Method                  |
+| -------------------------- | ----------------------- | ---------------------------- | -------------------------------------- |
+| `Integer.parseInt()`       | String → `int`          | `Integer.parseInt(str)`      | `Integer` conversion from String       |
+| `Double.parseDouble()`     | String → `double`       | `Double.parseDouble(str)`    | `Double` conversion from String        |
+| `Integer.valueOf()`        | → `Integer` object      | `Integer.valueOf(value)`     | `new Integer(value)`*                  |
+| `Integer.toString()`       | → String                | `Integer.toString(value)`    | `String.valueOf(value)` / `value + ""` |
+| `Integer.compareTo()`      | Compare wrapper objects | `obj1.compareTo(obj2)`       | `if-else` comparison                   |
+| `Integer.compare()`        | Compare values          | `Integer.compare(a, b)`      | `if-else` comparison                   |
+| `Integer.max()`            | Find maximum            | `Integer.max(a, b)`          | `Math.max(a, b)`                       |
+| `Integer.min()`            | Find minimum            | `Integer.min(a, b)`          | `Math.min(a, b)`                       |
+| `Character.isDigit()`      | Check digit             | `Character.isDigit(ch)`      | `ch >= '0' && ch <= '9'`               |
+| `Character.isLetter()`     | Check letter            | `Character.isLetter(ch)`     | Manual ASCII/range checks              |
+| `Character.isUpperCase()`  | Check uppercase         | `Character.isUpperCase(ch)`  | `ch >= 'A' && ch <= 'Z'`               |
+| `Character.isLowerCase()`  | Check lowercase         | `Character.isLowerCase(ch)`  | `ch >= 'a' && ch <= 'z'`               |
+| `Character.toUpperCase()`  | Convert to uppercase    | `Character.toUpperCase(ch)`  | `(char)(ch - 32)`*                     |
+| `Character.toLowerCase()`  | Convert to lowercase    | `Character.toLowerCase(ch)`  | `(char)(ch + 32)`*                     |
+| `Character.isWhitespace()` | Check whitespace        | `Character.isWhitespace(ch)` | `ch == ' '`                            |
+
+
+    
+
