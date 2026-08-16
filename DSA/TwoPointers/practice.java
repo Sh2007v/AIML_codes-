@@ -215,4 +215,89 @@ public class practice {
 
 
 //     }
+
+//Move Zeroes to the end of an array
+// static void moveZeroes(int[] arr) {
+
+//     int slow = 0;
+
+//     for(int fast = 0; fast < arr.length; fast++) {
+
+//         if(arr[fast] != 0) {
+
+//             int temp = arr[slow];
+//             arr[slow] = arr[fast];
+//             arr[fast] = temp;
+
+//             slow++;
+//         }
+//     }
+
+//     for(int i = 0; i < arr.length; i++) {
+//         System.out.print(arr[i] + " ");
+//     }
+// }
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter the size : ");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+
+//     for(int i=0;i<arr.length;i++){
+//         arr[i] = sc.nextInt();
+//     }
+//     moveZeroes(arr);
+//     }
+
+// REMOVE A PARTICULAR ELEMENT IN PLACE
+
+// static void removeElem(int[] arr, int x){
+    
+//     int start = 0;
+//     for(int f=0;f<arr.length;f++){
+//         if(arr[f]!=x){
+
+//             int temp = arr[f];
+//             arr[f] = arr[start];
+//             arr[start] = temp;
+
+//             start++;
+        
+//         }
+//     }
+
+//     int ct = 0;
+
+//     for(int i=0;i<arr.length;i++){
+//         if(arr[i]==x){
+//             ct++;
+//         }
+//     }
+
+//     for(int i=0;i<arr.length-ct;i++){
+//         System.out.print(arr[i]+" ");
+//     }
+// }
+// public static void main(String[] args){
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("Enter the size :");
+//     int size = sc.nextInt();
+
+//     int[] arr = new int[size];
+
+//     System.out.println("Enter the elem : ");
+//     int x = sc.nextInt();
+
+//     System.out.println("Enter the Array :");
+//     for(int i=0;i<arr.length;i++){
+//         arr[i] = sc.nextInt();
+//     }
+//     removeElem(arr, x);    
+// }
+
+
+
 }
