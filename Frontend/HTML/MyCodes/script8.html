@@ -1,0 +1,18 @@
+<html>
+<h2 id="date"></h2>
+<button onclick="displayDate()">Display Date</button>
+<script>
+    function displayDate() {
+        var d = new Date();
+
+        var day = d.toLocaleString('default', { weekday: 'long' });
+        var date = d.getDate();
+        var month = d.toLocaleString('default', { month: 'long' });
+        var year = d.getFullYear();
+
+        document.getElementById("date").innerHTML =
+            day + "," + date + month + "," + year;
+    }
+</script>
+
+</html>
