@@ -38,6 +38,20 @@ public class practice{
         // String input = sc.nextLine();
         // int num = Integer.parseInt(input);
         // methodName(num);
+
+        // String input = sc.nextLine();
+        // double num = Double.parseDouble(input);
+        // methodName(num);
+
+        // double num1 = Double.parseDouble(input1);
+        // double num2 = Double.parseDouble(input2);
+        // methodName(num1, num2);
+
+        // String input = sc.nextLine();
+        // Integer num = Integer.valueOf(input);
+        // methodName(num);
+
+        
 //     }
 
 }
