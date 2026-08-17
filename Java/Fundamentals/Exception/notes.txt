@@ -1,0 +1,75 @@
+Java Exceptions
+    organised in hierarchy
+
+                 Object
+                    ↓
+               Throwable
+               /         \
+              /           \
+          Error         Exception
+                          /      \
+                         /        \
+          RuntimeException       Other Exceptions
+                |
+        ┌───────┼────────┐
+        ↓       ↓        ↓
+   NullPointer  Arithmetic  ArrayIndexOutOfBounds
+   Exception    Exception       Exception
+
+
+1.Throwable
+    root class of everything which can be thrown by java exception mechanism
+    subclasses:
+        error
+        Exception
+
+        1.Error: serious problems that apps should not try to handle
+        2.Exception: conditions that can be handled by programs in some cases.
+                Types:
+                    Checked exceptions : checked by the compiler
+                                       : handle them by using try-catch or declare them using throws
+
+                                       Syntax : 
+                                       try {
+                                            // risky code
+                                        } catch (IOException e) {
+                                            System.out.println("File error");
+                                        }
+                    
+                    Unchecked exceptions : subclasses of runtime error
+                                         : caused by programming mistakes
+                                         
+                
+                Simple heirerchy 
+                Throwable
+                    │
+                    ├── Error
+                    │       ├── OutOfMemoryError
+                    │       └── StackOverflowError
+                    │
+                    └── Exception
+                    │
+                    ├── RuntimeException
+                    │   ├── ArithmeticException
+                    │   ├── NullPointerException
+                    │   ├── NumberFormatException
+                    │   └── ArrayIndexOutOfBoundsException
+                    │
+                    └── Checked Exceptions
+                    ├── IOException
+                    ├── SQLException
+                    └── FileNotFoundException
+
+        try block:
+                 contains risky code
+
+                 Syntax:
+                    try{
+                        //Risky_Code;
+                    }
+                    except{
+                        //solution if error occurs;
+                    }
+
+
+
