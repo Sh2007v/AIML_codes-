@@ -8,6 +8,53 @@ Nested queires
             where col_name;
         );
 
+SET OPERATIONS
+    union : 
+        Syntax:
+            //removes duplicates
+
+                select col_name from t_name_1
+                union 
+                select col_name from t_name_2
+
+            //keeps duplicates
+
+                select col_name from t_name_1
+                union all
+                select col_name from t_name_2
+
+    intersect :
+        Syntax:
+            //removes duplicates
+
+                select col_name from table_name_1
+                intersect
+                select col_name from table_name_2
+
+            //keeps duplicates
+
+                select col_name from t_name
+                intersect all
+                select col_name from table_name_2
+
+    minus : does not exist in sql workbench
+        alternative :
+            
+            SELECT c.Name
+            FROM CSE_Students c
+            WHERE NOT EXISTS (
+                SELECT 1
+                FROM AIML_Students a
+                WHERE a.Name = c.Name
+            );
+
+
+
+        
+
+            
+
+
 
 
 
