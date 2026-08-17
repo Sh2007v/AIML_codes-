@@ -1,0 +1,16 @@
+<html>
+<script>
+    var d = new Date();
+    document.write("<b>Local String: </b>" + d.toLocaleString() + "<br>");
+    document.write("<b>Full Month: " + d.toLocaleString('default', { month: 'long' }) + "<br>");
+    document.write("<b>Weekday Name: " + d.toLocaleString('default', { weekday: 'long' }) + "<br>");
+    document.write("<b>Hours: </b>" + d.getHours() + "<br>");
+    document.write("<b>Day: </b>" + d.getDay() + "<br>");
+    mnt = d.getMonth() + 1;
+    document.write("<b>Month: </b>" + mnt + "<br>");
+    document.write("<b>FullYear: </b>" + d.getFullYear() + "<br>");
+    document.write("<b>Minutes: </b>" + d.getMinutes() + "<br>");
+    document.write("<b>Seconds: </b>" + d.getSeconds() + "<br>");
+</script>
+
+</html>
