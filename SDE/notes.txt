@@ -204,6 +204,32 @@ Regression Analysis
                     replace the value when:
                         it is real but unusallly very high / low
                 
+            Feature insights
+                Feature: input for prediction
+                Feature insights : understanding
+                                    what each feature represents
+                                    how they affect the target value
+                    Types:
+                        Relationship Insights(Correlation)
+                            uses correlation to identify which features are related to the target.
+                        Group Insights(Segments)
+                            uses group by to compare avgs accross targets
+                        Feature Engineering
+                            creating new features using existing data
+                        
+            Sampling and Hypothesis testing
+                Sampling: process of extracting information by selecting smaller group from larger group.
+
+                Sampling methods.
+                    1. Simple random sampling : equal chance of selection of items
+                    2. Systematic sampling : selecting every kth element
+                    3. Stratified Sampling : divide the popln into strata and then study them.
+                    4. Cluster Sampling : divide the population into cluster and study them seperately.
+                    5. Convenience Sampling : select people easiest to reach
+
+                        Stratified sampling ensures that every group is represented
+                    
+
 
 
         
