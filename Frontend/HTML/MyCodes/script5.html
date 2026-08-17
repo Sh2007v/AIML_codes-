@@ -1,0 +1,52 @@
+<!-- <html>
+    <head>
+        <script type="text/javascript">
+
+            function showmsg(name){
+                document.write(`<h2>Welcome ${name}!</h2`);
+            }
+        </script>
+
+        <body>
+            <input type="text" id="username">
+            <button type="button" onClick="showmsg()">Click Me</button>
+        </body>
+    </head>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+
+<body>
+
+    <h1 id="message"></h1>
+
+    <label>Username:</label>
+    <input type="text" id="username">
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" id="password">
+    <br><br>
+
+    <button onclick="login()">Submit</button>
+
+    <script>
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username === "alok" && password === "123") {
+                document.getElementById("message").innerHTML = "Welcome Alok!";
+            } 
+            else {
+                document.getElementById("message").innerHTML = "Invalid username or password";
+            }
+        }
+    </script>
+
+</body>
+</html>
