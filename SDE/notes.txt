@@ -229,6 +229,34 @@ Regression Analysis
 
                         Stratified sampling ensures that every group is represented
                     
+                1.Sampling Distribution
+                    Sample variability : distribution of different sample means calculated from a given population
+                
+                2.CLT(Central Limit Theorem)
+                    for large sample space, the distribution becomes bell shaped
+                    centered around the population mean
+                    it is true even the original population is skewed
+
+                3.Standard Error : spread of sampling distribution 
+                                SE= (sigma)/(n)^1/2;
+                
+                Hypothesis Testing
+                    uses sample data to evaluate a claim about the population
+
+                    Main Hypothesis
+                        1.Null Hypothesis
+                            represents no effect or no difference
+                        2.Alternative Hypothesis
+                            represents claim or effect we suspect
+
+                    
+                    
+                    
+                
+
+
+
+                    
 
 
 
