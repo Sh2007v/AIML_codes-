@@ -107,6 +107,31 @@ checked_exception
 
             finally block:
                 it executes irrespective of wether the error occurs or not
+
+
+
+MAIN CODE TEMPLATE      
+main()
+│
+├── try
+│   ├── Input
+│   ├── Integer.parseInt()
+│   └── findLarger()
+│
+├── catch
+│   └── NumberFormatException
+│
+└── finally
+    └── Program executed completely!
+
+
+findLarger()
+│
+├── try
+│   └── Comparison
+│
+└── finally
+    └── Comparison completed!
             
 
 
