@@ -1,0 +1,104 @@
+<!---eg 1-->
+<!-- <html>
+
+<body>
+    <button id="btn1">Click Here</button>
+    <script>
+        document.getElementById("btn1").addEventListener("click", function () {
+            alert("Hi Buddy!")
+        })
+    </script>
+</body>
+
+</html> -->
+
+<!---eg 2----->
+<!-- <html>
+    <body>
+        <h2 id="greet">
+            Good Morning User!
+        </h2>
+        <button id="btn1">Click here</button>
+
+        <script>
+            document.getElementById("btn1").addEventListener("click",function(){
+                document.getElementById("greet").innerText = "Welcome Buddy !"
+            })
+        </script>
+    </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Current Date</title>
+
+    <script>
+        function showDate() {
+            let date = new Date();
+
+            let options = {
+                month: "long",
+                day: "numeric",
+                year: "numeric"
+            };
+
+            document.getElementById("date").innerHTML =
+                date.toLocaleDateString("en-US", options);
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="showDate()">Show Current Date</button>
+
+    <h2 id="date"></h2>
+
+</body>
+</html> -->
+
+
+<!-- <html>
+    <body> 
+        <h2 id="greet">
+            Click button to see date!
+        </h2>
+        <button id="btn1">Display Date</button>
+        <script>
+            var date = new Date()
+            monthname = date.toLocaleString('default',{month: 'long'});
+            day=date.getDate();
+            year=date.getFullYear();
+            fulldate=`${monthname} ${day},${year}`;
+            document.getElementById("btn1").addEventListener("click",function(){
+                document.getElementById("greet").innerText = fulldate;
+            })
+            </script>
+    </body>
+</html> -->
+
+
+
+<html>
+    <body>
+        <input type="number" id="num" placeholder="Enter any number">
+        <button id="btn1">Display Number Table</button>
+        <br>
+        <div id="numbertable"></div>
+
+    </body>
+    <script>
+            document.getElementById("btn1").onclick = function() {
+
+                let num = document.getElementById("num").value;
+                let result = "";
+
+                for(let i = 1; i <= 10; i++) {
+                    result += num + " × " + i + " = " + (num * i) + "<br>";
+                }
+
+                document.getElementById("numbertable").innerHTML = result;
+            };
+        </script>
+</html>
