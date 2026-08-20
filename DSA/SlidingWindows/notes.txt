@@ -1,0 +1,34 @@
+Sliding Windows
+    : specialization of two pointers
+    : used to solve problems having subarrays or substrings
+    : to examine a continuous range of elements
+
+    Types:
+        Fixed-size windows : 
+            window size remains constatnt
+            Example:
+            Find the maximum sum of any subarray of size k.
+            [1, 3, 2, 6, -1, 4]
+             └─────┘
+               k=3
+            Typical complexity:
+                O(n) instead of O(n × k).
+
+        Variable-size Windows :
+            window size may change
+
+
+
+FIXED - SLIDING WINDOWS
+    maintain a constant subarray and slide it by one position
+    don't recalculate what you have already calculated
+
+    newSum = oldSum - outgoingElement + incomingElement
+
+    Each element enters and leaves the window essentially once:
+
+    Time: O(n)
+
+    Space: O(1)
+
+    
