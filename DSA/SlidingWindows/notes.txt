@@ -31,4 +31,27 @@ FIXED - SLIDING WINDOWS
 
     Space: O(1)
 
+    Basic Java Template
+
+    int windowSum = 0;
+
+    // First window
+    for(int i = 0; i < k; i++){
+        windowSum += nums[i];
+    }
+
+    int maxSum = windowSum;
+
+    // Slide the window
+    for(int i = k; i < nums.length; i++){
+
+        windowSum += nums[i];       // add new element
+        windowSum -= nums[i - k];   // remove old element
+
+        maxSum = Math.max(maxSum, windowSum);
+    }
+
+
+
+
     
