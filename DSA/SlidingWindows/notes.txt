@@ -51,6 +51,91 @@ FIXED - SLIDING WINDOWS
         maxSum = Math.max(maxSum, windowSum);
     }
 
+VARIABLE SIZED WINDOWS
+       RIGHT →
+[ valid / invalid window ]
+↑
+LEFT
+
+window size changes
+
+general pattern to memorize
+    int left = 0;
+
+    for(int right = 0; right < n; right++){
+
+        // Add arr[right] to window
+
+        while(window is invalid){
+
+            // Remove arr[left]
+            left++;
+        }
+
+        // Update answer
+    }
+
+
+
+
+Basic Patterns
+1.Longest Valid window
+    General idea : Expand → Check → Shrink if invalid → Update maximum
+    
+    Basic Template
+
+    int left = 0;
+    int maxLength = 0;
+
+    for(int right = 0; right < nums.length; right++){
+
+        // Add nums[right]
+
+        while(condition is invalid){
+            // Remove nums[left]
+            left++;
+        }
+
+        maxLength = Math.max(maxLength, right - left + 1);
+    }
+
+2. Shortest Valid Window
+    Expand → Check → If valid, shrink → Update minimum
+
+    Basic Template
+    int left = 0;
+    int minLength = Integer.MAX_VALUE;
+
+    for(int right = 0; right < nums.length; right++){
+
+        // Add nums[right]
+
+        while(condition is valid){
+
+            minLength = Math.min(minLength, right - left + 1);
+
+            // Remove nums[left]
+            left++;
+        }
+    }
+
+3. Condition Based Window
+    int left = 0;
+
+    for(int right = 0; right < nums.length; right++){
+
+        // Add nums[right]
+
+        while(condition is violated){
+
+            // Remove nums[left]
+            left++;
+        }
+
+        // Process current valid window
+    }
+
+
 
 
 

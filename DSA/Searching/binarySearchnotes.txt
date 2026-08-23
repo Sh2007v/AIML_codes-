@@ -178,3 +178,11 @@ Most Asked Interview Questions
 
 ===========================================
 */
+
+
+Two important binary search patterns
+1. Exact Search
+   arr[mid] == target
+
+2. Boundary / Property Search
+   arr[mid] < arr[mid + 1]
