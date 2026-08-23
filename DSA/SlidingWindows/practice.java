@@ -233,7 +233,7 @@ public class practice{
 
 //     // Print result
 //     for(int i = 0; i < arr_odd.length; i++){
-//         System.out.print(arr_odd[i] + " ");
+//         soutpln(arr_odd[i] + " ");
 //     }
 // }
 
