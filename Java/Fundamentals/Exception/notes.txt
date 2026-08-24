@@ -132,7 +132,37 @@ findLarger()
 │
 └── finally
     └── Comparison completed!
-            
+
+1. throw
+
+Syntax : throw new ExceptionType("message");
+
+e.g.:
+    
+    class Main {
+    public static void main(String[] args) {
+
+        int age = 15;
+
+        if (age < 18) {
+            throw new ArithmeticException("Not eligible");
+        }
+
+        System.out.println("Eligible");
+    }
+}
+
+key-points
+    
+    used inside a method/block
+    explicitly throw an exception
+    followed by an exception object
+    actually throws an exception
+
+    
+
+
+
 
 
 
