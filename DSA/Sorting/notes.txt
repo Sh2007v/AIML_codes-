@@ -243,6 +243,8 @@ public class InsertionSort {
 * **Key Advantage**: Highly efficient for small datasets or arrays that are already nearly sorted.
 
 
+IMPORTANT POINTS TO REMEMEBER
+to make a copy : int[] arr1 = arr2.clone(); 
 
 
 
