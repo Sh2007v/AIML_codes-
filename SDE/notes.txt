@@ -1,3 +1,25 @@
+Data Visualisation
+
+    Comparison Charts
+        Bar Chart : comparing values at one point of time
+        Line Chart : continuous data over time
+        Scatter Plot : correlation between 2 vars
+        Donut Chart : showing part of a whole
+        Histogram :  shows freq distribution
+        Box plot : shows quartiles, outliers and median
+        Heatmap : encodes values as colors.
+        CandleStick Chart
+        Parallel Coordinates
+        Sankey Diagram: flow and quantity between nodes
+        Choropleth Map: Geo locn colored by data value
+        Stacked Area Chart
+        Radar Chart: compare entities across multiple dimensions simultaneously
+        Network Graph: nodes+edges for representing relations
+        Waterfall Chart: cumulative effect of sequential +ve and -ve values
+        Violin Chart: summary stats and spread shape
+        Funnel Chart: sequential reduction through stages
+        Gantt Chart: horizontal bars (tasks) vs time
+        
 Correlation Analysis
     stats method to measure the relation btw two vars
     tells wether one var changes when another var changes
