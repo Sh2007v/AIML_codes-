@@ -1,5 +1,5 @@
 TWO POINTERS:
-    we use to vars to traverse an array/string
+    we use two vars to traverse an array/string
     goal: to reduce a problem from O(n²) → O(n).
 
     basic approach(sum problem):
