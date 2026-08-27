@@ -1,0 +1,322 @@
+Array Lists
+    
+    used to store the dynamic collection of elements
+    resizable array
+
+    Example
+    import java.util.ArrayList;
+
+    class Main {
+        public static void main(String[] args) {
+
+            ArrayList<Integer> numbers = new ArrayList<>();
+
+            numbers.add(10);
+            numbers.add(20);
+            numbers.add(30);
+
+            System.out.println(numbers);
+        }
+    }
+
+    [10, 20, 30]
+
+    Important methods
+
+    | Method       | Use                          |
+    | ------------ | ---------------------------- |
+    | `add()`      | Add an element               |
+    | `get()`      | Access an element            |
+    | `set()`      | Update an element            |
+    | `remove()`   | Remove an element            |
+    | `size()`     | Get number of elements       |
+    | `contains()` | Check whether element exists |
+    | `clear()`    | Remove all elements          |
+
+
+    examples:
+    numbers.add(40);        // Add
+    numbers.get(1);         // Access
+    numbers.set(1, 50);     // Update
+    numbers.remove(0);      // Remove
+    numbers.size();         // Size
+    numbers.contains(30);  // Search
+
+    use wrapper classes/ objects
+    int     → Integer
+    double  → Double
+    char    → Character
+    boolean → Boolean
+
+
+
+1.  add()                    → Add at end
+2.  add(index, element)     → Add at specific index
+3.  get(index)              → Access element
+4.  set(index, element)     → Update element
+5.  remove(index)           → Remove by index
+6.  remove(Object)          → Remove by value
+7.  size()                  → Number of elements
+8.  contains()              → Search element
+9.  indexOf()               → First occurrence index
+10. lastIndexOf()           → Last occurrence index
+11. isEmpty()               → Check if empty
+12. clear()                 → Remove everything
+13. removeAll()             → Remove matching elements
+14. retainAll()             → Keep matching elements
+15. containsAll()           → Check all elements
+16. addAll()                → Add another collection
+17. addAll(index, list)     → Add collection at index
+18. subList()               → Get a range
+19. toArray()               → Convert to array
+20. clone()                 → Create a copy
+    
+
+import java.util.ArrayList;
+
+public class Practice {
+
+    public static void main(String[] args) {
+
+        // 1. add()
+        // USE: Adds an element at the end of the ArrayList.
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+
+        System.out.println("1. add(): " + numbers);
+
+
+        // 2. add(index, element)
+        // USE: Adds an element at a specific index.
+        // Existing elements from that index are shifted to the right.
+        numbers.add(2, 25);
+
+        System.out.println("2. add(index, element): " + numbers);
+
+
+        // 3. get(index)
+        // USE: Returns the element present at the specified index.
+        System.out.println("3. get(2): " + numbers.get(2));
+
+
+        // 4. set(index, element)
+        // USE: Replaces/updates the element at the specified index.
+        numbers.set(2, 30);
+
+        System.out.println("4. set(2, 30): " + numbers);
+
+
+        // 5. remove(index)
+        // USE: Removes the element from the specified index.
+        numbers.remove(2);
+
+        System.out.println("5. remove(2): " + numbers);
+
+
+        // 6. remove(Object)
+        // USE: Removes the first occurrence of the specified element.
+        numbers.remove(Integer.valueOf(20));
+
+        System.out.println("6. remove(20): " + numbers);
+
+
+        // Add elements back for further examples
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(20);
+
+        System.out.println("Current ArrayList: " + numbers);
+
+
+        // 7. size()
+        // USE: Returns the total number of elements in the ArrayList.
+        System.out.println("7. size(): " + numbers.size());
+
+
+        // 8. contains()
+        // USE: Checks whether a particular element exists in the ArrayList.
+        // Returns true or false.
+        System.out.println("8. contains(30): " + numbers.contains(30));
+
+
+        // 9. indexOf()
+        // USE: Returns the index of the first occurrence of an element.
+        System.out.println("9. indexOf(20): " + numbers.indexOf(20));
+
+
+        // 10. lastIndexOf()
+        // USE: Returns the index of the last occurrence of an element.
+        System.out.println("10. lastIndexOf(20): " + numbers.lastIndexOf(20));
+
+
+        // 11. isEmpty()
+        // USE: Checks whether the ArrayList is empty.
+        // Returns true if empty, otherwise false.
+        System.out.println("11. isEmpty(): " + numbers.isEmpty());
+
+
+        // 12. clear()
+        // USE: Removes ALL elements from the ArrayList.
+        ArrayList<Integer> clearList = new ArrayList<>();
+
+        clearList.add(10);
+        clearList.add(20);
+        clearList.add(30);
+
+        clearList.clear();
+
+        System.out.println("12. clear(): " + clearList);
+
+
+        // 13. removeAll()
+        // USE: Removes all elements from the first list
+        // that are also present in the second collection.
+        ArrayList<Integer> list1 = new ArrayList<>();
+
+        list1.add(10);
+        list1.add(20);
+        list1.add(30);
+        list1.add(40);
+
+        ArrayList<Integer> removeList = new ArrayList<>();
+
+        removeList.add(20);
+        removeList.add(40);
+
+        list1.removeAll(removeList);
+
+        System.out.println("13. removeAll(): " + list1);
+
+
+        // 14. retainAll()
+        // USE: Keeps only the elements that are also present
+        // in the specified collection.
+        ArrayList<Integer> list2 = new ArrayList<>();
+
+        list2.add(10);
+        list2.add(20);
+        list2.add(30);
+        list2.add(40);
+
+        ArrayList<Integer> retainList = new ArrayList<>();
+
+        retainList.add(20);
+        retainList.add(40);
+
+        list2.retainAll(retainList);
+
+        System.out.println("14. retainAll(): " + list2);
+
+
+        // 15. containsAll()
+        // USE: Checks whether the ArrayList contains ALL elements
+        // of another collection.
+        ArrayList<Integer> list3 = new ArrayList<>();
+
+        list3.add(10);
+        list3.add(20);
+        list3.add(30);
+        list3.add(40);
+
+        ArrayList<Integer> checkList = new ArrayList<>();
+
+        checkList.add(20);
+        checkList.add(40);
+
+        System.out.println("15. containsAll(): "
+                + list3.containsAll(checkList));
+
+
+        // 16. addAll()
+        // USE: Adds all elements of another collection
+        // to the end of the ArrayList.
+        ArrayList<Integer> list4 = new ArrayList<>();
+
+        list4.add(10);
+        list4.add(20);
+
+        ArrayList<Integer> extraList = new ArrayList<>();
+
+        extraList.add(30);
+        extraList.add(40);
+
+        list4.addAll(extraList);
+
+        System.out.println("16. addAll(): " + list4);
+
+
+        // 17. addAll(index, collection)
+        // USE: Adds all elements of another collection
+        // starting at the specified index.
+        ArrayList<Integer> list5 = new ArrayList<>();
+
+        list5.add(10);
+        list5.add(40);
+
+        ArrayList<Integer> middleList = new ArrayList<>();
+
+        middleList.add(20);
+        middleList.add(30);
+
+        list5.addAll(1, middleList);
+
+        System.out.println("17. addAll(index, collection): " + list5);
+
+
+        // 18. subList()
+        // USE: Returns a portion/range of the ArrayList
+        // from start index (inclusive) to end index (exclusive).
+        ArrayList<Integer> list6 = new ArrayList<>();
+
+        list6.add(10);
+        list6.add(20);
+        list6.add(30);
+        list6.add(40);
+        list6.add(50);
+
+        System.out.println("18. subList(1, 4): "
+                + list6.subList(1, 4));
+
+
+        // 19. toArray()
+        // USE: Converts the ArrayList into an array.
+        ArrayList<Integer> list7 = new ArrayList<>();
+
+        list7.add(10);
+        list7.add(20);
+        list7.add(30);
+
+        Integer[] arr = list7.toArray(new Integer[0]);
+
+        System.out.print("19. toArray(): ");
+
+        for (int x : arr) {
+            System.out.print(x + " ");
+        }
+
+        System.out.println();
+
+
+        // 20. clone()
+        // USE: Creates a shallow copy of the ArrayList.
+        ArrayList<Integer> original = new ArrayList<>();
+
+        original.add(10);
+        original.add(20);
+        original.add(30);
+
+        ArrayList<Integer> copy =
+                (ArrayList<Integer>) original.clone();
+
+        System.out.println("20. clone(): " + copy);
+    }
+}
+
+
+
+
+
