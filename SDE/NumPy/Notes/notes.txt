@@ -1,0 +1,61 @@
+1. Creating numpy arrays:
+    from list:
+        np.array([1,2,3,4,5,6])
+    from tuple:
+        np.array((1,2,3,4,5,6))
+    np.array converts the data into nd array
+
+2. Accessing array elements:
+    arr = np.array([1,2,3,4,5,6])
+    print(arr[2])
+    print(arr[0] + arr[2])
+
+3. Accessing 2d array elements:
+    
+    arr = np.array([
+        [1,2,3],
+        [4,5,6]
+    ])
+
+    syntax: arr[row,col]
+    eg: print(arr[1,2])
+
+4. Accessing 3d arrays:
+    arr = np.array([
+        [[1,2,3],[4,5,6]],
+        [[7,8,9],[10,11,12]]
+    ])
+    print(arr[0,1,2])
+    
+    syntax: arr[ind1,ind2,ind3]
+
+5.Negative indexing :
+    arr = np.array([
+        [1,2,3,4,5,6],
+        [7,8,9,2,3,4]
+    ])
+    print(arr[1,-1])
+
+6.Slicing Arrays
+    arr[start:end]
+
+7.-ve slicing
+    arr = np.array([1,2,3,4,5,6,7])
+    print(arr[-3:-1]) :  [5,6]
+
+8 Step+slicing
+    syntax: arr[start:end:step]
+
+9 Slicing 2d arrays
+    syntax: arr[row_sel,col_sel]
+
+10. Copy vs View
+    copy: 
+    a new array is created
+    changes to the original do not affect the copy
+    e.g: x = arr.copy()
+
+    view:
+    does not create an independent copy of the data
+    eg: x = arr.view()
+    view affects the original
