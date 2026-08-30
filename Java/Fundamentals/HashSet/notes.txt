@@ -1,0 +1,185 @@
+HashSet
+    1.unique_values + unordered_positioning + fast_searching
+    Suntax : 
+        import java.util.HashSet;
+
+        HashSet<Integer> name_hashset = new HashSet<>();
+
+import java.util.HashSet;
+
+public class Practice {
+
+    public static void main(String[] args) {
+
+        HashSet<Integer> numbers = new HashSet<>();
+
+
+        // =========================================================
+        // 1. add()
+        // USE: Adds an element to the HashSet.
+        // Duplicate elements are automatically ignored.
+        // =========================================================
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+
+        System.out.println("1. add(): " + numbers);
+
+        // ANSWER:
+        // [10, 20, 30]
+
+
+        // =========================================================
+        // 2. contains()
+        // USE: Checks whether a particular element exists.
+        // Returns true if found, otherwise false.
+        // =========================================================
+
+        System.out.println("2. contains(20): "
+                + numbers.contains(20));
+
+        // ANSWER:
+        // true
+
+
+        // =========================================================
+        // 3. remove()
+        // USE: Removes the specified element from the HashSet.
+        // =========================================================
+
+        numbers.remove(20);
+
+        System.out.println("3. remove(20): " + numbers);
+
+        // ANSWER:
+        // [10, 30]
+
+
+        // =========================================================
+        // 4. size()
+        // USE: Returns the total number of unique elements.
+        // =========================================================
+
+        System.out.println("4. size(): " + numbers.size());
+
+        // ANSWER:
+        // 2
+
+
+        // =========================================================
+        // 5. isEmpty()
+        // USE: Checks whether the HashSet contains no elements.
+        // Returns true if empty, otherwise false.
+        // =========================================================
+
+        System.out.println("5. isEmpty(): "
+                + numbers.isEmpty());
+
+        // ANSWER:
+        // false
+
+
+        // =========================================================
+        // 6. clear()
+        // USE: Removes ALL elements from the HashSet.
+        // =========================================================
+
+        HashSet<Integer> temp = new HashSet<>();
+
+        temp.add(100);
+        temp.add(200);
+        temp.add(300);
+
+        temp.clear();
+
+        System.out.println("6. clear(): " + temp);
+
+        // ANSWER:
+        // []
+
+
+        // =========================================================
+        // Add elements again for further examples
+        // =========================================================
+
+        numbers.add(20);
+        numbers.add(40);
+        numbers.add(50);
+
+
+        // =========================================================
+        // 7. addAll()
+        // USE: Adds all elements from another collection.
+        // =========================================================
+
+        HashSet<Integer> extra = new HashSet<>();
+
+        extra.add(60);
+        extra.add(70);
+
+        numbers.addAll(extra);
+
+        System.out.println("7. addAll(): " + numbers);
+
+        // ANSWER:
+        // [10, 20, 30, 40, 50, 60, 70]
+
+
+        // =========================================================
+        // 8. removeAll()
+        // USE: Removes all elements from the first HashSet
+        // that are also present in the second collection.
+        // =========================================================
+
+        HashSet<Integer> removeSet = new HashSet<>();
+
+        removeSet.add(40);
+        removeSet.add(60);
+
+        numbers.removeAll(removeSet);
+
+        System.out.println("8. removeAll(): " + numbers);
+
+        // ANSWER:
+        // [10, 20, 30, 50, 70]
+
+
+        // =========================================================
+        // 9. retainAll()
+        // USE: Keeps only the elements that are also present
+        // in the specified collection.
+        // =========================================================
+
+        HashSet<Integer> keepSet = new HashSet<>();
+
+        keepSet.add(20);
+        keepSet.add(50);
+        keepSet.add(100);
+
+        numbers.retainAll(keepSet);
+
+        System.out.println("9. retainAll(): " + numbers);
+
+        // ANSWER:
+        // [20, 50]
+
+
+        // =========================================================
+        // 10. containsAll()
+        // USE: Checks whether the HashSet contains ALL
+        // elements of another collection.
+        // =========================================================
+
+        HashSet<Integer> checkSet = new HashSet<>();
+
+        checkSet.add(20);
+        checkSet.add(50);
+
+        System.out.println("10. containsAll(): "
+                + numbers.containsAll(checkSet));
+
+        // ANSWER:
+        // true
+    }
+}
