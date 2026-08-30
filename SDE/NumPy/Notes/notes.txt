@@ -1,3 +1,5 @@
+Part 1 
+
 1. Creating numpy arrays:
     from list:
         np.array([1,2,3,4,5,6])
@@ -59,3 +61,144 @@
     does not create an independent copy of the data
     eg: x = arr.view()
     view affects the original
+
+11. to check wether the array owns its data
+    x=arr.copy()
+    y=arr.view()
+
+    print(x.base)
+    print(y.base)
+
+    if base == None, means : array owns its data
+    
+12. iteration
+    arr = np.array([1,2,3])
+
+    1d array:
+        for x in arr:
+            print(x)
+    2d array:
+        iterate through the rows
+        for x in arr:
+            print(x)
+        
+        iterate individual elements
+        for x in arr:
+            for y in arr:
+                print(y)
+    
+    3d array
+        for x in arr:
+            for y in arr:
+                for z in y:
+                    print(z)
+    
+13 Joining arrays
+    Syntax: np.concatenate((arr1,arr2))
+
+14 Searching arrays
+    np.where() : to return the indices where the given 
+    condition is true
+
+    e.g: np.where(arr == 4)
+         np.where(arr%2 == 0)
+
+
+15 Sorting arrays
+    np.sort(arr)
+    arr = np.array([41,42,43,44])
+    filter_arr = arr>42
+    new_arr = arr[filter_arr] : [43 44]
+
+
+Random numbers:
+    from numpy import random 
+    
+    1. Random integer:
+        a random num in the given range
+        x = random.randint(100)
+
+    2. Random Arrays (integer)
+        x = random.randint(100,size = (5))  1d array
+        x = random.randint(100,size = (3,5)) 2d array
+
+    3. Random Arrays (float)
+        x = random.rand(5)    #5 random floating values
+        x = random.rand(3,5)  #3*5 floating values
+
+    4. Random number from an array
+        random.choice() : selects a random value from an array
+
+
+Summary:
+
+Syntax to remember:
+
+import numpy as np 
+np.array([1, 2, 3]) 
+arr[index] arr[row, column] 
+arr[start:end] 
+arr[start:end:step] 
+arr[::-1] 
+arr[row_start:row_end, column_start:column_end] 
+arr.copy()
+arr.view() 
+arr.base 
+np.concatenate((arr1, arr2)) 
+np.where(condition) 
+np.sort(arr) 
+arr[condition] 
+random.randint()
+random.rand() 
+random.choice()
+
+
+
+| Function          | Purpose                                                                  |
+| ----------------- | ------------------------------------------------------------------------ |
+| `np.array()`      | Create array from list/tuple/array                                       |
+| `np.asarray()`    | Convert input to array; avoids copying an existing ndarray when possible |
+| `np.zeros()`      | Array filled with 0                                                      |
+| `np.ones()`       | Array filled with 1                                                      |
+| `np.full()`       | Array filled with a specified value                                      |
+| `np.empty()`      | Creates uninitialized array                                              |
+| `np.zeros_like()` | Zeros with same shape/type as another array                              |
+| `np.ones_like()`  | Ones with same shape/type                                                |
+| `np.full_like()`  | Specified value with same shape/type                                     |
+| `np.arange()`     | Evenly spaced values using a step                                        |
+| `np.linspace()`   | Evenly spaced values between two limits                                  |
+| `np.logspace()`   | Values evenly spaced on logarithmic scale                                |
+| `np.eye()`        | Identity-like matrix                                                     |
+| `np.identity()`   | Square identity matrix                                                   |
+| `np.diag()`       | Create/extract diagonal                                                  |
+| `np.meshgrid()`   | Create coordinate matrices                                               |
+| `np.fromiter()`   | Create 1-D array from iterable                                           |
+
+
+
+
+
+
+Part 2
+ 
+| Function          | Purpose                                                                  |
+| ----------------- | ------------------------------------------------------------------------ |
+| `np.array()`      | Create array from list/tuple/array                                       |
+| `np.asarray()`    | Convert input to array; avoids copying an existing ndarray when possible |
+| `np.zeros()`      | Array filled with 0                                                      |
+| `np.ones()`       | Array filled with 1                                                      |
+| `np.full()`       | Array filled with a specified value                                      |
+| `np.empty()`      | Creates uninitialized array                                              |
+| `np.zeros_like()` | Zeros with same shape/type as another array                              |
+| `np.ones_like()`  | Ones with same shape/type                                                |
+| `np.full_like()`  | Specified value with same shape/type                                     |
+| `np.arange()`     | Evenly spaced values using a step                                        |
+| `np.linspace()`   | Evenly spaced values between two limits                                  |
+| `np.logspace()`   | Values evenly spaced on logarithmic scale                                |
+| `np.eye()`        | Identity-like matrix                                                     |
+| `np.identity()`   | Square identity matrix                                                   |
+| `np.diag()`       | Create/extract diagonal                                                  |
+| `np.meshgrid()`   | Create coordinate matrices                                               |
+| `np.fromiter()`   | Create 1-D array from iterable                                           |
+
+
