@@ -46,7 +46,3 @@ WRAPPER CLASSES
 | `Character.isWhitespace()` | Check whitespace        | `Character.isWhitespace(ch)` | `ch == ' '`                            |
 
 
-
-
-    
-
