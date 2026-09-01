@@ -1,0 +1,119 @@
+Bit Manipulation
+    working directly on the individual bits of an integer using special operator
+
+    1.Binary Numbers
+        2⁰ = 1
+        2¹ = 2
+        2² = 4
+        2³ = 8
+        2⁴ = 16
+        2⁵ = 32
+    
+    2. AND  &
+        | A | B | A & B |
+        | - | - | ----- |
+        | 0 | 0 | 0     |
+          0 | 1 | 0     |
+        | 1 | 0 | 0     |
+        | 1 | 1 | **1** |
+
+        e.g : 
+        5 = 101
+        6 = 110
+
+        101
+        & 110
+        -----
+        100
+
+    ie.  4 
+
+    therefore : soutpln(5 & 6) = 4;
+
+    3.OR  |
+    | A | B | A | B |
+    | - | - | ----- |
+    | 0 | 0 | 0     |
+    | 0 | 1 | 1     |
+    | 1 | 0 | 1     |
+    | 1 | 1 | 1     |
+
+
+    e.g: soutpln(5 | 6) = 7
+
+
+    3.XOR  ^
+
+    | A | B | A ^ B |
+    | - | - | ----- |
+    | 0 | 0 | 0     |
+    | 0 | 1 | **1** |
+    | 1 | 0 | **1** |
+    | 1 | 1 | 0     |
+
+    e.g : System.out.println(5 ^ 6) = 3;
+
+    Properties :
+    a ^ a = 0
+    a ^ 0 = a
+
+    4.NOT ~ 
+    : flips every bit
+
+    Important identity : ~n = -(n + 1)
+    i.e: soutpln(~5) = -6;
+
+    5.Left Shift <<
+        : moves bits towards the left by specified number of positions
+
+        Important rule:
+            n << 1  → n × 2
+            n << 2  → n × 4
+            n << 3  → n × 8
+    
+    6.Right Shift >>
+        : moves bits towards the right by specified number of positions
+
+        Important rule :
+            n >> 1  → n / 2
+            n >> 2  → n / 4
+            n >> 3  → n / 8
+        
+    7.Check Odd/Even
+        : for even numbers : last bit is a 0
+        : for odd numbers : last bit is 1
+
+
+        Therefore : 
+            if((n & 1) == 0) {
+            // even
+            }
+            else {
+                // odd
+            }
+
+    8. Check a particular bit
+    
+    if ((n & (1 << i)) != 0) {
+        System.out.println("Bit is 1");
+    } else {
+        System.out.println("Bit is 0");
+    }
+
+    9. Toggle/Set/Flip
+    
+    | Operation  | Formula         | Meaning      |
+    | ---------- | --------------- | ------------ |
+    | **Set**    | `n \| (1 << i)` | Make bit `1` |
+    | **Clear**  | `n & ~(1 << i)` | Make bit `0` |
+    | **Toggle** | `n ^ (1 << i)`  | Flip bit     |
+
+    SET    → OR
+    CLEAR  → AND + NOT
+    TOGGLE → XOR
+
+    10.
+
+    
+
+
