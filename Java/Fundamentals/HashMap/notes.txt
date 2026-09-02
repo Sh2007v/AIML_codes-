@@ -1,0 +1,24 @@
+HashMap
+    : key value pair 
+    : Syntax : HashMap <Integer, String> students = new HashMap<>();
+    : Important properties :
+        1. keys are unique
+        2. values can duplicate
+        3. keys are to retrieve values
+        4. does not guarantee order
+        5. allows one null key
+
+
+    : Important methods
+    put(key, value)          → Add/update a key-value pair
+    get(key)                 → Get value using key
+    remove(key)              → Remove key-value pair
+    containsKey(key)         → Check whether key exists
+    containsValue(value)     → Check whether value exists
+    size()                   → Number of key-value pairs
+    isEmpty()                → Check whether empty
+    clear()                  → Remove everything
+    keySet()                 → Get all keys
+    values()                 → Get all values
+
+    
