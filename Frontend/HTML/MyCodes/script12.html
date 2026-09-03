@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <div>
+        <img id="img1" src="flower1.jpg" height="150" width="150">
+    </div>
+
+    <br><br>
+
+    <button onclick="zoomin()">Zoomin</button>&nbsp;
+    <button onclick="zoomout()">Zoomout</button>
+
+
+    <style>
+
+        div {
+            display: inline-flex;
+            overflow: hidden;
+            border: 4px solid navy;
+        }
+
+    </style>
+
+
+    <script>
+
+        let img = document.getElementById("img1");
+
+        let zoom = 1;
+
+
+        function zoomin() {
+
+            if (zoom < 4) {
+
+                zoom++;
+
+                img.style.transform = "scale(" + zoom + ")";
+
+            }
+
+            else {
+
+                alert("Zoom limit reached!");
+
+            }
+
+        }
+
+
+        function zoomout() {
+
+            if (zoom > 1) {
+
+                zoom--;
+
+                img.style.transform = "scale(" + zoom + ")";
+
+            }
+
+            else {
+
+                alert("Zoom out limit reached!");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
