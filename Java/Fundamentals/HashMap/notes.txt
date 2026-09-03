@@ -10,15 +10,18 @@ HashMap
 
 
     : Important methods
-    put(key, value)          → Add/update a key-value pair
-    get(key)                 → Get value using key
-    remove(key)              → Remove key-value pair
-    containsKey(key)         → Check whether key exists
-    containsValue(value)     → Check whether value exists
-    size()                   → Number of key-value pairs
-    isEmpty()                → Check whether empty
-    clear()                  → Remove everything
-    keySet()                 → Get all keys
-    values()                 → Get all values
+| Method            | Syntax                      | Use / Meaning                                        | Example                                 |
+| ----------------- | --------------------------- | ---------------------------------------------------- | --------------------------------------- |
+| `put()`           | `map.put(key, value);`      | Adds a new key-value pair or updates an existing key | `map.put(101, "Aman");`                 |
+| `get()`           | `map.get(key);`             | Gets the value associated with a key                 | `map.get(101);` → `"Aman"`              |
+| `remove()`        | `map.remove(key);`          | Removes the key-value pair                           | `map.remove(101);`                      |
+| `containsKey()`   | `map.containsKey(key);`     | Checks whether a key exists                          | `map.containsKey(101);` → `true`        |
+| `containsValue()` | `map.containsValue(value);` | Checks whether a value exists                        | `map.containsValue("Aman");` → `true`   |
+| `size()`          | `map.size();`               | Returns number of key-value pairs                    | `map.size();` → `3`                     |
+| `isEmpty()`       | `map.isEmpty();`            | Checks whether the HashMap is empty                  | `map.isEmpty();` → `false`              |
+| `clear()`         | `map.clear();`              | Removes all key-value pairs                          | `map.clear();`                          |
+| `keySet()`        | `map.keySet();`             | Returns all keys                                     | `map.keySet();` → `[101, 102, 103]`     |
+| `values()`        | `map.values();`             | Returns all values                                   | `map.values();` → `[Aman, Rahul, Ravi]` |
+
 
     
