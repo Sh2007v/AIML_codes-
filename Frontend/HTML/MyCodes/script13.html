@@ -1,0 +1,24 @@
+<script>
+    let curscale = 0.5;
+    function zoomin(){
+        if(curscale>=3){
+            alert("You are fully zoomed");
+        }
+        else{
+            document.getElementById("img1").style.scale = curscale + 1;
+            document.getElementById("img2").style.transition="0.5s";
+            curscale ++;
+
+        }
+    }
+    function zoomout(){
+        if(curscale<1){
+            alert("Limit Reached");
+        }
+        else{
+            document.getElementById("img1").style.scale = curscale - 0.5;
+            document.getElementById("img1").style.transition = "0.5s";
+            curscale--;
+        }
+    }
+</script>
