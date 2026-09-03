@@ -112,8 +112,38 @@ Bit Manipulation
     CLEAR  → AND + NOT
     TOGGLE → XOR
 
-    10.
+    10. Count set bits
+        i.e. count bits having 1
+        : Basic method
+            int count = 0;
 
+            while(n > 0) {
+
+            if((n & 1) == 1) {
+                count++;
+            }
+
+            n = n >> 1;
+        }
+
+        Also : Integer.bitCount(n);
+    11. Power of 2
+        a positive number is a power of 2 if it's binary representation has only one time 1.
+        Famous trick : n > 0 && (n & (n - 1)) == 0
+    12 Single number
+        arr = [4, 1, 2, 1, 2]
+        here except 4 , ebery element appears more than once.
+        so use xor to find that element which is repeated once.
+        4 ^ 1 ^ 2 ^ 1 ^ 2 = 4
+        Basic method:
+            int result = 0;
+
+            for(int num : nums) {
+                result ^= num;
+            }
+
+            return result;
+    13.
     
 
 
