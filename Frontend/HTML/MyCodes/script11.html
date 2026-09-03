@@ -1,7 +1,493 @@
+<!DOCTYPE html>
 <html>
-    <body>
-    <script>
-        
-        </script>
-        </body>
+
+<head>
+
+    <title>Calculator</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            background: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .calculator {
+            width: 100%;
+            max-width: 850px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: white;
+        }
+
+        .top {
+            height: 100px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            border-bottom: 1px solid #eeeeee;
+            position: relative;
+        }
+
+        .top h1 {
+            margin: 0;
+            font-size: 42px;
+            color: #4d7ff0;
+        }
+
+        .top h2 {
+            margin: 0;
+            font-size: 42px;
+            color: #aaaaaa;
+        }
+
+        .settings {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 34px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .display-area {
+            height: 390px;
+            flex-shrink: 0;
+            position: relative;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        #display {
+            position: absolute;
+            right: 35px;
+            bottom: 25px;
+            width: calc(100% - 70px);
+            border: none;
+            outline: none;
+            background: transparent;
+            text-align: right;
+            font-size: 65px;
+            color: black;
+            padding: 0;
+        }
+
+        .display-tools {
+            position: absolute;
+            left: 45px;
+            bottom: 45px;
+            display: flex;
+            align-items: center;
+            gap: 45px;
+            color: #999999;
+        }
+
+        .history {
+            font-size: 42px;
+        }
+
+        .mode {
+            font-size: 18px;
+            border: 2px solid #999999;
+            padding: 5px 3px;
+        }
+
+        .memory {
+            height: 85px;
+            flex-shrink: 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            padding: 0 35px;
+        }
+
+        .memory button {
+            border: none;
+            background: white;
+            color: #4d70e8;
+            font-size: 46px;
+            cursor: pointer;
+        }
+
+        .memory button:hover {
+            background: #f5f5f5;
+        }
+
+        .buttons {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            padding: 0 35px 15px;
+        }
+
+        button {
+            border: none;
+            background: white;
+            color: black;
+            font-size: 45px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #f5f5f5;
+        }
+
+        .blue {
+            color: #4d70e8;
+        }
+
+        .equal {
+            width: 80px;
+            height: 80px;
+            background: #4776e8;
+            color: white;
+            border-radius: 50%;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .equal:hover {
+            background: #3565d5;
+        }
+
+        @media (max-width: 600px) {
+
+            .calculator {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .top {
+                height: 85px;
+                gap: 40px;
+            }
+
+            .top h1 {
+                font-size: 30px;
+            }
+
+            .top h2 {
+                font-size: 30px;
+            }
+
+            .settings {
+                right: 15px;
+                font-size: 27px;
+            }
+
+            .display-area {
+                height: 360px;
+            }
+
+            #display {
+                font-size: 52px;
+                right: 20px;
+                width: calc(100% - 40px);
+            }
+
+            .display-tools {
+                left: 35px;
+                bottom: 40px;
+                gap: 35px;
+            }
+
+            .history {
+                font-size: 35px;
+            }
+
+            .mode {
+                font-size: 15px;
+            }
+
+            .memory {
+                height: 70px;
+                padding: 0 20px;
+            }
+
+            .memory button {
+                font-size: 35px;
+            }
+
+            .buttons {
+                padding: 0 20px 10px;
+            }
+
+            button {
+                font-size: 34px;
+            }
+
+            .equal {
+                width: 65px;
+                height: 65px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <div class="top">
+
+        <h1>Calculate</h1>
+
+        <h2>Exchange rate</h2>
+
+        <div class="settings">
+            ⚙
+        </div>
+
+    </div>
+
+    <div class="display-area">
+
+        <div class="display-tools">
+
+            <span class="history">◷</span>
+
+            <span class="mode">MODE</span>
+
+        </div>
+
+        <input
+            type="text"
+            id="display"
+            value="0"
+            readonly
+        >
+
+    </div>
+
+    <div class="memory">
+
+        <button onclick="memoryClear()">mc</button>
+
+        <button onclick="memoryAdd()">m+</button>
+
+        <button onclick="memorySubtract()">m−</button>
+
+        <button onclick="memoryRecall()">mr</button>
+
+    </div>
+
+    <div class="buttons">
+
+        <button class="blue" onclick="clearDisplay()">AC</button>
+
+        <button class="blue" onclick="deleteLast()">←</button>
+
+        <button class="blue" onclick="changeSign()">+/−</button>
+
+        <button class="blue" onclick="appendValue('÷')">÷</button>
+
+        <button onclick="appendValue('7')">7</button>
+
+        <button onclick="appendValue('8')">8</button>
+
+        <button onclick="appendValue('9')">9</button>
+
+        <button class="blue" onclick="appendValue('×')">×</button>
+
+        <button onclick="appendValue('4')">4</button>
+
+        <button onclick="appendValue('5')">5</button>
+
+        <button onclick="appendValue('6')">6</button>
+
+        <button class="blue" onclick="appendValue('−')">−</button>
+
+        <button onclick="appendValue('1')">1</button>
+
+        <button onclick="appendValue('2')">2</button>
+
+        <button onclick="appendValue('3')">3</button>
+
+        <button class="blue" onclick="appendValue('+')">+</button>
+
+        <button onclick="percentage()">%</button>
+
+        <button onclick="appendValue('0')">0</button>
+
+        <button onclick="appendValue('.')">.</button>
+
+        <button class="equal" onclick="calculate()">=</button>
+
+    </div>
+
+</div>
+
+<script>
+
+    let display = document.getElementById("display");
+
+    let expression = "";
+
+    let memory = 0;
+
+    function appendValue(value) {
+
+        if (display.value == "Error") {
+            expression = "";
+        }
+
+        expression += value;
+
+        display.value = expression;
+
+    }
+
+    function clearDisplay() {
+
+        expression = "";
+
+        display.value = "0";
+
+    }
+
+    function deleteLast() {
+
+        expression = expression.slice(0, -1);
+
+        display.value = expression || "0";
+
+    }
+
+    function calculate() {
+
+        try {
+
+            let calculation = expression
+                .replace(/×/g, "*")
+                .replace(/÷/g, "/")
+                .replace(/−/g, "-");
+
+            let result = eval(calculation);
+
+            expression = result.toString();
+
+            display.value = result;
+
+        }
+
+        catch {
+
+            expression = "";
+
+            display.value = "Error";
+
+        }
+
+    }
+
+    function changeSign() {
+
+        if (expression != "") {
+
+            if (expression.startsWith("-")) {
+
+                expression = expression.substring(1);
+
+            }
+
+            else {
+
+                expression = "-" + expression;
+
+            }
+
+            display.value = expression;
+
+        }
+
+    }
+
+    function percentage() {
+
+        try {
+
+            let calculation = expression
+                .replace(/×/g, "*")
+                .replace(/÷/g, "/")
+                .replace(/−/g, "-");
+
+            let result = eval(calculation) / 100;
+
+            expression = result.toString();
+
+            display.value = result;
+
+        }
+
+        catch {
+
+            display.value = "Error";
+
+        }
+
+    }
+
+    function memoryClear() {
+
+        memory = 0;
+
+    }
+
+    function memoryAdd() {
+
+        let value = parseFloat(display.value);
+
+        if (!isNaN(value)) {
+
+            memory += value;
+
+        }
+
+    }
+
+    function memorySubtract() {
+
+        let value = parseFloat(display.value);
+
+        if (!isNaN(value)) {
+
+            memory -= value;
+
+        }
+
+    }
+
+    function memoryRecall() {
+
+        expression = memory.toString();
+
+        display.value = memory;
+
+    }
+
+</script>
+
+</body>
+
 </html>
