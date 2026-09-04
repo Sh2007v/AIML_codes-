@@ -28,19 +28,25 @@ import java.util.LinkedList;
 //
 
 
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         int n =sc.nextInt();
+//         LinkedList<Integer> num = new LinkedList<>();
+        
+//         for(int i=0;i<n;i++){
+//             num.add(sc.nextInt());
+//         }
+
+        
+
+
+//     }
+// }
+
 public class practice{
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-
-        int n =sc.nextInt();
-        LinkedList<Integer> num = new LinkedList<>();
-        
-        for(int i=0;i<n;i++){
-            num.add(sc.nextInt());
-        }
-
-        
-
-
+        System.out.println("Java is working !");
     }
 }
