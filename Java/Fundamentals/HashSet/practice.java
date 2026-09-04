@@ -74,43 +74,43 @@ import java.util.HashSet;
 
 // Find common elements of two arrays
 
-// public class practice {
+public class practice {
 
-//     public static void main(String[] args) {
+    public static void main(String[] args) {
 
-//         Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-//         // Size of first array
-//         int n1 = sc.nextInt();
+        // Size of first array
+        int n1 = sc.nextInt();
 
-//         HashSet<Integer> first = new HashSet<>();
+        HashSet<Integer> first = new HashSet<>();
 
-//         // Store first array elements
-//         for (int i = 0; i < n1; i++) {
-//             first.add(sc.nextInt());
-//         }
+        // Store first array elements
+        for (int i = 0; i < n1; i++) {
+            first.add(sc.nextInt());
+        }
 
-//         // Size of second array
-//         int n2 = sc.nextInt();
+        // Size of second array
+        int n2 = sc.nextInt();
 
-//         HashSet<Integer> common = new HashSet<>();
+        HashSet<Integer> common = new HashSet<>();
 
-//         // Check second array elements
-//         for (int i = 0; i < n2; i++) {
+        // Check second array elements
+        for (int i = 0; i < n2; i++) {
 
-//             int element = sc.nextInt();
+            int element = sc.nextInt();
 
-//             if (first.contains(element)) {
-//                 common.add(element);
-//             }
-//         }
+            if (first.contains(element)) {
+                common.add(element);
+            }
+        }
 
-//         // Print common elements
-//         System.out.println(common);
+        // Print common elements
+        System.out.println(common);
 
-//         sc.close();
-//     }
-// }
+        sc.close();
+    }
+}
 
 
 //Check Whether Two Arrays Contain the Same Unique Elements
