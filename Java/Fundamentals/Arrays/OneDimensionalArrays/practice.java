@@ -1,6 +1,17 @@
 package Java.Fundamentals.Arrays.OneDimensionalArrays;
 
-public class practice {
+
+import java.util.HashMap;
+import java.util.HashSet;
+
+
+public class practice{
+    public static void main(String[] args){
+        HashMap<Integer,Integer> map = new HashMap<>();
+        HashSet<Integer> set = new HashSet<>();
+    }
+}
+// public class practice {
 //         System.out.println("Enter the size of array : ");
 //         int n = sc.nextInt();
 
@@ -320,6 +331,7 @@ public class practice {
 //                 count++;
 
 //         }
+
 
 //         System.out.println("Average = " + average);
 //         System.out.println("Count = " + count);
