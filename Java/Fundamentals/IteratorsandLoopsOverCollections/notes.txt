@@ -1,0 +1,90 @@
+Iterators and loops over collection
+    2 main approaches for iterating :
+        1.loops
+        2.iterator
+
+        1.enhanced for loop
+
+        Syntax : for (DataType variable : collection) {
+                        // use variable
+                    }
+            e.g. 
+                ArrayList<Integer> numbers = new ArrayList<>();
+
+                numbers.add(10);
+                numbers.add(20);
+                numbers.add(30);
+
+                for (int num : numbers) {
+                    System.out.println(num);
+                }
+
+        2. Iterator : used to traverse a collection one elem at a time
+                import java.util.Iterator;
+
+                ArrayList<Integer> numbers = new ArrayList<>();
+
+                numbers.add(10);
+                numbers.add(20);
+                numbers.add(30);
+
+                Iterator<Integer> it = numbers.iterator();
+
+                while (it.hasNext()) {
+                    int num = it.next();
+                    System.out.println(num);
+                }
+        
+            Iterator with HashSet:
+                HashSet<Integer> numbers = new HashSet<>();
+
+                numbers.add(10);
+                numbers.add(20);
+                numbers.add(30);
+
+                Iterator<Integer> it = numbers.iterator();
+
+                while (it.hasNext()) {
+                    System.out.println(it.next());
+                }
+            
+            Iterator.remove(): to remove elements during traversal
+            e.g.
+                ArrayList<Integer> numbers = new ArrayList<>();
+
+                numbers.add(10);
+                numbers.add(20);
+                numbers.add(30);
+
+                Iterator<Integer> it = numbers.iterator();
+
+                while (it.hasNext()) {
+
+                    int num = it.next();
+
+                    if (num == 20) {
+                        it.remove();
+                    }
+                }
+
+                System.out.println(numbers);
+        
+        3. Loops with HashMap : 
+            HashMap<Integer, String> students = new HashMap<>();
+
+            students.put(101, "Aman");
+            students.put(102, "Rahul");
+            students.put(103, "Simran");
+
+            for (int key : students.keySet()) {
+                System.out.println(key + " -> " + students.get(key));
+            }
+
+| Method               | Purpose                                       | Syntax                        | Example                                     |
+| -------------------- | --------------------------------------------- | ----------------------------- | ------------------------------------------- |
+| `hasNext()`          | Checks if another element exists              | `it.hasNext()`                | `if (it.hasNext())`                         |
+| `next()`             | Returns the next element                      | `it.next()`                   | `int x = it.next();`                        |
+| `remove()`           | Removes the last element returned by `next()` | `it.remove()`                 | `it.remove();`                              |
+| `forEachRemaining()` | Performs an action on all remaining elements  | `it.forEachRemaining(action)` | `it.forEachRemaining(System.out::println);` |
+
+        4. 
