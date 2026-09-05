@@ -159,6 +159,74 @@ key-points
     followed by an exception object
     actually throws an exception
 
+
+2.throws 
+
+Syntax : returnType methodName() throws ExceptionType{
+    //code;
+}
+
+e.g.
+import java.util.*;
+
+public class Practice {
+
+    static int divide(int a, int b) throws ArithmeticException {
+        return a / b;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        try {
+            System.out.println(divide(a, b));
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero");
+        }
+
+        sc.close();
+    }
+}
+
+e.g.:
+import java.util.*;
+
+public class Practice {
+
+    static int getElement(int[] arr, int index) throws ArrayIndexOutOfBoundsException {
+        return arr[index];
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        int index = sc.nextInt();
+
+        try {
+            System.out.println(getElement(arr, index));
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Invalid index");
+        }
+
+        sc.close();
+    }
+}
+
     
 
 
