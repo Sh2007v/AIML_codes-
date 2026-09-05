@@ -1,0 +1,61 @@
+TreeMap :
+    key-value pair storage
+    keys are sorted
+
+    Syntax : TreeMap<Integer,String> map = new TreeMap<>();
+
+    Example:
+    import java.util.*;
+
+    public class Practice {
+        public static void main(String[] args) {
+
+            Scanner sc = new Scanner(System.in);
+
+            TreeMap<Integer, String> students = new TreeMap<>();
+
+            System.out.print("Enter number of students: ");
+            int n = sc.nextInt();
+
+            for (int i = 0; i < n; i++) {
+
+                System.out.print("Enter roll number: ");
+                int rollNo = sc.nextInt();
+
+                System.out.print("Enter name: ");
+                String name = sc.next();
+
+                students.put(rollNo, name);
+            }
+
+            System.out.println("\nStudents sorted by roll number:");
+
+            for (int rollNo : students.keySet()) {
+                System.out.println(rollNo + " -> " + students.get(rollNo));
+            }
+
+            System.out.println("\nSmallest Roll Number: " + students.firstKey());
+            System.out.println("Largest Roll Number: " + students.lastKey());
+
+            sc.close();
+        }
+    }
+
+
+
+    Some important methods
+| Method            | Purpose                       | Syntax                      | Example                            | Result                |
+| ----------------- | ----------------------------- | --------------------------- | ---------------------------------- | --------------------- |
+| `put()`           | Add/update key-value pair     | `map.put(key, value);`      | `students.put(105, "Karan");`      | Adds `105 → Karan`    |
+| `get()`           | Get value using key           | `map.get(key);`             | `students.get(102);`               | `"Shahbaaz"`          |
+| `remove()`        | Remove a key-value pair       | `map.remove(key);`          | `students.remove(103);`            | Removes `103 → Rahul` |
+| `containsKey()`   | Check whether key exists      | `map.containsKey(key);`     | `students.containsKey(101);`       | `true`                |
+| `containsValue()` | Check whether value exists    | `map.containsValue(value);` | `students.containsValue("Rahul");` | `true`                |
+| `size()`          | Get number of key-value pairs | `map.size();`               | `students.size();`                 | `4`                   |
+| `firstKey()`      | Get smallest key              | `map.firstKey();`           | `students.firstKey();`             | `101`                 |
+| `lastKey()`       | Get largest key               | `map.lastKey();`            | `students.lastKey();`              | `104`                 |
+| `higherKey()`     | Get next greater key          | `map.higherKey(key);`       | `students.higherKey(102);`         | `103`                 |
+| `lowerKey()`      | Get previous smaller key      | `map.lowerKey(key);`        | `students.lowerKey(102);`          | `101`                 |
+
+
+    
