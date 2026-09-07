@@ -1,0 +1,139 @@
+<!-- <html>
+    <head>
+        <script>
+            function showPath(){
+                var filepath = document.getElementById("myfile").value;
+                console.log(filepath);
+            }
+        </script>
+    </head>
+    <body>
+        Select image file- <input type="file" id="myfile">
+        <br>
+        <button onClick="showPath()">Show Path</button>
+    </body>
+</html>
+
+ -->
+
+<!-- <html>
+    <h2>Select a picture to display : </h2>
+    <input type="file" id="imageInput" accept="image/"><br><br>
+    <button id="btn1">Show Image</button><br>
+    <img id="preview" src="" style="width: 300px; height: 300px; display: none; border: 5px solid green">
+
+    <script>
+        const input = document.getElementById("imageInput");
+        const preview = document.getElementById("preview");
+        document.getElementById("btn1").addEventListener("click",function(){
+            const file = input.files[0];
+            console.log(file.name);
+            console.log(file.size);
+            console.log(file.type);
+
+            if(file){
+                const imageURL = URL.createObjectURL(file);
+                preview.src = imageURL;
+                preview.style.display = 'block';
+            }
+        })
+    </script>
+</html> -->
+
+<!-- <html>
+    <h2>Select a picture to display : </h2>
+    <input type="file" id="imageInput" accept="image/"><br><br> -->
+    <!-- <button id="btn1">Show Image</button><br> -->
+    <!-- <img id="preview" src="" style="width: 300px; height: 300px; display: none; border: 5px solid green">
+    
+    <script>
+        const input = document.getElementById("imageInput");
+        const preview = document.getElementById("preview");
+        input.addEventListener("change",function(){
+            const file = input.files[0];
+            console.log(file.name);
+            console.log(file.size);
+            console.log(file.type);
+
+            if(file){
+                const imageURL = URL.createObjectURL(file);
+                preview.src = imageURL;
+                preview.style.display = 'block';
+            }
+        })
+    </script>
+</html> -->
+
+
+<!-- <html>
+    <h2>Select  pictures to display : </h2>
+    <input type="file" id="imageInput" accept="image/*" multiple><br><br>
+     <button id="btn1">Show Image</button><br> 
+    <img id="preview" src="" style="width: 300px; height: 300px; display: none; border: 5px solid green">
+    
+    <script>
+        const input = document.getElementById("imageInput");
+        // const preview = document.getElementById("preview");
+        input.addEventListener("change",function(){
+            for(let i=0;i<input.files.length;i++){
+            const file = input.files[i];
+            console.log(file.name);
+            console.log(file.size);
+            console.log(file.type);
+        }
+
+            
+        })
+    </script>
+</html> --->
+
+ <!-- <html>
+    <h2>Select pictures : </h2>
+    <input type="file" id="imageInput" accept="image/*" multiple><br><br>
+    <div id="imageContainer" style="display: flex; flex-wrap: wrap; gap: 10px;"></div>
+    <script>
+        const imgIput
+    </script>
+ </html> -->
+
+
+
+ <!---------Arrays--------->
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var book = ["Harry Potter", "J.K. Rowling", 500];
+
+        console.log("Book Name: " + book[0]);
+        console.log("Author: " + book[1]);
+        console.log("Price: " + book[2]);
+        console.log("Array Length: " + book.length);
+    </script>
+</body>
+</html> -->
+
+
+<html>
+    <script>
+        var arr = [13,58,23,45,26,48,100,66];
+        var newarr = [];
+        for(var i=0,ni=0;i<arr.length;i++){
+            if(arr[i]%2 == 0){
+                newarr[ni] = arr[i];
+                ni++;
+            }
+        }
+        console.log(newarr.sort(function(a,b){
+            return a-b;
+        }));
+        console.log(newarr.sort(function(a,b){
+            return b-a;
+        }));
+    </script>
+</html>
