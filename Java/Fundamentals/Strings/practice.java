@@ -1248,21 +1248,48 @@
 
 
 //STRING BUILDER 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class practice {
-    public static void main(String[] args) {
+// public class practice {
+//     public static void main(String[] args) {
 
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.println("Enter the String : ");
+//         String str = sc.nextLine();
+
+//         StringBuilder sb = new StringBuilder(str);
+
+//         sb.reverse();
+
+//         System.out.println("Reversed String : " + sb);
+//     }
+// }
+// Reverse a string (method format)
+
+public class practice{
+
+    static void revString(String Str){
+        String rev_Str ="";
+        for(int i=Str.length()-1;i>0;i--){
+            rev_Str+=Str.charAt(i);
+        }
+        System.out.println(rev_Str);
+    }
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the String : ");
-        String str = sc.nextLine();
-
-        StringBuilder sb = new StringBuilder(str);
-
-        sb.reverse();
-
-        System.out.println("Reversed String : " + sb);
+        String Str = sc.nextLine();
+        revString(Str);
     }
 }
-// 
+
+
+
+
+String s = sc.nextLine();        // String / complete line
+String s = sc.next();            // String / single word
+char c = sc.next().charAt(0);    // Character (most important)
+int n = sc.nextInt();            // Integer
+double d = sc.nextDouble();      // Decimal
+//
