@@ -90,9 +90,9 @@ Calculate the average of array elements.
 Count even and odd numbers.
 Search an element (Linear Search).
 Reverse an array.
-Find the second largest element.
+Find the second largest element. (important)
 Merge two arrays using Arrays.copyOf() and System.arraycopy().
-Remove duplicate elements from an array.
+Remove duplicate elements from an array. (important)
 Find the third largest element.
 Check whether the array is sorted.
 Find all pairs whose sum equals a given number.
