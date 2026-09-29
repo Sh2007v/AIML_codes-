@@ -1,0 +1,533 @@
+ANALYTICS
+WHAT happened?       → Descriptive
+WHY happened?        → Diagnostic
+WHAT will happen?    → Predictive
+WHAT should I do?    → Prescriptive
+AI understands      → Cognitive
+
+PROCESSING
+Can wait             → Batch
+Can't wait           → Streaming
+
+DATABASES
+Relationships        → Graph
+Simple lookup        → Key-Value
+JSON                 → Semi-structured
+
+ROLES
+Charts/Insights      → Data Analyst
+
+| Q      | Trigger                                            | Answer                  |
+| ------ | -------------------------------------------------- | ----------------------- |
+| **11** | Graph + social users/followers                     | **Semi-structured**     |
+
+| **12** | Key/value store optimized for                      | **Simple lookups**      |
+
+| **13** | Visuals + charts + decisions                       | **Data Analyst**        |
+
+| **14** | DBA → cleansing/useful info                        | **No**                  |
+|        | Data Engineer → backup/recovery                    | **No**                  |
+|        | Data Analyst → visuals/decisions                   | **Yes**                 |
+
+| **15** | Database availability + performance + optimization | **DBA**                 |
+
+| **16** | Hidden patterns + graphical reports                | **Data Analyst**        |
+
+| **17** | Audio → closed captions                            | **Cognitive analytics** |
+
+| **18** | Data Engineer → governance rules                   | **No**                  |
+|        | Data Engineer → ingestion pipelines                | **Yes**                 |
+|        | Data Engineer → backup/recovery                    | **No**                  |
+
+| **19** | Structured data in tables                          | **Relational DB**       |
+
+| **20** | JSON + varying fields                              | **Semi-structured**     |
+
+
+| Q      | Trigger                               | Answer                               |
+| ------ | ------------------------------------- | ------------------------------------ |
+
+| **21** | Database security                     | **DBA**                              |
+
+| **22** | Backup + restore                      | **DBA**                              |
+
+| **23** | Relational schema defined before data | **YES**                              |
+|        | Key/value + complex joins             | **NO**                               |
+|        | Relational → structured data          | **YES**                              |
+
+| **24** | Batch → file store                    | **YES**                              |
+|        | Batch → relational DB                 | **YES**                              |
+|        | Batch → NoSQL DB                      | **YES**                              |
+
+| **25** | Non-relational → always tables        | **NO**                               |
+|        | Non-relational → fixed schema         | **NO**                               |
+|        | Same collection → different fields    | **YES**                              |
+
+| **26** | Sales processed daily                 | **Batch**                            |
+|        | Rolling temperature average           | **Streaming**                        |
+|        | Last month's average revenue          | **Batch**                            |
+
+| **27** | Structured rows/entities              | **Tabular**                          |
+
+| **28** | Replication outside region            | **GRS + RA-GRS**                     |
+
+| **29** | Real-time processing                  | **Low latency + as data is created** |
+
+| **30** | Data shown in table/rows/columns      | **Structured**                       |
+
+
+| Q      | Trigger                        | Answer                              |
+| ------ | ------------------------------ | ----------------------------------- |
+
+| **31** | POSIX ACLs                     | **Azure Data Lake Storage**         |
+
+| **32** | Batch → noticeable delay       | **YES / Noticeable delay**          |
+
+| **33** | Nodes + edges                  | **Graph DB**                        |
+
+| **34** | Relationships between devices  | **Graph**                           |
+
+| **35** | Structured vs semi-structured  | **Fixed schema vs Flexible schema** |
+
+| **36** | Future quarter prediction      | **Predictive**                      |
+
+
+| **37** | Small work events in real time | **Transactional / OLTP**            |
+
+| **38** | Banking money transfer         | **OLTP**                            |
+
+| **39** | Tabular data                   | **Structured**                      |
+
+| **40** | DBA responsibility             | **Backup copies**                   |
+
+| **41** | File/folder-level ACLs         | **Azure Data Lake Storage**         |
+
+| **42** | Nodes + relationships          | **Graph**                           |
+
+| **43** | Analytical data stores         | **Data Engineer**                   |
+
+| **44** | Blob storage →                 | **Objects/files**                   |
+|        | Cosmos DB Gremlin →            | **Relationships**                   |
+|        | Table storage →                | **Key/value pairs**                 |
+
+| **45** | Every 12 hours                 | **Batch**                           |
+|        | Real-time / thousands per sec  | **Streaming**                       |
+|        | Every 1M transactions          | **Batch**                           |
+
+| **46** | Why did it happen?             | **Diagnostic**                      |
+|        | What should I do? / guidance   | **Prescriptive**                    |
+|        | Detect images / AI recognition | **Cognitive**                       |
+
+| **47** | Pipeline DB → warehouse        | **Data Engineer**                   |
+|        | Create transactional DB        | **DBA**                             |
+|        | Sales chart                    | **Data Analyst**                    |
+
+| **48** | Backup + recovery              | **DBA**                             |
+|        | Reports / analytics            | **Data Analyst**                    |
+|        | Monitor pipelines              | **Data Engineer**                   |
+
+| **49** | Assign permissions             | **DBA**                             |
+|        | Visualizations + charts        | **Data Analyst**                    |
+|        | Transfer/transform pipelines   | **Data Engineer**                   |
+
+
+
+current student enrollment versus the maximum capacity - descriptive
+university's current student enrolment per department is an example of - descriptive
+To add a new attribute to an entity in structured data, you need to - 
+[update all the records in the entity table to include the new column.]
+Transparent Data Encryption (TDE) encrypts: The database to protect data at rest
+
+
+
+
+ | Q      | Trigger                                   | Answer                                                         |
+| ------ | ----------------------------------------- | -------------------------------------------------------------- |
+| **1**  | Username → default language               | **Key/value**                                                  |
+|        | Medical images + metadata                 | **Object**                                                     |
+|        | Employee relationships                    | **Graph**                                                      |
+| **2**  | ADLS requirement                          | **Hierarchical namespace (HNS)**                               |
+| **3**  | Page Blob                                 | **Random read/write**                                          |
+| **4**  | XML                                       | **Semi-structured**                                            |
+
+| **5**  | Hot tier → high-performance media         | **YES**                                                        |
+|        | Cool costs > Hot                          | **NO**                                                         |
+|        | Archive → highest latency                 | **YES**                                                        |
+
+| **6**  | Graph edges connect                       | **Vertices**                                                   |
+
+| **7**  | Comma-delimited                           | **CSV**                                                        |
+
+| **8**  | Hierarchical document format              | **JSON**                                                       |
+
+| **9**  | JSON + variable properties                | **Semi-structured**                                            |
+
+| **10** | Row-based + JSON header + binary          | **Avro**                                                       |
+
+| **11** | Cosmos graph query                        | **Gremlin**                                                    |
+
+| **12** | Cool = default tier                       | **NO**                                                         |
+|        | Append Blob → random read/write           | **NO**                                                         |
+|        | Archive retrieval → hours                 | **YES**                                                        |
+
+| **13** | Cosmos SELECT documents                   | **API for NoSQL**                                              |
+
+| **14** | Azure Files created in Storage Account    | **YES**                                                        |
+|        | Premium Files → HDD                       | **NO**                                                         |
+|        | Standard Files → SSD                      | **NO**                                                         |
+
+| **15** | Databricks consumes SQL/Event Hubs/Cosmos | **YES — all**                                                  |
+
+| **16** | Azure Table → multi-region reads          | **YES**                                                        |
+|        | Azure Table → multi-region writes         | **NO**                                                         |
+|        | Cosmos Table API → multi-region reads     | **YES**                                                        |
+|        | Cosmos Table API → multi-region writes    | **YES**                                                        |
+
+| **17** | Cosmos setting only at account creation   | **API**                                                        |
+
+| **18** | Cosmos redundancy within region           | **Availability Zones**                                         |
+
+| **19** | Network relationships/effects             | **Graph**                                                      |
+
+| **20** | Non-relational characteristic             | **Self-describing entities**                                   |
+
+| **21** | OLTP characteristics                      | **Normalized + Schema-on-write + Heavy writes/moderate reads** |
+
+| **22** | Blob → external cache sync                | **Change feed**                                                |
+
+| **23** | JSON-looking format                       | **JSON**                                                       |
+
+| **24** | XML tags format                           | **XML**                                                        |
+
+| **25** | Comma-separated format                    | **CSV**                                                        |
+
+| **26** | ADLS provisioning                         | **HNS enabled**                                                |
+
+| **27** | Non-relational characteristic             | **Self-describing entities**                                   |
+
+| **28** | Automatically delete blobs                | **Lifecycle management policy**                                |
+
+| **29** | Compressed columnar format                | **Parquet**                                                    |
+
+| **30** | Cosmos graph API                          | **Gremlin**                                                    |
+
+| **31** | Cosmos graph API                          | **Apache Gremlin**                                             |
+
+| **32** | Large IoT streaming data                  | **Cosmos DB**                                                  |
+
+| **33** | Cool tier read latency                    | **Few milliseconds**                                           |
+
+| **34** | Column-family database                    | **Column family**                                              |
+
+| **35** | Student structured analytical data        | **Columnar**                                                   |
+
+| **36** | JSON + flexible schema + whole entity     | **Document**                                                   |
+
+
+| **37** | Cosmos Table vs Azure Table               | **Multi-master**                                               |
+
+| **38** | Azure key/value service                   | **Azure Table**                                                |
+
+| **39** | <10 ms NoSQL reads/writes                 | **Cosmos DB**                                                  |
+| **40** | Cosmos container settings                 | **Partition key + Throughput**                                 |
+
+
+| **41** | Azure Table unique row                    | **PartitionKey + RowKey**                                      |
+
+| **42** | Semi-structured event logs                | **Azure Table**                                                |
+
+| **43** | Cosmos graph API                          | **Gremlin**                                                    |
+
+| **44** | Graph data                                | **Gremlin**                                                    |
+|        | JSON documents                            | **MongoDB**                                                    |
+|        | Key/value                                 | **Table**                                                      |
+
+| **45** | Graph data                                | **Gremlin**                                                    |
+|        | JSON documents                            | **NoSQL**                                                      |
+|        | Key/value                                 | **Table**                                                      |
+
+| **46** | Audio files                               | **Blob Storage**                                               |
+|        | JSON documents                            | **Cosmos DB for NoSQL**                                        |
+|        | Tabular datasets                          | **Azure SQL Database**                                         |
+
+
+
+
+
+| Q      | 🔑 Trigger                                     | ✅ Answer                                                  |
+| ------ | ---------------------------------------------- | --------------------------------------------------------- |
+
+| **1**  | ADLS Gen2 hierarchy                            | **Storage Account → Container → Directory → File**        |
+
+| **2**  | Average sales **per day**                      | **GROUP BY date + AVG()**                                 |
+
+| **3**  | Azure services → architecture                  | **Identify service by its role/use case**                 |
+
+| **4**  | **ELT**                                        | Extract→**Source**; Load→**Target**; Transform→**Target** |
+
+| **5**  | Colored nested rectangles                      | **Treemap**                                               |
+|        | Major contributors                             | **Key influencer**                                        |
+|        | Relationship between 2 numerical values        | **Scatter**                                               |
+
+| **6**  | Data structure representation                  | **Dataset**                                               |
+|        | Connection to external resources               | **Linked service**                                        |
+|        | Group of activities/workflow                   | **Pipeline**                                              |
+
+| **7**  | Object that holds data                         | **Table**                                                 |
+|        | Content defined by query                       | **View**                                                  |
+|        | Faster data retrieval                          | **Index**                                                 |
+
+| **8**  | Block network access                           | **Firewall**                                              |
+|        | Azure AD/Entra sign-ins                        | **Authentication**                                        |
+|        | Protect sensitive data from plain text         | **Encryption**                                            |
+
+| **9**  | Serverless configuration                       | **Azure SQL Database – Single Database**                  |
+|        | Highest SQL Server compatibility               | **Azure SQL Managed Instance**                            |
+|        | Multiple DBs share resources / low maintenance | **Elastic Pool**                                          |
+
+| **10** | Attributes →                                   | **Columns**                                               |
+|        | Entities →                                     | **Tables**                                                |
+|        | Link related entities                          | **Foreign keys**                                          |
+
+| **11** | **ETL**                                        | **Transform BEFORE Load**                                 |
+
+| **12** | Top-level JSON object                          | **Root object**                                           |
+|        | Object inside another object                   | **Nested object**                                         |
+|        | `[]` collection                                | **Nested array**                                          |
+
+| **13** | Fact + dimensions                              | **Star schema**                                           |
+|        | Customer                                       | **Dimension table**                                       |
+
+| **14** | Synapse **MPP**                                | **Distributes processing across compute nodes**           |
+
+| **15** | Rows sorted/stored by key                      | **Clustered index**                                       |
+
+
+| Q      | 🔑 Trigger                                   | ✅ Answer                                |
+| ------ | -------------------------------------------- | --------------------------------------- |
+
+| **16** | Relational DB + high-volume writes           | **Transactional writes / OLTP**         |
+
+| **17** | Cosmos DB + `SELECT` statements on documents | **Core (SQL) API**                      |
+
+| **18** | Colored rectangles + size = relative value   | **Treemap**                             |
+
+| **19** | Aggregate functions                          | **MAX(), MIN()**                        |
+
+| **20** | Relational table rows                        | **Same set of columns**                 |
+
+| **21** | SQL Server on Azure **IaaS**                 | Manage the **Virtual Machine**          |
+
+| **22** | Full SQL Server management/admin             | **SSMS**                                |
+|        | Lightweight SQL queries/results              | **Azure Data Studio**                   |
+|        | Database/SSAS/SSIS/SSRS development          | **SSDT**                                |
+
+| **23** | `dbo.Products`                               | **Table**                               |
+|        | `ProductName`                                | **Column**                              |
+
+| **24** | Relational DB required                       | **Strong consistency guarantees**       |
+
+| **25** | Relationships between relational tables      | **Keys**                                |
+
+| **26** | Virtual table + query-defined content        | **View**                                |
+
+| **27** | Uniquely identifies each row                 | **Primary key**                         |
+
+| **28** | Content defined by query                     | **View**                                |
+
+| **29** | Folder-level security + atomic directories   | **Enable Hierarchical Namespace (HNS)** |
+
+| **30** | SQL queries against JSON documents           | **Azure Cosmos DB**                     |
+|        | SMB v3 file access                           | **Azure Files**                         |
+
+
+
+| Q      | 🔑 Trigger                                | ✅ Answer                                 |
+| ------ | ----------------------------------------- | ---------------------------------------- |
+
+| **31** | Cosmos DB API specified when provisioning | **Account**                              |
+
+| **32** | Cosmos **Gremlin** container projected as | **Graph**                                |
+
+| **33** | Graph DB → nodes + edges                  | **Gremlin language**                     |
+
+| **34** | Rows sorted by key values                 | **Clustered index**                      |
+
+| **35** | Non-relational database                   | **No fixed schema**                      |
+
+| **36** | Atomicity                                 | **All succeed OR rollback**              |
+|        | Consistency                               | **Valid state/rules maintained**         |
+|        | Isolation                                 | **Transactions/processes isolated**      |
+
+| **37** | Multiple Azure SQL DBs share resources    | **Elastic Pool**                         |
+
+| **38** | DML row criteria/filter                   | **WHERE**                                |
+
+| **39** | Multiple Azure SQL DBs share resources    | **Elastic Pool**                         |
+
+| **40** | DML command                               | **UPDATE**                               |
+
+| **41** | Block blob blocks all same fixed size     | **NO**                                   |
+|        | Blob stored in                            | **Container**                            |
+|        | HNS disabled + folder-level access        | **NO**                                   |
+
+| **42** | Add attribute to structured entity        | **Add new column / update schema**       |
+
+| **43** | TDE                                       | **Database → Data at rest**              |
+
+| **44** | Start Power BI analytics workflow         | **Power BI Desktop**                     |
+
+
+| **45** | PaaS relational + MPP                     | **Azure Synapse Analytics**              |
+
+| **46** | Physically sorts table data by key        | **Clustered index**                      |
+
+| **47** | Relational data                           | **Rows + columns / tabular**             |
+
+| **48** | Default Azure SQL network protection      | **Server-level firewall**                |
+
+| **49** | SQL Server tables store                   | **Relational data**                      |
+
+| **50** | Lift-and-shift SQL Server                 | **SQL Server on Azure Virtual Machines** |
+
+
+| **51** | Relational DB commonly stores             | **Structured data**                      |
+
+| **52** | Relationships between relational tables   | **Keys**                                 |
+
+| **53** | Azure SQL optimized for IoT               | **Azure SQL Edge**                       |
+
+| **54** | pgAdmin → PostgreSQL                      | **YES**                                  |
+|        | MariaDB PITR up to 365 days               | **NO**                                   |
+|        | MySQL always requires SSL                 | **NO**                                   |
+
+| **55** | Normalization eliminates relationships    | **NO**                                   |
+|        | Normalization reduces redundancy          | **YES**                                  |
+|        | Normalization improves integrity          | **YES**                                  |
+
+
+
+| Q      | 🔑 Trigger                                               | ✅ Answer                      |
+| ------ | -------------------------------------------------------- | ------------------------------- |
+
+| **56** | PaaS → less setup than IaaS                              | **YES**                         |
+|        | PaaS → user controls OS updates                          | **NO**                          |
+|        | All PaaS DBs can be paused to save cost                  | **NO**                          |
+
+| **57** | ETL → sensitive data transfer                            | **Can reduce transfer → YES**   |
+|        | ELT transforms using independent compute                 | **NO**                          |
+|        | ELT → faster copying large data                          | **YES**                         |
+
+| **58** | Managed Instance → multiple DBs + cross-database queries | **YES**                         |
+|        | Elastic Pool → Azure VMs                                 | **NO**                          |
+|        | Azure SQL Database → fully SQL Server compatible         | **NO**                          |
+
+| **59** | Relational table                                         | **Columns + rows → YES**        |
+|        | Index → describes data types                             | **NO**                          |
+|        | View → virtual table defined by query                    | **YES**                         |
+
+| **60** | Azure SQL Database → managed backup                      | **YES**                         |
+|        | Azure SQL Database → built-in HA                         | **YES**                         |
+|        | Azure SQL Database → Azure Defender                      | **YES**                         |
+
+| **61** | PaaS → built-in HA                                       | **YES**                         |
+|        | PaaS → configurable scaling                              | **YES**                         |
+|        | PaaS → less hardware administration                      | **YES**                         |
+
+| **62** | Azure SQL → user applies OS updates                      | **NO**                          |
+|        | Azure SQL → Microsoft 365 required                       | **NO**                          |
+|        | Existing SQL Server licenses → reduce cost               | **YES**                         |
+
+| **63** | Azure Data Studio → macOS SQL querying                   | **YES**                         |
+|        | SSMS → SQL notebooks                                     | **NO**                          |
+|        | Azure Data Studio → database restore                     | **YES**                         |
+
+| **64** | PaaS → user applies OS updates                           | **NO**                          |
+|        | PaaS → automatic backups                                 | **YES**                         |
+|        | PaaS → user installs DB engine                           | **NO**                          |
+
+| **65** | Cosmos API configured per database                       | **NO → Account level**          |
+|        | Partition keys → optimize queries                        | **YES**                         |
+|        | Same logical partition → different partition keys        | **NO**                          |
+
+| **66** | Cross-region data copy → extra cost                      | **YES**                         |
+|        | Blob + Table + File in same Storage Account              | **YES**                         |
+|        | ADLS → create Storage Account                            | **YES**                         |
+
+| **67** | Normalization → increases write throughput               | **NO**                          |
+|        | Analytics → more normalized than transactional           | **NO**                          |
+|        | Normalization → more joins                               | **YES**                         |
+
+| **68** | Azure Table → multiple read replicas                     | **YES**                         |
+|        | Azure Table → multiple write regions                     | **NO**                          |
+|        | Cosmos Table API → multiple read replicas                | **YES**                         |
+|        | Cosmos Table API → multiple write regions                | **YES**                         |
+
+| **69** | PostgreSQL on Azure VM                                   | **IaaS**                        |
+|        | Azure Database for PostgreSQL                            | **PaaS**                        |
+
+| **70** | First resource for Azure Table Storage                   | **Storage Account**             |
+
+| **71** | DML                                                      | **INSERT**                      |
+
+| **72** | DML                                                      | **UPDATE**                      |
+
+| **73** | Create Azure resource for Table Storage                  | **`az storage account create`** |
+
+| **74** | Modify database object/schema                            | **ALTER**                       |
+
+| **75** | PaaS relational DB + autoscaling                         | **Azure SQL Database**          |
+
+| **76** | Block of executable database code                        | **Stored procedure**            |
+
+
+| Q       | 🔑 Trigger                                         | ✅ Answer                                                            |
+| ------- | -------------------------------------------------- | --------------------------------------------------------------------- |
+
+| **77**  | Change existing value/data                         | **UPDATE**                                                            |
+
+| **78**  | Relational DB + minimum maintenance                | **Azure SQL Database**                                                |
+
+| **79**  | Application reads + writes transactions            | **OLTP**                                                              |
+
+| **80**  | ARM template                                       | **Repeatable creation of interdependent Azure resources**             |
+
+| **81**  | Public IP changed → SQL inaccessible               | **Database-level firewall**                                           |
+
+| **82**  | DDL                                                | **CREATE**                                                            |
+
+| **83**  | SaaS + relational + OLTP                           | **Azure SQL Database**                                                |
+
+| **84**  | Always-connect Azure SQL account                   | **Logical server admin login**                                        |
+
+| **85**  | Windows + Ubuntu + IntelliSense                    | **Azure Data Studio**                                                 |
+
+| **86**  | MFA for Azure SQL                                  | **Azure AD / Entra authentication**                                   |
+
+| **87**  | Managed Instance advantage                         | **Cross-database queries + transactions**                             |
+
+| **88**  | Graphical + project-based + offline DB development | **SSDT**                                                              |
+
+| **89**  | Reports without affecting transactions             | **Read-only replica**                                                 |
+
+| **90**  | Combine rows from tables                           | **JOIN**                                                              |
+
+| **91**  | VM → SQL without public Internet                   | **Azure Private Link**                                                |
+
+| **92**  | Highest SQL Server compatibility                   | **Azure SQL Managed Instance**                                        |
+
+| **93**  | Native SQL API + configurable indexes              | **Azure Cosmos DB**                                                   |
+
+| **94**  | Lowest-latency website session data                | **Key/value**                                                         |
+
+| **95**  | Windows mapped drive                               | **Azure Files**                                                       |
+
+| **96**  | High-volume JSON + flexible schema                 | **Document store**                                                    |
+
+| **97**  | Temperature sensors + trends                       | **Time series**                                                       |
+
+| **98**  | Cosmos DB throughput levels                        | **Database + Container**                                              |
+
+| **99**  | OLTP characteristics                               | **Denormalized + Heavy writes/moderate reads + Schema defined in DB** |
+
+| **100** | Tables with rows + columns                         | **Structured**                                                        |
