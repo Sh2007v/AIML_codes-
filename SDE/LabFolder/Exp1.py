@@ -49,9 +49,13 @@ import pandas as pd
 # print(df1.iloc[0:2,0:3])
 #print(df1.iloc[2,3] = 56)
 
-df3 = pd.read_excel("AIML_codes-/SDE/LabFolder/Diabetes_data.xlsx ")
-print(df3)
-print(df3.corr(numeric_only = True))
+# df3 = pd.read_excel("AIML_codes-/SDE/LabFolder/Diabetes_data.xlsx ")
+# print(df3)
+# print(df3.corr(numeric_only = True))
+
+
+
+
 
 
 
