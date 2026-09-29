@@ -1,0 +1,81 @@
+1. String Basics
+   ├── Creation
+   ├── length()
+   ├── charAt()
+   └── Input
+
+2. String Traversal
+   └── Loop through characters
+
+3. Character Manipulation
+   ├── Character → ASCII
+   ├── Uppercase/lowercase
+   └── Character checks
+
+4. String Comparison
+   ├── equals()
+   ├── equalsIgnoreCase()
+   └── compareTo()
+
+5. Reverse String
+   ├── Loop
+   └── StringBuilder
+
+6. Palindrome
+   └── Basic + Two Pointers
+
+7. substring()
+   └── Extract portions of strings
+
+8. StringBuilder
+   ├── append()
+   ├── insert()
+   ├── delete()
+   └── reverse()
+
+9. Frequency / Character Counting
+   └── Basic counting
+
+10. String + Arrays
+    └── Convert/manipulate characters
+
+11. String + Two Pointers
+    ├── Palindrome
+    ├── Reverse
+    └── Matching characters
+
+12. String + Sliding Window
+    ├── Fixed window
+    └── Later variable window
+
+
+
+
+
+
+Part 1
+String Basics
+   ├── Creation
+   ├── length()
+   ├── charAt()
+   └── Input
+
+Creation
+    1. String name = "Virdi";
+    String is not a primitive data type
+
+length() : tells you the number of the characters in a string
+charAt() : gives you a particular character
+s.charAt(s.length() - 1) = last character
+
+ASCII values : 
+'A' → 65
+'B' → 66
+'C' → 67
+
+'a' → 97
+'b' → 98
+'c' → 99
+
+'0' → 48
+'1' → 49
