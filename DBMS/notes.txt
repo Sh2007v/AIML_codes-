@@ -89,6 +89,16 @@ SET OPERATIONS
             on db_name.t_name
             from 'username'@'localhost'
         
+| Command/Clause | Purpose           | Example                         |
+| -------------- | ----------------- | ------------------------------- |
+| `INSERT`       | Add rows          | `INSERT INTO Student ...`       |
+| `UPDATE`       | Modify rows       | `UPDATE Student SET Age=21 ...` |
+| `DELETE`       | Remove rows       | `DELETE FROM Student WHERE ...` |
+| `SELECT`       | Retrieve data     | `SELECT * FROM Student`         |
+| `WHERE`        | Filter rows       | `WHERE Age > 20`                |
+| `ORDER BY`     | Sort results      | `ORDER BY Age DESC`             |
+| `DISTINCT`     | Remove duplicates | `SELECT DISTINCT Course`        |
+| `LIMIT`        | Restrict rows     | `LIMIT 5`                       |
 
         
               
