@@ -263,6 +263,59 @@ import java.util.ArrayList;
 // }
 
 
+// import java.util.ArrayList;
+// import java.util.Scanner;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         ArrayList<Integer> list = new ArrayList<>();
+
+//         System.out.println("Enter the size: ");
+//         int n = sc.nextInt();
+
+//         System.out.println("Enter the list : ");
+//         for(int i=0;i<n;i++){
+//             list.add(sc.nextInt());
+//         }
+
+//         int ct_even = 0;
+
+//         for(int i=0;i<n;i++){
+//             if(list.get(i)%2 == 0){
+//                 ct_even++;
+//             }
+//         }
+
+//         system.out.println(ct_even);
+//     }
+// }
+
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class practice{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        System.out.println("Enter the size : ");
+        int n = sc.nextInt();
+
+        System.out.println("Enter the array : ");
+        for(int i=0;i<n;i++){
+            numbers.add(sc.nextInt());
+        }
+
+        for(int i=numbers.size()-1;i>=0;i--){
+            System.out.print(numbers.get(i)+" ");
+        }
+    }
+}
+
 
 
 
