@@ -1,2 +1,75 @@
 LinkedList:
     
+| Operation    | ArrayList                    | LinkedList           | Main difference                               |
+| ------------ | ---------------------------- | -------------------- | --------------------------------------------- |
+| Add          | `list.add(40)`               | `list.add(40)`       | Both add at end                               |
+| Get          | `list.get(1)`                | `list.get(1)`        | ArrayList is faster                           |
+| Update       | `list.set(1, 25)`            | `list.set(1, 25)`    | ArrayList is faster                           |
+| Remove       | `list.remove(1)`             | `list.remove(1)`     | LinkedList can be faster once node is located |
+| Search       | `list.contains(20)`          | `list.contains(20)`  | Both generally `O(n)`                         |
+| Size         | `list.size()`                | `list.size()`        | Both `O(1)`                                   |
+| Add First    | `list.add(0, 5)`             | `list.addFirst(5)`   | LinkedList is better                          |
+| Add Last     | `list.add(50)`               | `list.addLast(50)`   | Both generally `O(1)`                         |
+| Remove First | `list.remove(0)`             | `list.removeFirst()` | LinkedList is better                          |
+| Remove Last  | `list.remove(list.size()-1)` | `list.removeLast()`  | Both generally `O(1)`                         |
+
+One complete example for linked list important methods
+
+#	Method	Purpose	Example
+
+1	add()	Add an element at the end	list.add(40);
+2	addFirst()	Add an element at the beginning	list.addFirst(5);
+3	addLast()	Add an element at the end	list.addLast(50);
+4	get()	Access an element by index	list.get(1);
+5	getFirst()	Get the first element	list.getFirst();
+6	getLast()	Get the last element	list.getLast();
+7	set()	Replace an element at an index	list.set(1, 25);
+8	remove()	Remove an element by index	list.remove(1);
+9	removeFirst()	Remove the first element	list.removeFirst();
+10	removeLast()	Remove the last element	list.removeLast();
+
+3 additional methods worth learning
+
+Method	Purpose
+size()	Returns the number of elements
+contains()	Checks whether an element exists
+isEmpty()	Checks whether the list is empty
+
+
+
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> list = new LinkedList<>();
+
+        // Adding elements
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.addFirst(5);
+        list.addLast(40);
+
+        System.out.println("List: " + list);
+
+        // Accessing elements
+        System.out.println("First: " + list.getFirst());
+        System.out.println("Last: " + list.getLast());
+        System.out.println("Element at index 2: " + list.get(2));
+
+        // Updating an element
+        list.set(1, 15);
+        System.out.println("After update: " + list);
+
+        // Removing elements
+        list.removeFirst();
+        list.removeLast();
+        System.out.println("After removal: " + list);
+
+        // Other useful methods
+        System.out.println("Size: " + list.size());
+        System.out.println("Contains 20: " + list.contains(20));
+        System.out.println("Is empty: " + list.isEmpty());
+    }
+}
