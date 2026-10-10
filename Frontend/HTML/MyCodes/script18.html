@@ -1,0 +1,20 @@
+<head>
+    <script>
+    function validateForm(){
+        var uname = document.getElementById("username").value;
+        var desc = document.getElementById("description").value;
+        var p1 = document.getElementById("pwd1").value;
+        var p2 = document.getElementById("pwd2").value;
+        if(uname == "" || desc == "" || p1 == "" || p2 ==""){
+            alert("Please fill all required fields!");
+            return false;
+        }
+        else{
+            if(p1 != p2){
+                alert("Password & Retype-passwords must be same!");
+                return false;
+            }
+        }
+    }
+    </script>
+</head>
