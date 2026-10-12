@@ -1,0 +1,59 @@
+Python Variables
+1. What is a Variable?
+A variable is a name used to store or refer to a value in a program.
+name = "Rahul"
+age = 20
+marks = 85.5
+
+Here, name, age, and marks are variables.
+2. Syntax
+variable_name = value
+
+Example:
+x = 10
+
+
+- x → Variable name
+- = → Assignment operator
+- 10 → Value assigned to the variable
+
+3. Types of Values
+Python automatically determines the data type of a variable.
+
+Example	Data type
+age = 20	int
+price = 99.5	float
+name = "Rahul"	str
+is_pass = True	bool
+You can check the type using type():
+x = 10
+print(type(x))  # <class 'int'>
+
+4. Rules for Naming Variables
+- Must start with a letter or underscore (_).
+- Cannot start with a number.
+- Can contain letters, numbers, and underscores.
+- Names are case-sensitive (age and Age are different).
+- Cannot use Python keywords such as if, for, or class.
+
+Valid	Invalid
+student_name	student-name
+_count	2count
+marks1	class
+
+5. Reassigning Variables
+You can change the value stored in a variable.
+x = 10
+x = 25
+print(x)  # 25
+
+Python also supports assigning multiple variables at once:
+a, b = 10, 20
+
+6. Important Point
+Python is dynamically typed, meaning a variable can refer to values of different types during execution.
+x = 10
+x = "Hello"
+
+Initially, x refers to an integer; later, it refers to a string.
+
