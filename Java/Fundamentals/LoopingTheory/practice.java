@@ -598,7 +598,15 @@ package Java.Fundamentals.LoopingTheory;
 //     }
 // }
 
+// public class practice{
+//     public static void main(String[] args){
 
+//         for(int i=0;i<=100000;i++){
+//             System.out.println("FUCK YOU ALL !");
+//         }
+//         System.out.println("THANK YOU");
+//     }
+// }
 
 
 
