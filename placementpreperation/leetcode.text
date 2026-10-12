@@ -1,0 +1,3 @@
+This file is for writing the patterns of each problem which I solve daily :
+
+1. Happy Number:  the pattern is digit processing + cycle detection using a HashSet.
