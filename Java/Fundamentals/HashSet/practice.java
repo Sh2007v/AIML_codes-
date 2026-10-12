@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.HashSet;
+import java.util.LinkedList;
 
 
 //Print unique elements
@@ -74,43 +75,43 @@ import java.util.HashSet;
 
 // Find common elements of two arrays
 
-public class practice {
+// public class practice {
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+//         Scanner sc = new Scanner(System.in);
 
-        // Size of first array
-        int n1 = sc.nextInt();
+//         // Size of first array
+//         int n1 = sc.nextInt();
 
-        HashSet<Integer> first = new HashSet<>();
+//         HashSet<Integer> first = new HashSet<>();
 
-        // Store first array elements
-        for (int i = 0; i < n1; i++) {
-            first.add(sc.nextInt());
-        }
+//         // Store first array elements
+//         for (int i = 0; i < n1; i++) {
+//             first.add(sc.nextInt());
+//         }
 
-        // Size of second array
-        int n2 = sc.nextInt();
+//         // Size of second array
+//         int n2 = sc.nextInt();
 
-        HashSet<Integer> common = new HashSet<>();
+//         HashSet<Integer> common = new HashSet<>();
 
-        // Check second array elements
-        for (int i = 0; i < n2; i++) {
+//         // Check second array elements
+//         for (int i = 0; i < n2; i++) {
 
-            int element = sc.nextInt();
+//             int element = sc.nextInt();
 
-            if (first.contains(element)) {
-                common.add(element);
-            }
-        }
+//             if (first.contains(element)) {
+//                 common.add(element);
+//             }
+//         }
 
-        // Print common elements
-        System.out.println(common);
+//         // Print common elements
+//         System.out.println(common);
 
-        sc.close();
-    }
-}
+//         sc.close();
+//     }
+// }
 
 
 //Check Whether Two Arrays Contain the Same Unique Elements
@@ -157,4 +158,85 @@ public class practice {
 
 
 // Find the missing number from the array 1 to N
+
+// Input n numbers and print unique elements and total numner of unique elements
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         HashSet<Integer> set = new HashSet<>();
+
+//         System.out.println("Enter the size : ");
+//         int size = sc.nextInt();
+
+//         for(int i=0;i<size;i++){
+//             set.add(sc.nextInt());
+//         }
+//         System.out.println("Number of unique elements : " + set.size());
+
+//     }
+// }
+
+// Wether an element exists
+
+// public class practice{ 
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         HashSet<Integer> set = new HashSet<>();
+
+//         System.out.println("Enter the size : ");
+//         int size = sc.nextInt();
+
+//         System.out.println("Enter the set : ");
+//         for(int i=0;i<size;i++){
+//             set.add(sc.nextInt());
+//         }
+
+//         System.out.println("Enter target element : ");
+//         int target = sc.nextInt();
+
+//         System.out.println(set.contains(target));
+//     }
+// }
+
+// Find common elements in two lists
+
+// import java.util.HashSet;
+// import java.util.Scanner;
+
+// public class practice {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         HashSet<Integer> set1 = new HashSet<>();
+//         HashSet<Integer> common = new HashSet<>();
+
+//         System.out.println("Enter size of first list:");
+//         int n1 = sc.nextInt();
+
+//         System.out.println("Enter elements of first list:");
+//         for (int i = 0; i < n1; i++) {
+//             set1.add(sc.nextInt());
+//         }
+
+//         System.out.println("Enter size of second list:");
+//         int n2 = sc.nextInt();
+
+//         System.out.println("Enter elements of second list:");
+//         for (int i = 0; i < n2; i++) {
+//             int element = sc.nextInt();
+
+//             if (set1.contains(element)) {
+//                 common.add(element);
+//             }
+//         }
+
+//         System.out.println("Common elements: " + common);
+
+//         sc.close();
+//     }
+// }
+
 
