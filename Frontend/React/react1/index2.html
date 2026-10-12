@@ -1,0 +1,30 @@
+<head>
+    <script type="text/javascript" language="javascript">
+        function saveForm(){
+            un = document.getElementById("username").value;
+            pw = document.getElementById("pwd1").value;
+
+            //save in localStorage
+            localStorage.users = JSON.stringify({username: un, password: pw});
+            document.getElementById("aftersave").style.display="block";
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1" method="get" onSubmit="return saveForm()">
+        Username: <input type="text" name="password" id="username"><br>
+        Password: <input type="password" name="pwd1" id="pwd1"><br>
+        Retype Password: <input type="password" name="pwd2" id="pwd2"><br>
+        <input type="submit" value="submit">
+        <br><br>
+        <div id="aftersave">
+            <h2 id="saveinfo">Registered Successfully!</h2>
+            <a href="login.html">Login Here</a>
+        </div>
+    </form>
+    <script>
+        document.getElementById("aftersave").style.display = "none";
+    </script>
+</body>
