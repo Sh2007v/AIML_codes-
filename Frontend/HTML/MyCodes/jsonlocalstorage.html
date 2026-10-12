@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+<script>
+
+    localStorage.user = JSON.stringify({name: un , password:pw});
+//getting user data from local storage
+    let userdata = JSON.parse(localStorage.user);  
+    function validate(){
+        let u = loginform.uname.value;
+        let p = loginform.pwd.value;
+        if(u == userdata.name && p == userdata.password)
+            return true;
+        else{
+            document.getElementById("showError").innerText = "Invalid creadentials!";
+            return false;
+        }
+    }
+</script>
+</head>
+<body>
+    <h2 id="showError"></h2>
+    <form name="loginform" action="web8.html" onsubmit="return validate()">
+        Username: <input type="text" name="uname"><br>
+        Password: <input type="password" name="pwd"><br>
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
