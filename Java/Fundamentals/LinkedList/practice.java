@@ -423,3 +423,117 @@
 //     }
 // }
 
+//Rotate linked list by k positions
+// import java.util.LinkedList;
+// import java.util.Scanner;
+
+// public class practice {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         LinkedList<Integer> list = new LinkedList<>();
+
+//         System.out.println("Enter the size:");
+//         int size = sc.nextInt();
+
+//         System.out.println("Enter the elements:");
+//         for (int i = 0; i < size; i++) {
+//             list.add(sc.nextInt());
+//         }
+
+//         System.out.println("Enter k:");
+//         int k = sc.nextInt();
+
+//         if (!list.isEmpty()) {
+//             k = k % list.size();
+
+//             for (int i = 0; i < k; i++) {
+//                 int last = list.removeLast();
+//                 list.addFirst(last);
+//             }
+//         }
+
+//         System.out.println("Rotated list: " + list);
+
+//         sc.close();
+//     }
+// }
+
+//Remove all duplicates from a linked list
+
+// import java.util.Scanner;
+// import java.util.LinkedList;
+
+// public class practice {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         LinkedList<Integer> list = new LinkedList<>();
+
+//         System.out.println("Enter the size:");
+//         int size = sc.nextInt();
+
+//         System.out.println("Enter the elements:");
+//         for (int i = 0; i < size; i++) {
+//             list.add(sc.nextInt());
+//         }
+
+//         for (int j = 0; j < list.size(); j++) {
+//             for (int k = j + 1; k < list.size(); k++) {
+//                 if (list.get(j).equals(list.get(k))) {
+//                     list.remove(k);
+//                     k--;
+//                 }
+//             }
+//         }
+
+//         System.out.println("LinkedList after removing duplicates: " + list);
+
+//         sc.close();
+//     }
+// }
+
+//5. Rearrange the List in Alternating High–Low Order
+
+// import java.util.LinkedList;
+// import java.util.Scanner;
+
+// public class practice {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         LinkedList<Integer> list = new LinkedList<>();
+
+//         System.out.println("Enter the size:");
+//         int size = sc.nextInt();
+
+//         System.out.println("Enter the elements:");
+//         for (int i = 0; i < size; i++) {
+//             list.add(sc.nextInt());
+//         }
+
+//         // i = 0: a1 <= a2
+//         // i = 1: a2 >= a3
+//         // i = 2: a3 <= a4
+//         for (int i = 0; i < list.size() - 1; i++) {
+//             if (i % 2 == 0) {
+//                 // Even index: current <= next
+//                 if (list.get(i) > list.get(i + 1)) {
+//                     int temp = list.get(i);
+//                     list.set(i, list.get(i + 1));
+//                     list.set(i + 1, temp);
+//                 }
+//             } else {
+//                 // Odd index: current >= next
+//                 if (list.get(i) < list.get(i + 1)) {
+//                     int temp = list.get(i);
+//                     list.set(i, list.get(i + 1));
+//                     list.set(i + 1, temp);
+//                 }
+//             }
+//         }
+
+//         System.out.println("Rearranged list: " + list);
+//         sc.close();
+//     }
+// }
+
