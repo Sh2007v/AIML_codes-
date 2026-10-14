@@ -57,3 +57,28 @@ x = "Hello"
 
 Initially, x refers to an integer; later, it refers to a string.
 
+
+2. Main Python Data Types
+
+Data  type	Description	Example
+int	Whole numbers	age = 20
+float	Decimal numbers	price = 99.5
+complex	Complex numbers	z = 2 + 3j
+str	Text or characters	name = "Rahul"
+bool	Logical values	passed = True
+list	Ordered, mutable collection	nums = [1, 2, 3]
+tuple	Ordered, immutable collection	nums = (1, 2, 3)
+set	Collection of unique elements	nums = {1, 2, 3}
+dict	Key-value pairs	student = {"age": 20}
+NoneType	Represents the absence of a value	x = None
+
+
+Common conversion functions:
+Function	Converts to
+int()	Integer
+float()	Floating-point number
+str()	String
+bool()	Boolean
+list()	List
+tuple()	Tuple
+set()	Set
