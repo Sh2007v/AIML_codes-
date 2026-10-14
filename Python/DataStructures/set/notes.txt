@@ -1,0 +1,23 @@
+Sets : unique+unordered+mutable
+num={1,2,3}
+mixed data types
+
+
+1	add(x)	            Adds one element	                              A.add(7)
+2	update(iterable)	Adds multiple elements	                     A.update([5, 6])
+3	remove(x)	        Removes an element; error if absent	             A.remove(2)
+4	discard(x)	        Removes an element; no error if absent	          A.discard(10)
+5	pop()	            Removes and returns an arbitrary element         A.pop()
+6	clear()	            Removes all elements	                             A.clear()
+7	copy()	                    Creates a shallow copy	                    C = A.copy()
+8	union(B)	            Returns all unique elements from both sets	    A.union(B)
+9	intersection(B)	        Returns common elements	                          A.intersection(B)
+10	difference(B)	        Returns elements in A but not B	                     A.difference(B)
+11	symmetric_difference(B)	Returns elements in either set but not both	        A.symmetric_difference(B)
+12	intersection_update(B)	Keeps only common elements in A	                        A.intersection_update(B)
+13	difference_update(B)	Removes B's elements from A	                         A.difference_update(B)
+14	issubset(B)	            Checks whether A is a subset of B	                A.issubset(B)
+15	issuperset(B)	        Checks whether A contains every element of B	        A.issuperset(B)
+
+
+
