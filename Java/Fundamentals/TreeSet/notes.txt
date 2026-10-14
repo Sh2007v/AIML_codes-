@@ -1,0 +1,130 @@
+TreeSet : collects unique element in sorted order
+
+Features :
+    no duplicates
+    sorted order
+    no index based access
+
+1.e.g.
+
+import java.util.TreeSet;
+import java.util.Scanner;
+
+public class practice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        TreeSet<Integer> set = new TreeSet<>();
+
+        System.out.println("Enter the size:");
+        int n = sc.nextInt();
+
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < n; i++) {
+            set.add(sc.nextInt());
+        }
+
+        System.out.println("TreeSet: " + set);
+        System.out.println("Smallest element: " + set.first());
+        System.out.println("Largest element: " + set.last());
+
+        sc.close();
+    }
+}
+
+
+Important TreeSet methods
+Method	        Purpose
+add(value)	    Adds a unique element
+remove(value)	Removes an element
+contains(value)	Checks whether an element exists
+first()	        Returns the smallest element
+last()	        Returns the largest element
+higher(value)	Returns the smallest element strictly greater than the value
+lower(value)	Returns the largest element strictly smaller than the value
+ceiling(value)	Returns the smallest element greater than or equal to the value
+floor(value)	Returns the largest element less than or equal to the value
+pollFirst()	    Removes and returns the smallest element
+pollLast()	    Removes and returns the largest element
+size()	        Returns the number of elements
+
+
+import java.util.TreeSet;
+
+public class practice {
+    public static void main(String[] args) {
+
+        TreeSet<Integer> set = new TreeSet<>();
+
+        // 1. add() - Add elements in sorted order
+        set.add(30);
+        set.add(10);
+        set.add(20);
+        set.add(40);
+        set.add(20);  // Duplicate ignored
+        System.out.println("TreeSet: " + set);
+
+        // 2. size() - Number of elements
+        System.out.println("Size: " + set.size());
+
+        // 3. contains() - Check if element exists
+        System.out.println("Contains 20: " + set.contains(20));
+
+        // 4. first() - Smallest element
+        System.out.println("First: " + set.first());
+
+        // 5. last() - Largest element
+        System.out.println("Last: " + set.last());
+
+        // 6. higher() - Smallest element strictly greater than value
+        System.out.println("Higher than 20: " + set.higher(20));
+
+        // 7. lower() - Largest element strictly smaller than value
+        System.out.println("Lower than 20: " + set.lower(20));
+
+        // 8. ceiling() - Smallest element greater than or equal to value
+        System.out.println("Ceiling of 25: " + set.ceiling(25));
+
+        // 9. floor() - Largest element less than or equal to value
+        System.out.println("Floor of 25: " + set.floor(25));
+
+        // 10. remove() - Remove a specific element
+        set.remove(20);
+        System.out.println("After removing 20: " + set);
+
+        // 11. pollFirst() - Remove and return smallest element
+        System.out.println("Removed first: " + set.pollFirst());
+        System.out.println("After pollFirst: " + set);
+
+        // 12. pollLast() - Remove and return largest element
+        System.out.println("Removed last: " + set.pollLast());
+        System.out.println("After pollLast: " + set);
+
+        // 13. isEmpty() - Check if set is empty
+        System.out.println("Is empty: " + set.isEmpty());
+
+        // 14. clear() - Remove all elements
+        set.clear();
+        System.out.println("After clear: " + set);
+        System.out.println("Is empty now: " + set.isEmpty());
+    }
+}
+
+output
+TreeSet: [10, 20, 30, 40]
+Size: 4
+Contains 20: true
+First: 10
+Last: 40
+Higher than 20: 30
+Lower than 20: 10
+Ceiling of 25: 30
+Floor of 25: 20
+After removing 20: [10, 30, 40]
+Removed first: 10
+After pollFirst: [30, 40]
+Removed last: 40
+After pollLast: [30]
+Is empty: false
+After clear: []
+Is empty now: true
+
