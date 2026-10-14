@@ -23,5 +23,19 @@ HashMap
 | `keySet()`        | `map.keySet();`             | Returns all keys                                     | `map.keySet();` → `[101, 102, 103]`     |
 | `values()`        | `map.values();`             | Returns all values                                   | `map.values();` → `[Aman, Rahul, Ravi]` |
 
+3. Important HashMap methods
+Method	                                        Purpose
+put(key, value)	                                Add or update an entry
+get(key)	                                    Retrieve a value by key
+remove(key)	                                    Remove an entry
+containsKey(key)	                            Check whether a key exists
+containsValue(value)	                        Check whether a value exists
+getOrDefault(key, defaultValue)	                Return a default if the key is absent
+putIfAbsent(key, value)	                        Add only if the key is absent
+keySet()	                                    Get all keys
+values()	                                    Get all values
+entrySet()	                                    Get all key-value pairs
+size()	                                        Count entries
+isEmpty()	                                    Check whether empty
+clear()	                                        Remove all entries
 
-    
