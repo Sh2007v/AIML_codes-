@@ -1,0 +1,64 @@
+2. Types of Python Operators
+
+1. Arithmetic Operators
+Used for mathematical calculations.
+Operator	Meaning	Example (a=10, b=3)	Result
++	Addition	a + b	13
+-	Subtraction	a - b	7
+*	Multiplication	a * b	30
+/	Division	a / b	3.333...
+//	Floor division	a // b	3
+%	Modulus (remainder)	a % b	1
+**	Exponentiation	a ** b	1000
+
+2. Comparison Operators
+Compare two values and return True or False.
+Operator	Meaning
+==	Equal to
+!=	Not equal to
+>	Greater than
+<	Less than
+>=	Greater than or equal to
+<=	Less than or equal to
+
+3. Assignment Operators
+Used to assign or update variable values.
+Operator	Example	Equivalent operation
+=	x = 5	Assign 5
++=	x += 2	x = x + 2
+-=	x -= 2	x = x - 2
+*=	x *= 2	x = x * 2
+/=	x /= 2	x = x / 2
+//=	x //= 2	x = x // 2
+%=	x %= 2	x = x % 2
+**=	x **= 2	x = x ** 2
+
+4. Logical Operators
+Combine or reverse conditions.
+Operator	Meaning	Example
+and	True if both conditions are true	5 > 2 and 8 > 4 → True
+or	True if at least one condition is true	5 < 2 or 8 > 4 → True
+not	Reverses the Boolean result	not True → False
+
+Bitwise Operators
+Operate on the binary bits of integers.
+Operator	Meaning
+&	Bitwise AND
+\|	Bitwise OR
+^	Bitwise XOR
+~	Bitwise NOT
+<<	Left shift
+>>	Right shift
+
+6. Membership Operators
+Check whether a value exists in a sequence or collection.
+Operator	Meaning
+in	Value exists
+not in	Value does not exist
+
+7. Identity Operators
+Check whether two references point to the same object, not merely whether their values are equal.
+Operator	Meaning
+is	Same object
+is not	Different objects
+
