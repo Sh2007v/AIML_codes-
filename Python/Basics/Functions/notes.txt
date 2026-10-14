@@ -1,0 +1,9 @@
+Functions:
+Important Function Concepts
+Concept	Meaning	Example
+Definition	Creating a function	def greet():
+Calling	Executing a function	greet()
+Parameter	Variable in the definition	def greet(name):
+Argument	Value passed during the call	greet("Rahul")
+Return	Sends a result back	return a + b
+Default parameter	Provides a default value	def greet(name="User"):
