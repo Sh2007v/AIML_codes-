@@ -1,0 +1,18 @@
+static var is shared by all object of a class
+e.g.
+class Student {
+    static String university = "Chitkara";
+}
+
+e.g.:
+class Calculator {
+    static int add(int a, int b) {
+        return a + b;
+    }
+}
+
+public class practice {
+    public static void main(String[] args) {
+        System.out.println(Calculator.add(10, 20));
+    }
+}
