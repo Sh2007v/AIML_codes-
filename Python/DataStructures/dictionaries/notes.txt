@@ -1,0 +1,26 @@
+Dictionary : key-value pairs
+student = {
+    "name": "Aman",
+    "age": 20,
+    "branch": "CSE"
+}
+
+print(student)
+
+keys are unique
+mutable
+insertion-method
+
+
+Method	Purpose
+keys()	Returns the dictionary's keys
+values()	Returns its values
+items()	Returns key-value pairs
+get(key)	Safely retrieves a value
+update()	Adds or updates entries
+pop(key)	Removes a key and returns its value
+popitem()	Removes and returns the last inserted pair
+clear()	Removes all entries
+copy()	Creates a shallow copy
+setdefault()	Returns a value, inserting a default if the key is absent
+
