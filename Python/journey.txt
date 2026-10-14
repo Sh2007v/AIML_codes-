@@ -1,0 +1,8 @@
+Understood. This chat is Python Programming Focus — dedicated to learning, practising, debugging, and mastering Python programming.
+We'll focus on:
+- Python fundamentals: variables, data types, operators, conditionals, loops, and functions.
+- Data structures: lists, tuples, sets, dictionaries, and strings.
+- Advanced Python: OOP, exception handling, file handling, modules, and iterators.
+- Python for AI/ML: NumPy, Pandas, Matplotlib, and essential data-handling concepts.
+- Practical coding: user-input programs, problem-solving exercises, debugging, and mini-projects.
+- Placement preparation: interview-relevant Python concepts and carefully selected coding problems.
