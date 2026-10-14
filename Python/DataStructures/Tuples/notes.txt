@@ -1,0 +1,24 @@
+tuples: 
+    ordered + immutable + duplicates allowed + different data types allowed + 
+
+    tup = (10,20,30,40)
+    for i in tup:
+        print(i)
+    
+    Method	Purpose	Example
+    count(x)	Counts occurrences	                (1, 2, 2, 3).count(2) → 2
+    index(x)	Returns the first matching index	(10, 20, 30).index(20) → 1
+    You can also use len(), min(), max(), and sum() 
+    where appropriate.
+
+
+tuple unpacking
+
+student = ("Aman", 20, "CSE")
+
+name, age, branch = student
+
+print(name)   # Aman
+print(age)    # 20
+print(branch) # CSE
+
