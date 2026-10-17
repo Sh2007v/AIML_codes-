@@ -1,0 +1,47 @@
+<!------MAP function----->
+
+<!-- <script>
+    var myArray = [1,2,3,4,5];
+    var dbArray = myArray.map(double);
+    document.write(`${dbArray}`);
+
+    function double(n){
+        return n*2;
+    }
+</script> -->
+
+<!--------------filter function------>
+<!-- 
+<script>
+    var myArray = [1,2,3,4,5];
+    var oddArray = myArray.filter(odd);
+    document.write(`${oddArray}`);
+
+    function odd(n){
+        if(n%2 != 0){
+            return n;
+        }
+    }
+</script> -->
+
+<!------------------reduce function---------->
+<!-- <script>
+    var myArray = [1,2,3,4,5,6];
+    var sum = myArray.reduce(add,0);
+    document.write(`${sum}`);
+
+    function add(n,cur){
+        return n+cur;
+    }
+</script> -->
+
+<script>
+    let name = 'CHITKARA';
+    let namearray = [...name];
+    let newarray = namearray.map(add1);
+    document.write(newarray);
+
+    function add1(str){
+        return str + "1";
+    }
+</script>
