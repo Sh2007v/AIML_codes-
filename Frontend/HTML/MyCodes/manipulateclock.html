@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 id="h1"></h1>
+    <br>
+    <button id="btn" onclick="toggleClock()">Stop clock</button>
+
+    <script>
+        var myClock;
+        var run = true;
+
+        function showClock() {
+            var d = new Date();
+            var myTime = d.toLocaleTimeString();
+            document.getElementById('h1').innerHTML = myTime;
+        }
+
+        function toggleClock() {
+            if (running) {
+                clearInterval(myClock);
+                document.getElementById('btn').innerHTML = "Start clock";
+                run = false;
+            } else {
+                showClock();
+                myClock = setInterval(showClock, 1000);
+                document.getElementById('btn').innerHTML = "Stop clock";
+                run = true;
+            }
+        }
+
+        showClock();
+        myClock = setInterval(showClock, 1000);
+    </script>
+</body>
+</html>
