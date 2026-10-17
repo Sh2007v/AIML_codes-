@@ -1,0 +1,24 @@
+Encapsulation :
+    we combine data (variables) and methods into a single class and 
+    restrict direct access to the data.
+     To achieve that, do these :
+
+        private variables to hide data.
+        public getter and setter methods to provide controlled access.
+
+
+1 e.g. : 
+class Student {
+    private int marks;
+
+    public void setMarks(int marks) {
+        if (marks >= 0 && marks <= 100) {
+            this.marks = marks;
+        }
+    }
+
+    public int getMarks() {
+        return marks;
+    }
+}
+
