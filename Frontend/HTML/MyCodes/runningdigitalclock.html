@@ -1,0 +1,16 @@
+<head>
+    <body>
+        <h1 id="h1"></h1><br>
+        <button onClick="clearInterval(myClock);">Stop clock</button>
+    </body>
+</head>
+
+<script>
+    var myClock = setInterval(showClock, 1000);
+
+    function showClock(){
+        var d = new Date();
+        myTime = d.toLocaleTimeString();
+        document.getElementById('h1').innerHTML = myTime;
+    }
+</script>
