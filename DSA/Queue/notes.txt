@@ -1,0 +1,148 @@
+Queue: linear data str + follows FIFO principle + 
+
+import java.util.Queue;
+import java.util.LinkedList;
+
+class Main {
+    public static void main(String[] args) {
+        Queue<Integer> q = new LinkedList<>();
+
+        q.offer(10); // Add element
+        q.offer(20);
+        q.offer(30);
+
+        System.out.println(q);        // [10, 20, 30]
+        System.out.println(q.peek()); // 10
+
+        q.poll();                     // Removes 10
+
+        System.out.println(q);        // [20, 30]
+    }
+}
+
+#	Method	Purpose	Time
+1	offer(x)	Adds an element to the rear	O(1)*
+2	add(x)	Adds an element; may throw if insertion fails	O(1)*
+3	poll()	Removes and returns the front element; returns null if empty	O(1)
+4	remove()	Removes and returns the front; throws if empty	O(1)
+5	peek()	Returns the front without removing it; returns null if empty	O(1)
+6	element()	Returns the front; throws if empty	O(1)
+7	size()	Returns number of elements	O(1)
+8	isEmpty()	Checks whether queue is empty	O(1)
+9	contains(x)	Checks whether an element exists	O(n)
+10	clear()	Removes all elements	O(n)
+2. Additional useful methods
+#	Method	Purpose	Time
+11	iterator()	Creates an iterator for traversal	O(1)
+12	toArray()	Copies elements into an array	O(n)
+13	toArray(arr)	Copies elements into a supplied array	O(n)
+14	remove(x)	Removes the first matching occurrence	O(n)
+15	removeAll(c)	Removes elements also found in collection c	O(n × m)*
+16	retainAll(c)	Keeps only elements found in c	O(n × m)*
+17	containsAll(c)	Checks whether all elements of c exist	O(n × m)*
+18	addAll(c)	Adds all elements of collection c	O(m)*
+19	forEach(action)	Performs an action on each element	O(n)
+20	toString()	Returns a string representation	O(n)
+
+
+import java.util.Queue;
+import java.util.LinkedList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Queue<Integer> q = new LinkedList<>();
+
+        // 1. offer(x) - Adds an element
+        q.offer(10);
+        q.offer(20);
+        q.offer(30);
+        System.out.println("1. offer(): " + q);
+
+        // 2. add(x) - Adds an element
+        q.add(40);
+        System.out.println("2. add(): " + q);
+
+        // 3. poll() - Removes and returns front element
+        System.out.println("3. poll(): " + q.poll());
+
+        // 4. remove() - Removes and returns front element
+        System.out.println("4. remove(): " + q.remove());
+
+        // 5. peek() - Views front element
+        System.out.println("5. peek(): " + q.peek());
+
+        // 6. element() - Views front; throws if empty
+        System.out.println("6. element(): " + q.element());
+
+        // 7. size() - Number of elements
+        System.out.println("7. size(): " + q.size());
+
+        // 8. isEmpty() - Checks if empty
+        System.out.println("8. isEmpty(): " + q.isEmpty());
+
+        // 9. contains(x) - Checks if element exists
+        System.out.println("9. contains(30): " + q.contains(30));
+
+        // 10. clear() - Removes all elements
+        // Demonstrated at the end so other methods can run first.
+
+        // 11. iterator() - Traverses the queue
+        System.out.print("11. iterator(): ");
+        var it = q.iterator();
+        while (it.hasNext()) {
+            System.out.print(it.next() + " ");
+        }
+        System.out.println();
+
+        // 12. toArray() - Converts queue to Object[]
+        Object[] arr = q.toArray();
+        System.out.println("12. toArray(): " + Arrays.toString(arr));
+
+        // 13. toArray(T[] a) - Converts to typed array
+        Integer[] intArr = q.toArray(new Integer[0]);
+        System.out.println("13. toArray(T[]): " + Arrays.toString(intArr));
+
+        // Prepare another collection for collection methods
+        List<Integer> other = Arrays.asList(30, 40, 50);
+
+        // 14. remove(x) - Removes a matching element
+        q.remove(Integer.valueOf(30));
+        System.out.println("14. remove(x): " + q);
+
+        // 15. removeAll(c) - Removes elements also in other
+        q.removeAll(other);
+        System.out.println("15. removeAll(): " + q);
+
+        // Reset queue for remaining demonstrations
+        q.clear();
+        q.addAll(Arrays.asList(10, 20, 30, 40));
+
+        // 16. retainAll(c) - Keeps only matching elements
+        q.retainAll(other);
+        System.out.println("16. retainAll(): " + q);
+
+        // 17. containsAll(c) - Checks if all elements exist
+        System.out.println("17. containsAll(): "
+                + q.containsAll(Arrays.asList(30, 40)));
+
+        // 18. addAll(c) - Adds every element from collection
+        q.addAll(Arrays.asList(50, 60));
+        System.out.println("18. addAll(): " + q);
+
+        // 19. forEach(action) - Performs action on each element
+        System.out.print("19. forEach(): ");
+        q.forEach(x -> System.out.print(x + " "));
+        System.out.println();
+
+        // 20. toString() - String representation
+        System.out.println("20. toString(): " + q);
+
+        // clear() - Removes all elements
+        q.clear();
+        System.out.println("clear(): " + q);
+    }
+}
+
