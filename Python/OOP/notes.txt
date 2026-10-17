@@ -1,0 +1,50 @@
+Classes and objects
+Class : blueprint for creating objects
+Object : an instance of class
+
+
+class Student:
+    def display(self):
+        print("I am a student")
+
+
+s1 = Student()
+s1.display()
+
+
+class Student:
+    def display(self):
+        print("I am a student")
+
+
+s1 = Student()
+s2 = Student()
+
+s1.display()
+s2.display()
+
+
+Constructor: special method that runs automatically when you create an object of a class.
+constructor method is written as __init__().
+
+class Student:
+    def __init__(self):
+        print("Student is present")
+
+s1 = Student()
+s2 = Student()
+
+Constructor with parameters
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Aman", 20)
+s2 = Student("Priya", 19)
+
+print(s1.name, s1.age)
+print(s2.name, s2.age)
+
+
