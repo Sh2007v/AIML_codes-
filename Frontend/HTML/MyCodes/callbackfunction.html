@@ -1,0 +1,12 @@
+<script>
+    function greet(name,callback){
+        console.log("Hello" + " " + name);
+        callback();
+    }
+
+    function callMe(){
+        console.log("It is a callback function");
+    }
+
+    greet('Ram',callMe);
+</script>
