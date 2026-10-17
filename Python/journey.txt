@@ -6,3 +6,55 @@ We'll focus on:
 - Python for AI/ML: NumPy, Pandas, Matplotlib, Seaborn and essential data-handling concepts.
 - Practical coding: user-input programs, problem-solving exercises, debugging, and mini-projects.
 - Placement preparation: interview-relevant Python concepts and carefully selected coding problems.
+
+
+Classes and Objects
+The foundation of OOP — start here today.
+
+
+02
+
+Constructors (`__init__`)
+Initialize an object's data.
+
+
+03
+
+`self` keyword
+Access the current object's attributes and methods.
+
+
+04
+
+Instance vs Class Variables
+Understand object-specific and shared data.
+
+
+05
+
+Instance, Class and Static Methods
+Learn the three common method types.
+
+
+06
+
+Encapsulation
+Organize and control access to data.
+
+
+07
+
+Inheritance
+Reuse and extend existing classes.
+
+
+08
+
+Polymorphism
+Use a common interface for different behaviors.
+
+
+09
+
+Abstraction
+Expose essential behavior and hide implementation details.
