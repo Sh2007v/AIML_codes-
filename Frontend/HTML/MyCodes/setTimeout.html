@@ -1,0 +1,33 @@
+<!-- <head>
+    <script>
+        function showMessage(){
+            document.getElementById('message').innerText = "Please wait !"
+        
+        setTimeout(function(){
+            document.getElementById('message').innerText = "This msg appears after 3 seconds";
+        },3000);
+        }
+    </script>
+</head>
+<body onload="showMessage()">
+    <h2> Hello !</h2>
+    <h3 id="message"></h3><br>
+</body>
+ -->
+
+
+ <!---asynchronous mode-->
+ <body>
+    <h2 id="msg1"></h2>
+    <h2 id="msg2"></h2>
+    <h3 id="msg3"></h3>
+
+    <script>
+        setTimeout(function(){
+            document.getElementById('msg2').innerText = "Appears after 3 seconds.";
+
+        },3000);
+        document.getElementById('msg1').innerText = "Starting message.";
+        document.getElementById('msg3').innerText = "Ending message.";
+    </script>
+ </body>
