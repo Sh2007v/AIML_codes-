@@ -1,0 +1,37 @@
+dequeu : double-ended queue + rear + front mechanics
+
+Important methods
+
+1	dq.addFirst(x)	Inserts x at the front; throws an exception if insertion fails.
+2	dq.addLast(x)	Inserts x at the rear; throws an exception if insertion fails.
+3	dq.offerFirst(x)	Inserts x at the front; returns false if insertion fails.
+4	dq.offerLast(x)	Inserts x at the rear; returns false if insertion fails.
+5	dq.removeFirst()	Removes and returns the front element; throws an exception if empty.
+6	dq.removeLast()	Removes and returns the rear element; throws an exception if empty.
+7	dq.pollFirst()	Removes and returns the front element; returns null if empty.
+8	dq.pollLast()	Removes and returns the rear element; returns null if empty.
+9	dq.getFirst()	Returns the front element without removing it; throws an exception if empty.
+10	dq.getLast()	Returns the rear element without removing it; throws an exception if empty.
+11	dq.peekFirst()	Returns the front element without removing it; returns null if empty.
+12	dq.peekLast()	Returns the rear element without removing it; returns null if empty.
+13	dq.push(x)	Pushes x onto the front; works like a stack push.
+14	dq.pop()	Removes and returns the front element; works like a stack pop. Throws an exception if empty.
+15	dq.size()	Returns the number of elements.
+16	dq.isEmpty()	Returns true if the deque is empty.
+17	dq.contains(x)	Checks whether x exists in the deque.
+18	dq.clear()	Removes all elements.
+19	dq.removeFirstOccurrence(x)	Removes the first occurrence of x, searching from the front; returns a boolean.
+20	dq.removeLastOccurrence(x)	Removes the last occurrence of x, searching from the rear; returns a boolean.
+
+
+Important differences to remember
+1. add vs offer
+- addFirst() / addLast() — throw an exception if insertion fails.
+- offerFirst() / offerLast() — return false if insertion fails.
+2. remove vs poll
+- removeFirst() / removeLast() — throw an exception if the deque is empty.
+- pollFirst() / pollLast() — return null if the deque is empty.
+3. get vs peek
+- getFirst() / getLast() — throw an exception if empty.
+- peekFirst() / peekLast() — return null if empty.
+
