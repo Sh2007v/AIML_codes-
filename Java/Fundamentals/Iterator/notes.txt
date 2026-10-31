@@ -1,0 +1,4 @@
+works on every Collection
+hasNext(): is there another element?
+next(): return the next element and move forward
+remove(): remove the last element returned by next() (optional operation)
