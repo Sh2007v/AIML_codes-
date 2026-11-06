@@ -293,31 +293,97 @@ import java.util.ArrayList;
 // }
 
 
-import java.util.Arrays;
-import java.util.Scanner;
+// import java.util.Arrays;
+// import java.util.Scanner;
 
-public class practice{
-    public static void main(String[] args){
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         ArrayList<Integer> numbers = new ArrayList<>();
+
+//         System.out.println("Enter the size : ");
+//         int n = sc.nextInt();
+
+//         System.out.println("Enter the array : ");
+//         for(int i=0;i<n;i++){
+//             numbers.add(sc.nextInt());
+//         }
+
+//         for(int i=numbers.size()-1;i>=0;i--){
+//             System.out.print(numbers.get(i)+" ");
+//         }
+//     }
+// }
+
+// //REMOVE ALL OCCURENCES OF A VALUE 
+
+// import java.util.*;
+
+// public class practice{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+
+//         ArrayList<Integer> list = new ArrayList<>();
+
+//         int size = sc.nextInt();
+
+//         for(int i=0;i<size;i++){
+//             list.add(sc.nextInt());
+//         }
+
+//         int elem = sc.nextInt();
+
+//         ArrayList<Integer> res_arr = new ArrayList<>();
+
+//         for(int i=0;i<list.size();i++){
+//             if(list.get(i) == elem){
+//                 continue;
+//             }
+//             else{
+//                 res_arr.add(list.get(i));
+//             }
+//         }
+
+//         for(int i=0;i<res_arr.size();i++){
+//             System.out.print(res_arr.get(i)+" ");
+//         }
+//     }
+// }
+import java.util.*;
+
+public class practice {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        ArrayList<Integer> numbers = new ArrayList<>();
-
-        System.out.println("Enter the size : ");
-        int n = sc.nextInt();
-
-        System.out.println("Enter the array : ");
-        for(int i=0;i<n;i++){
-            numbers.add(sc.nextInt());
+        ArrayList<Integer> list = new ArrayList<>();
+        int size = sc.nextInt();
+        for (int i = 0; i < size; i++) {
+            list.add(sc.nextInt());
         }
 
-        for(int i=numbers.size()-1;i>=0;i--){
-            System.out.print(numbers.get(i)+" ");
+        int largest = Integer.MIN_VALUE;
+        int second = Integer.MIN_VALUE;
+        boolean found = false;
+
+        for (int x : list) {
+            if (x > largest) {
+                second = largest;     // der alte Größte wird zum Zweitgrößten
+                largest = x;
+            } else if (x > second && x < largest) {
+                second = x;           // gleiche Werte werden ausgeschlossen
+            }
+        }
+
+        // second gültig? (mindestens zwei verschiedene Werte nötig)
+        for (int x : list) {
+            if (x < largest) { found = true; break; }
+        }
+
+        if (found) {
+            System.out.println("Second Largest : " + second);
+        } else {
+            System.out.println("No second largest");
         }
     }
 }
-
-
-
-
-
-
