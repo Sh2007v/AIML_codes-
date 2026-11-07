@@ -315,8 +315,3 @@ public class Practice {
         System.out.println("20. clone(): " + copy);
     }
 }
-
-
-
-
-
