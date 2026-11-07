@@ -350,40 +350,74 @@ import java.util.ArrayList;
 //         }
 //     }
 // }
-import java.util.*;
+// import java.util.*;
 
-public class practice {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+// public class practice {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
 
-        ArrayList<Integer> list = new ArrayList<>();
-        int size = sc.nextInt();
-        for (int i = 0; i < size; i++) {
-            list.add(sc.nextInt());
-        }
+//         ArrayList<Integer> list = new ArrayList<>();
+//         int size = sc.nextInt();
+//         for (int i = 0; i < size; i++) {
+//             list.add(sc.nextInt());
+//         }
 
-        int largest = Integer.MIN_VALUE;
-        int second = Integer.MIN_VALUE;
-        boolean found = false;
+//         int largest = Integer.MIN_VALUE;
+//         int second = Integer.MIN_VALUE;
+//         boolean found = false;
 
-        for (int x : list) {
-            if (x > largest) {
-                second = largest;     // der alte Größte wird zum Zweitgrößten
-                largest = x;
-            } else if (x > second && x < largest) {
-                second = x;           // gleiche Werte werden ausgeschlossen
-            }
-        }
+//         for (int x : list) {
+//             if (x > largest) {
+//                 second = largest;     // der alte Größte wird zum Zweitgrößten
+//                 largest = x;
+//             } else if (x > second && x < largest) {
+//                 second = x;           // gleiche Werte werden ausgeschlossen
+//             }
+//         }
 
-        // second gültig? (mindestens zwei verschiedene Werte nötig)
-        for (int x : list) {
-            if (x < largest) { found = true; break; }
-        }
+//         // second gültig? (mindestens zwei verschiedene Werte nötig)
+//         for (int x : list) {
+//             if (x < largest) { found = true; break; }
+//         }
 
-        if (found) {
-            System.out.println("Second Largest : " + second);
-        } else {
-            System.out.println("No second largest");
-        }
-    }
-}
+//         if (found) {
+//             System.out.println("Second Largest : " + second);
+//         } else {
+//             System.out.println("No second largest");
+//         }
+//     }
+// }
+
+//Rotate array by k positions
+
+// import java.util.*;
+
+// public class practice {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         ArrayList<Integer> list = new ArrayList<>();
+//         int size = sc.nextInt();
+//         for (int i = 0; i < size; i++) {
+//             list.add(sc.nextInt());
+//         }
+
+//         int k = sc.nextInt();
+//         if (size > 0) {
+//             k = k % size;                          // handles k >= size
+//         }
+
+//         ArrayList<Integer> rotated = new ArrayList<>();
+//         for (int i = k; i < size; i++) {           // from index k to the end
+//             rotated.add(list.get(i));
+//         }
+//         for (int i = 0; i < k; i++) {              // then the first k elements
+//             rotated.add(list.get(i));
+//         }
+
+//         for (int x : rotated) {
+//             System.out.print(x + " ");
+//         }
+//     }
+// }
+
