@@ -1267,29 +1267,30 @@
 // }
 // Reverse a string (method format)
 
-public class practice{
+// public class practice{
 
-    static void revString(String Str){
-        String rev_Str ="";
-        for(int i=Str.length()-1;i>0;i--){
-            rev_Str+=Str.charAt(i);
-        }
-        System.out.println(rev_Str);
-    }
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+//     static void revString(String Str){
+//         String rev_Str ="";
+//         for(int i=Str.length()-1;i>0;i--){
+//             rev_Str+=Str.charAt(i);
+//         }
+//         System.out.println(rev_Str);
+//     }
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
 
-        String Str = sc.nextLine();
-        revString(Str);
-    }
-}
-
-
+//         String Str = sc.nextLine();
+//         revString(Str);
+//     }
+// }
 
 
-String s = sc.nextLine();        // String / complete line
-String s = sc.next();            // String / single word
-char c = sc.next().charAt(0);    // Character (most important)
-int n = sc.nextInt();            // Integer
-double d = sc.nextDouble();      // Decimal
+
+
+// String s = sc.nextLine();        // String / complete line
+// String s = sc.next();            // String / single word
+// char c = sc.next().charAt(0);    // Character (most important)
+// int n = sc.nextInt();            // Integer
+// double d = sc.nextDouble();      // Decimal
 //
+
