@@ -240,3 +240,38 @@ import java.util.LinkedList;
 // }
 
 
+//First Non-Repeating Character in a string
+
+// import java.util.*;
+
+// public class practice {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         System.out.print("Enter a string: ");
+//         String s = sc.nextLine();
+
+//         HashSet<Character> seen = new HashSet<>();
+//         HashSet<Character> repeated = new HashSet<>();
+ 
+//         for (int i = 0; i < s.length(); i++) {
+//             char c = s.charAt(i);
+//             if (seen.contains(c)) {
+//                 repeated.add(c);
+//             } else {
+//                 seen.add(c);
+//             }
+//         }
+
+//         char ans = '_';
+//         for (int j = 0; j < s.length(); j++) {
+//             char c = s.charAt(j);
+//             if (!repeated.contains(c)) {
+//                 ans = c;
+//                 break;
+//             }
+//         }
+
+//         System.out.println(ans);
+//     }
+// }
