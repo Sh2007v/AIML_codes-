@@ -1,0 +1,39 @@
+PriorityQueue
+
+Constructors
+#	Method	What it does
+1	new PriorityQueue<>()	Empty min-heap (natural order)
+2	new PriorityQueue<>(Collections.reverseOrder())	Max-heap
+3	new PriorityQueue<>(comparator)	Custom order, e.g. (a, b) -> Integer.compare(a[0], b[0])
+4	new PriorityQueue<>(collection)	Builds a heap from an existing collection
+
+Insert
+#	Method	What it does	Time
+5	offer(x)	Insert; returns true	O(log n)
+6	add(x)	Same as offer (throws on failure, which never happens in practice)	O(log n)
+7	addAll(collection)	Insert many elements	O(m log n)
+
+Look at the top
+#	Method	What it does	Time
+8	peek()	Top element, returns null if empty	O(1)
+9	element()	Top element, throws NoSuchElementException if empty	O(1)
+
+Remove
+#	Method	What it does	Time
+10	poll()	Remove and return top, null if empty	O(log n)
+11	remove()	Remove and return top, throws if empty	O(log n)
+12	remove(obj)	Remove one specific element, true if found	O(n)
+13	clear()	Remove everything	O(n)
+
+Information
+#	Method	What it does	Time
+14	size()	Number of elements	O(1)
+15	isEmpty()	true if no elements	O(1)
+16	contains(obj)	true if present	O(n)
+17	comparator()	Returns the comparator used (null for natural order)	O(1)
+
+Traversal and conversion
+#	Method	What it does
+18	iterator()	Iterate over elements (not in sorted order)
+19	toArray()	Copy elements to an array (heap order, not sorted)
+20	stream()	Stream of elements (inherited from Collection; also heap order)
