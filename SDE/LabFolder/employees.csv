@@ -1,0 +1,11 @@
+Emp_ID,Name,Department,Salary,Joining_Date
+101,Aman,IT,55000,15/01/23
+102,Simran,HR,42000,10/08/22
+103,Raj,Finance,60000,20/05/21
+104,Neha,IT,58000,12/03/23
+105,Karan,HR,,05/11/22
+106,Priya,Finance,65000,18/07/20
+107,Aman,IT,55000,15/01/23
+108,Ravi,Marketing,45000,01/02/24
+109,Meena,IT,,14/09/23
+110,Arjun,Finance,70000,25/06/19
