@@ -15,7 +15,7 @@
 //         }
 
 //         for(int i=0;i<size;i++){
-//             System.out.println(dq.poll());
+//             System.out.println(dq.peek());
 //         }
 //     }
 // }
@@ -53,11 +53,11 @@
 //         }
 
 //         if (!dq.isEmpty()) {
-//             dq.pollFirst();
+//             dq.peekFirst();
 //         }
 
 //         if (!dq.isEmpty()) {
-//             dq.pollLast();
+//             dq.peekLast();
 //         }
 
 //         System.out.println("Remaining Deque: " + dq);
@@ -114,7 +114,7 @@
 //         System.out.println("Reverse order:");
 
 //         while (!dq.isEmpty()) {
-//             System.out.print(dq.pollLast() + " ");
+//             System.out.print(dq.peekLast() + " ");
 //         }
 
 //         sc.close();
@@ -135,7 +135,7 @@
 //         }
 
 //         while (dq.size() > 1) {
-//             if (dq.pollFirst() != dq.pollLast()) {   // chars compared by value here (see note)
+//             if (dq.peekFirst() != dq.peekLast()) {   // chars compared by value here (see note)
 //                 return false;
 //             }
 //         }
@@ -166,9 +166,9 @@
 
 //         for (int i = 0; i < arr.length; i++) {
 //             if (i % 2 == 0) {
-//                 res[i] = dq.pollFirst();   // even position -> front
+//                 res[i] = dq.peekFirst();   // even position -> front
 //             } else {
-//                 res[i] = dq.pollLast();    // odd position -> back
+//                 res[i] = dq.peekLast();    // odd position -> back
 //             }
 //         }
 //         return res;
@@ -241,12 +241,12 @@
 
 //             // 1. remove the front if it is outside the window
 //             if (!dq.isEmpty() && dq.peekFirst() <= i - k) {
-//                 dq.pollFirst();
+//                 dq.peekFirst();
 //             }
 
 //             // 2. remove bigger values from the back (they can never be the min)
 //             while (!dq.isEmpty() && nums[dq.peekLast()] >= nums[i]) {
-//                 dq.pollLast();
+//                 dq.peekLast();
 //             }
 
 //             // 3. add the current index
@@ -341,38 +341,49 @@
 // }
 
 
-import java.util.*;
+// 1. Two-End Coin Game
+// Coins are in a row. Two players take turns, and each takes the larger of the two end coins. Print both scores.
+// Example: [4, 9, 2, 7] → A = 16, B = 6
 
-public class practice{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        
-        Deque<Integer> dq = new ArrayDeque<>();
-        
-        int size = sc.nextInt();
+// import java.util.*;
+// public class practice {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
 
-        for(int i=0;i<size;i++){
-            dq.add(sc.nextInt());
-        }
+//         Deque<Integer> dq = new ArrayDeque<>();
 
-        int sum_A = 0;
-        int sum_B = 0;
+//         int size = sc.nextInt();
+//         for (int i = 0; i < size; i++) {
+//             dq.add(sc.nextInt());
+//         }
 
-        for(int i=0;i<dq.size();i++){
-            if(dq.pollFirst() > dq.pollLast()){
-                sum_A+=dq.pollFirst();
-                sum_B+=dq.pollLast();
-        }
-        else{
-            sum_A+=dq.pollLast();
-            sum_B+=dq.pollFirst();
-        }
-    }
-    System.out.println(sum_A);
-    System.out.println(sum_B);
-}
-}
+//         int sum_A = 0;
+//         int sum_B = 0;
+//         boolean aTurn = true;
+
+//         while (!dq.isEmpty()) {
+//             int coin;
+
+//             // take the larger end coin (on a tie, take from the front)
+//             if (dq.peekFirst() >= dq.peekLast()) {
+//                 coin = dq.pollFirst();
+//             } else {
+//                 coin = dq.pollLast();
+//             }
+
+//             if (aTurn) {
+//                 sum_A += coin;
+//             } else {
+//                 sum_B += coin;
+//             }
+
+//             aTurn = !aTurn;   // switch players
+//         }
+
+//         System.out.println("A = " + sum_A);
+//         System.out.println("B = " + sum_B);
+//     }
+// }
 
 
-
-
+//
