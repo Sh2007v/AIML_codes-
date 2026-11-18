@@ -205,4 +205,64 @@
 // }
 
 
-//
+import java.util.*;
+
+// public class Practice {
+
+//     static List<Integer> sortByAbsolute(int[] arr) {
+//         // min-heap ordered by absolute value
+//         PriorityQueue<Integer> pq = new PriorityQueue<>(
+//             (a, b) -> Integer.compare(Math.abs(a), Math.abs(b))
+//         );
+
+//         for (int num : arr) {
+//             pq.add(num);
+//         }
+
+//         List<Integer> result = new ArrayList<>();
+//         while (!pq.isEmpty()) {
+//             result.add(pq.poll());
+//         }
+
+//         return result;
+//     }
+
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+
+//         int n = Integer.parseInt(sc.nextLine());
+//         int[] arr = new int[n];
+//         for (int i = 0; i < n; i++) {
+//             arr[i] = Integer.parseInt(sc.nextLine());
+//         }
+
+//         System.out.println(sortByAbsolute(arr));
+//     }
+// }
+
+//8. Running Minimum
+// Numbers arrive one at a time. After each number, print the smallest value seen so far.
+// Example: [5, 3, 8, 1, 4] → 5 3 3 1 1
+// Practice: add, peek
+
+import java.util.*;
+
+public class Practice {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        ArrayList<Integer> res_list = new ArrayList<>();
+
+        int n = Integer.parseInt(sc.nextLine());
+
+        for (int i = 0; i < n; i++) {
+            int num = Integer.parseInt(sc.nextLine());
+
+            pq.add(num);                 // the new number arrives
+            res_list.add(pq.peek());     // the smallest so far is on top
+        }
+
+        System.out.println(res_list);
+    }
+}
