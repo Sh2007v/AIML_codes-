@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Array Data</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Arrays() {
+        const data = [
+          { name: "Alok", city: "Noida", email: "alok123@gmail.com" },
+          { name: "Suresh", city: "Delhi", email: "suresh321@gmail.com" },
+        ];
+//Version 1
+        // return (
+        //   <div>
+        //     <h2>Data coming from an Array:</h2>
+        //     {data.map((element) => (
+        //       <h3 key={element.email}>
+        //         Name: {element.name}, City: {element.city}, Email: {element.email}
+        //       </h3>
+        //     ))}
+        //   </div>
+        // );
+//Version 2
+        return (
+            <div>
+                <h2>Data coming from an Array</h2>
+                <table border = '1' width = '45%'>
+                    <tr>
+                        <th>Name</th><th>City</th><th>Email</th>
+                        </tr>
+                        {data.map((element)=>
+                        <tr>
+                        <td>{element.name}</td><td>{element.city}</td><td>{element.email}</td>
+                    </tr>)}
+                    </table>
+                    </div>
+        )
+      }
+
+      ReactDOM.createRoot(document.getElementById("root")).render(<Arrays />);
+    </script>
+  </body>
+</html>
